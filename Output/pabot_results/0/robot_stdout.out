@@ -1,32 +1,66 @@
 ==============================================================================
 Tests :: Testing functionality through Robot Framework                        
 ==============================================================================
-<<<<<<< HEAD
-Tests.Test Role configuration                                                 
-=======
 Tests.Test User Administration                                                
->>>>>>> b7fd8316f0569b0260ad23974c53037da69fee6e
 ==============================================================================
 Start TestCase                                                        | PASS |
 ------------------------------------------------------------------------------
-Submit Anugal username and password                                   | PASS |
+Submit Anugal username and password                                   | FAIL |
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.115)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6100A3E42+31618]
+	(No symbol) [0x00007FF61001B0A9]
+	(No symbol) [0x00007FF60FED888A]
+	(No symbol) [0x00007FF60FEADAE5]
+	(No symbol) [0x00007FF60FF545A7]
+	(No symbol) [0x00007FF60FF6C131]
+	(No symbol) [0x00007FF60FF4CEB3]
+	(No symbol) [0x00007FF60FF1A46B]
+	(No symbol) [0x00007FF60FF1B001]
+	GetHandleVerifier [0x00007FF6103AA01D+3202397]
+	GetHandleVerifier [0x00007FF6103F6A3D+3516285]
+	GetHandleVerifier [0x00007FF6103EC4B0+3473904]
+	GetHandleVerifier [0x00007FF610155D46+760454]
+	(No symbol) [0x00007FF610026B4F]
+	(No symbol) [0x00007FF610021CE4]
+	(No symbol) [0x00007FF610021E72]
+	(No symbol) [0x00007FF61001121F]
+	BaseThreadInitThunk [0x00007FFCBAB17AC4+20]
+	RtlUserThreadStart [0x00007FFCBAD6A4E1+33]
 ------------------------------------------------------------------------------
-<<<<<<< HEAD
-Role_configuartion                                                    | PASS |
+Create User_id                                                        | FAIL |
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.115)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6100A3E42+31618]
+	(No symbol) [0x00007FF61001B0A9]
+	(No symbol) [0x00007FF60FED888A]
+	(No symbol) [0x00007FF60FEADAE5]
+	(No symbol) [0x00007FF60FF545A7]
+	(No symbol) [0x00007FF60FF6C131]
+	(No symbol) [0x00007FF60FF4CEB3]
+	(No symbol) [0x00007FF60FF1A46B]
+	(No symbol) [0x00007FF60FF1B001]
+	GetHandleVerifier [0x00007FF6103AA01D+3202397]
+	GetHandleVerifier [0x00007FF6103F6A3D+3516285]
+	GetHandleVerifier [0x00007FF6103EC4B0+3473904]
+	GetHandleVerifier [0x00007FF610155D46+760454]
+	(No symbol) [0x00007FF610026B4F]
+	(No symbol) [0x00007FF610021CE4]
+	(No symbol) [0x00007FF610021E72]
+	(No symbol) [0x00007FF61001121F]
+	BaseThreadInitThunk [0x00007FFCBAB17AC4+20]
+	RtlUserThreadStart [0x00007FFCBAD6A4E1+33]
 ------------------------------------------------------------------------------
 Finish TestCase                                                       | PASS |
 ------------------------------------------------------------------------------
-Tests.Test Role configuration                                         | PASS |
-=======
-Create User_id                                                        | PASS |
-------------------------------------------------------------------------------
-Finish TestCase                                                       | PASS |
-------------------------------------------------------------------------------
-Tests.Test User Administration                                        | PASS |
->>>>>>> b7fd8316f0569b0260ad23974c53037da69fee6e
-4 tests, 4 passed, 0 failed
+Tests.Test User Administration                                        | FAIL |
+4 tests, 2 passed, 2 failed
 ==============================================================================
-Tests :: Testing functionality through Robot Framework                | PASS |
-4 tests, 4 passed, 0 failed
+Tests :: Testing functionality through Robot Framework                | FAIL |
+4 tests, 2 passed, 2 failed
 ==============================================================================
 Output:  C:\Anugal_Testing\Anugal\Output\pabot_results\0\Output.xml
