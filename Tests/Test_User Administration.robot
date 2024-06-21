@@ -1,7 +1,6 @@
 *** Settings ***
 Resource    ../Tests/Resource/User_Administration.robot
-
-Test Tags    user_admin_01
+Test Tags    useradmin01
 
 *** Test Cases ***
 Start TestCase
