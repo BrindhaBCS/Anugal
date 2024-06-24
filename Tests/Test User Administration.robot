@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../Tests/Resource/User_Administration.robot
+Resource    ../Tests/Resource/User Administration.robot
 Test Tags    useradmin01
 
 *** Test Cases ***
@@ -17,3 +17,4 @@ Create User_id
 
 Finish TestCase 
     Finish TestCase         
+
