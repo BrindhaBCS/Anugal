@@ -1,0 +1,66 @@
+==============================================================================
+Tests :: Testing functionality through Robot Framework                        
+==============================================================================
+Tests.Test Role configuration                                                 
+==============================================================================
+Start TestCase                                                        | PASS |
+------------------------------------------------------------------------------
+Submit Anugal username and password                                   | FAIL |
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.126)
+Stacktrace:
+	GetHandleVerifier [0x00007FF69F153E42+31618]
+	(No symbol) [0x00007FF69F0CB0A9]
+	(No symbol) [0x00007FF69EF8888A]
+	(No symbol) [0x00007FF69EF5DAE5]
+	(No symbol) [0x00007FF69F0045A7]
+	(No symbol) [0x00007FF69F01C131]
+	(No symbol) [0x00007FF69EFFCEB3]
+	(No symbol) [0x00007FF69EFCA46B]
+	(No symbol) [0x00007FF69EFCB001]
+	GetHandleVerifier [0x00007FF69F45A01D+3202397]
+	GetHandleVerifier [0x00007FF69F4A6A3D+3516285]
+	GetHandleVerifier [0x00007FF69F49C4B0+3473904]
+	GetHandleVerifier [0x00007FF69F205D46+760454]
+	(No symbol) [0x00007FF69F0D6B4F]
+	(No symbol) [0x00007FF69F0D1CE4]
+	(No symbol) [0x00007FF69F0D1E72]
+	(No symbol) [0x00007FF69F0C121F]
+	BaseThreadInitThunk [0x00007FFE0B477AC4+20]
+	RtlUserThreadStart [0x00007FFE0E28A4E1+33]
+------------------------------------------------------------------------------
+Role_configuartion                                                    | FAIL |
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.126)
+Stacktrace:
+	GetHandleVerifier [0x00007FF69F153E42+31618]
+	(No symbol) [0x00007FF69F0CB0A9]
+	(No symbol) [0x00007FF69EF8888A]
+	(No symbol) [0x00007FF69EF5DAE5]
+	(No symbol) [0x00007FF69F0045A7]
+	(No symbol) [0x00007FF69F01C131]
+	(No symbol) [0x00007FF69EFFCEB3]
+	(No symbol) [0x00007FF69EFCA46B]
+	(No symbol) [0x00007FF69EFCB001]
+	GetHandleVerifier [0x00007FF69F45A01D+3202397]
+	GetHandleVerifier [0x00007FF69F4A6A3D+3516285]
+	GetHandleVerifier [0x00007FF69F49C4B0+3473904]
+	GetHandleVerifier [0x00007FF69F205D46+760454]
+	(No symbol) [0x00007FF69F0D6B4F]
+	(No symbol) [0x00007FF69F0D1CE4]
+	(No symbol) [0x00007FF69F0D1E72]
+	(No symbol) [0x00007FF69F0C121F]
+	BaseThreadInitThunk [0x00007FFE0B477AC4+20]
+	RtlUserThreadStart [0x00007FFE0E28A4E1+33]
+------------------------------------------------------------------------------
+Finish TestCase                                                       | PASS |
+------------------------------------------------------------------------------
+Tests.Test Role configuration                                         | FAIL |
+4 tests, 2 passed, 2 failed
+==============================================================================
+Tests :: Testing functionality through Robot Framework                | FAIL |
+4 tests, 2 passed, 2 failed
+==============================================================================
+Output:  C:\Anugal_Testing\Anugal\Output\33181b60-0728-45db-8fbd-98d61a98bccc\pabot_results\0\Output.xml
