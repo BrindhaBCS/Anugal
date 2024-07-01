@@ -1,0 +1,48 @@
+==============================================================================
+Tests :: Testing functionality through Robot Framework                        
+==============================================================================
+Tests.Test User Administration                                                
+==============================================================================
+Start TestCase                                                        | PASS |
+------------------------------------------------------------------------------
+Submit Anugal username and password                                   | PASS |
+------------------------------------------------------------------------------
+Create User_id                                                        | FAIL |
+ElementClickInterceptedException: Message: element click intercepted: Element <span class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-1uq8hka" tabindex="-1" role="button" aria-disabled="true" aria-label="delete">...</span> is not clickable at point (2184, 316). Other element would receive the click: <div>...</div>
+  (Session info: chrome=126.0.6478.126)
+Stacktrace:
+	GetHandleVerifier [0x00007FF69F153E42+31618]
+	(No symbol) [0x00007FF69F0CB0A9]
+	(No symbol) [0x00007FF69EF8888A]
+	(No symbol) [0x00007FF69EFE022E]
+	(No symbol) [0x00007FF69EFDDBE2]
+	(No symbol) [0x00007FF69EFDB07B]
+	(No symbol) [0x00007FF69EFDA246]
+	(No symbol) [0x00007FF69EFCC281]
+	(No symbol) [0x00007FF69EFFD10A]
+	(No symbol) [0x00007FF69EFCBBA6]
+	(No symbol) [0x00007FF69EFFD320]
+	(No symbol) [0x00007FF69F01CA80]
+	(No symbol) [0x00007FF69EFFCEB3]
+	(No symbol) [0x00007FF69EFCA46B]
+	(No symbol) [0x00007FF69EFCB001]
+	GetHandleVerifier [0x00007FF69F45A01D+3202397]
+	GetHandleVerifier [0x00007FF69F4A6A3D+3516285]
+	GetHandleVerifier [0x00007FF69F49C4B0+3473904]
+	GetHandleVerifier [0x00007FF69F205D46+760454]
+	(No symbol) [0x00007FF69F0D6B4F]
+	(No symbol) [0x00007FF69F0D1CE4]
+	(No symbol) [0x00007FF69F0D1E72]
+	(No symbol) [0x00007FF69F0C121F]
+	BaseThreadInitThunk [0x00007FFE0B477AC4+20]
+	RtlUserThreadStart [0x00007FFE0E28A4E1+33]
+------------------------------------------------------------------------------
+Finish TestCase                                                       | PASS |
+------------------------------------------------------------------------------
+Tests.Test User Administration                                        | FAIL |
+4 tests, 3 passed, 1 failed
+==============================================================================
+Tests :: Testing functionality through Robot Framework                | FAIL |
+4 tests, 3 passed, 1 failed
+==============================================================================
+Output:  C:\Anugal_Testing\Anugal\Output\8c7b7602-de4a-4fcb-a66c-c19ca0def44a\pabot_results\0\Output.xml
