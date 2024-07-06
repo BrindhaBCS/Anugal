@@ -1,5 +1,5 @@
 *** Settings ***
-Resource   ../Tests/Resource/Role_configuration.robot
+Resource   ../Tests/Resource/Role configuration.robot
 Test Tags    role_configuration
 
 *** Test Cases ***
