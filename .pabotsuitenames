@@ -1,6 +1,5 @@
-datasources:6a6bb60fbc92ef036ee4068a28c23e759e3b6878
-commandlineoptions:43a70ed10e7802446c25a10786947c1cf705e378
+datasources:0436fe02f3e353d5c98757606075769f9097aa5e
+commandlineoptions:fd9dbcacd6d0f2d992a7693f31ff4e249d4f5d9f
 suitesfrom:no-suites-from-option
-file:6961fb01a1367c97e78532f05bcef28d754dc0c2
---suite Tests.TestUserAdministration
---suite Tests.Test User Administration
+file:fc39aef77315bbe30697f5d8e968c9d125e8b3b8
+--suite Tests.TestRoleconfiguration

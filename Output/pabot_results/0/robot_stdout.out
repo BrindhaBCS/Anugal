@@ -1,18 +1,21 @@
 ==============================================================================
 Tests :: Testing functionality through Robot Framework                        
 ==============================================================================
-Tests.Test Access request                                                     
+Tests.Test Role configuration                                                 
 ==============================================================================
 Start TestCase                                                        | PASS |
 ------------------------------------------------------------------------------
 Submit Anugal username and password                                   | PASS |
 ------------------------------------------------------------------------------
-Access_Request                                                        | PASS |
+Role_configuartion                                                    | FAIL |
+Element with locator 'xpath://div[text()='Role Configuration']' not found.
 ------------------------------------------------------------------------------
-Tests.Test Access request                                             | PASS |
-3 tests, 3 passed, 0 failed
+Finish TestCase                                                       | PASS |
+------------------------------------------------------------------------------
+Tests.Test Role configuration                                         | FAIL |
+4 tests, 3 passed, 1 failed
 ==============================================================================
-Tests :: Testing functionality through Robot Framework                | PASS |
-3 tests, 3 passed, 0 failed
+Tests :: Testing functionality through Robot Framework                | FAIL |
+4 tests, 3 passed, 1 failed
 ==============================================================================
 Output:  C:\Anugal_Testing\Anugal\Output\pabot_results\0\Output.xml
