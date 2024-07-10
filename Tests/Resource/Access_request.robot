@@ -57,10 +57,10 @@ Access_Request
     
     # Click Element    xpath://div[text()='Symphony,IGA']
     # Sleep    2
-    # Click Element    xpath://div[@title='SAP_BC_SRV_ARL_ADMIN_OLD']
-    # Sleep    2
-    Click Element    xpath://div[@title='/BCS/SYMPHONY_AZURE']
+    Click Element    xpath://div[@title='SAP_BC_SRV_ARL_ADMIN_OLD']
     Sleep    2
+    # Click Element    xpath://div[@title='/BCS/SYMPHONY_AZURE']
+    # Sleep    2
     Click Element    xpath://a[normalize-space()='Add']
     Sleep    1
 

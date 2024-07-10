@@ -1,2 +1,0 @@
-[ WARN ] Multiple suites with name 'TestRoleconfiguration' executed in suite 'Tests'.
-[ ERROR ] Error in file 'C:\Anugal_Testing\Anugal\Tests\TestRoleconfiguration.robot' on line 2: Resource file '..\Tests\Resource\Role configuration.robot' does not exist.

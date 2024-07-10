@@ -14,60 +14,7 @@ Finish TestCase                                                       | PASS |
 Tests.Test Role configuration                                         | PASS |
 4 tests, 4 passed, 0 failed
 ==============================================================================
-Tests.TestRoleconfiguration                                                   
-==============================================================================
-Start TestCase                                                          
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Anugal_Testing\Anugal\Tests\TestRoleconfiguration.robot:6
-    T:  Start TestCase    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Anugal_Testing\Anugal\Tests\TestRoleconfiguration.robot:7
-      Start TestCase    
-______________________________________________________________________________
-| FAIL |
-No keyword with name 'Start TestCase' found.
-------------------------------------------------------------------------------
-Submit Anugal username and password                                     
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Anugal_Testing\Anugal\Tests\TestRoleconfiguration.robot:9
-    T:  Submit Anugal username and password    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Anugal_Testing\Anugal\Tests\TestRoleconfiguration.robot:10
-      Submit Anugal username and password    
-______________________________________________________________________________
-| FAIL |
-No keyword with name 'Submit Anugal username and password' found.
-------------------------------------------------------------------------------
-Role_configuartion                                                      
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Anugal_Testing\Anugal\Tests\TestRoleconfiguration.robot:12
-    T:  Role_configuartion    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Anugal_Testing\Anugal\Tests\TestRoleconfiguration.robot:13
-      Role_configuartion    
-______________________________________________________________________________
-| FAIL |
-No keyword with name 'Role_configuartion' found.
-------------------------------------------------------------------------------
-Finish TestCase                                                         
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Anugal_Testing\Anugal\Tests\TestRoleconfiguration.robot:19
-    T:  Finish TestCase    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Anugal_Testing\Anugal\Tests\TestRoleconfiguration.robot:20
-      Finish TestCase    
-______________________________________________________________________________
-| FAIL |
-No keyword with name 'Finish TestCase' found.
-------------------------------------------------------------------------------
-Tests.TestRoleconfiguration                                           | FAIL |
-4 tests, 0 passed, 4 failed
-==============================================================================
-Tests :: Testing functionality through Robot Framework                | FAIL |
-8 tests, 4 passed, 4 failed
+Tests :: Testing functionality through Robot Framework                | PASS |
+4 tests, 4 passed, 0 failed
 ==============================================================================
 Output:  C:\Anugal_Testing\Anugal\Output\pabot_results\0\Output.xml
