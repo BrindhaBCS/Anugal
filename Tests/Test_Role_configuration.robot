@@ -1,6 +1,6 @@
 *** Settings ***
-Resource    ../Tests/Resource/Role configuration.robot
-Test Tags    role_configuration
+Resource    ../Tests/Resource/Role_configuration.robot
+Test Tags    role_configuration1
 
 *** Test Cases ***
 Start TestCase
