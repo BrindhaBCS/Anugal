@@ -9,23 +9,19 @@ Start TestCase
 Submit Anugal username and password
     Wait until element is visible    ${angvar('user_text_box')}
     Sleep    10
-    
-    Input text    id:emailId        abarna.s@basiscloudsolutions.com
-    Input password    id:password    2GdJytwi
-    Click element    xpath://button[text()='Login']
    
-    # Click Element    xpath:(//div[@class='MuiStack-root css-1ed5314']//button)[2]
-    # Sleep    5
-    # Input Text   xpath://*[@id="i0116"]    malayranjan.s@basiscloudsolutions.com
-    # Sleep    3
-    # Click Element    xpath://*[@id="idSIButton9"]
+    Click Element    xpath:(//div[@class='MuiStack-root css-1ed5314']//button)[2]
+    Sleep    5
+    Input Text   xpath://*[@id="i0116"]    malayranjan.s@basiscloudsolutions.com
+    Sleep    3
+    Click Element    xpath://*[@id="idSIButton9"]
 
-    # Wait Until Element Is Visible    xpath://*[@id="i0118"]    60s
-    # Input Text    xpath://*[@id="i0118"]    Malay@Ranjan!@#
-    # Click Element    xpath://*[@id="idSIButton9"]
-    # Sleep    2
-    # Click Element    xpath://*[@id="idBtn_Back"]
-    # Sleep    5
+    Wait Until Element Is Visible    xpath://*[@id="i0118"]    60s
+    Input Text    xpath://*[@id="i0118"]    Malay@Ranjan!@#
+    Click Element    xpath://*[@id="idSIButton9"]
+    Sleep    2
+    Click Element    xpath://*[@id="idBtn_Back"]
+    Sleep    5
 
     Maximize Browser Window
     Sleep    20
