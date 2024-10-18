@@ -66,10 +66,10 @@ Create User_id
     Press Keys    xpath://input[@id='timeZone']    ENTER
     
     Click Element    xpath://button[normalize-space(text())='Add']
-    Sleep    10
+    # Sleep    10
     
 View the User id
-    Click Element    xpath:(//span[@aria-label='view'])[1]
+    Wait Until Keyword Succeeds    2minute    10s    Click Element    xpath:(//span[@aria-label='view'])[1]
     Sleep    2
     Click Element    xpath:(//div[@role='button'])[1]
     Sleep    2
