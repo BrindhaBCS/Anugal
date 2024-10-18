@@ -57,10 +57,11 @@ Role_configuartion
     Click Element    xpath://button[text()='Next']
     Sleep    5
     Click Element    xpath://button[text()='Create']
-    Sleep    9
+    # Sleep    9
 
 Provisioning the role
-    Click Element    xpath:(//input[@type='checkbox'])[1]
+    Wait Until Keyword Succeeds    2minute    10s    Click Element    xpath:(//input[@type='checkbox'])[1]
+    # Click Element    xpath:(//input[@type='checkbox'])[1]
     Sleep    2
     Click Element    xpath://button[text()='Confirm']
     Sleep    5
