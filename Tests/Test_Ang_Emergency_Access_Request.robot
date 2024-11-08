@@ -1,7 +1,7 @@
 *** Settings ***
-Resource    ../Tests/Resources/Ang_Emergency_Access_Request.robot
+Resource    ../Tests/Resource/Ang_Emergency_Access_Request.robot
 Suite Setup    Ang_Emergency_Access_Request.Start TestCase
-# Suite Teardown    Ang_Emergency_Access_Request.Finish TestCase
+Suite Teardown    Ang_Emergency_Access_Request.Finish TestCase
 Test Tags    Emergency_Access
 
 *** Test Cases ***

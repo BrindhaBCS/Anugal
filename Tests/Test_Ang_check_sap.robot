@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../Tests/Resources/Ang_check_sap
+Resource    ../Tests/Resource/Ang_check_sap.robot
 Suite Setup    Ang_check_sap.Start TestCase
 Suite Teardown    Ang_check_sap.Finish TestCase
 Test Tags    sap_login

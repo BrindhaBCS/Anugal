@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../Tests/Resources/Ang_provisioning_status.robot
+Resource    ../Tests/Resource/Ang_provisioning_status.robot
 Suite Setup    Ang_provisioning_status.Start TestCase
 Suite Teardown    Ang_provisioning_status.Finish TestCase
 Test Tags    check_provisioning
