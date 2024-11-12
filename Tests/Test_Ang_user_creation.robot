@@ -6,11 +6,12 @@ Test Tags    user_creation
 
 *** Test Cases ***
 
+
 Submit Anugal username and password
     Submit Anugal username and password
 
-User_creation
-    User_creation
+User_creation_step
+    User_creation_step
 
 Request Status
     Request Status

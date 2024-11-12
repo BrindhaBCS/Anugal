@@ -17,7 +17,7 @@ Submit Anugal username and password
     Maximize Browser Window
     # Sleep    20
     Wait Until Element Is Visible    xpath://img[@alt='IGA']    60s
-User_creation
+User_creation_step
     Click Element    xpath:(//button[@type='button']//img)[1]
     Wait Until Element Is Visible    xpath://div[normalize-space(text())='Access Request']    60s 
     Click Element    xpath://div[normalize-space(text())='Access Request']
