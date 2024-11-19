@@ -30,6 +30,7 @@ User_creation
     Sleep    1
     Click Element    xpath://button[normalize-space(text())='Next']
     Sleep    2
+    Wait Until Element Is Visible    xpath://div[normalize-space(text())='Symphony']    60s
     Click Element    xpath://div[normalize-space(text())='Symphony']
     Sleep    2
     Wait Until Element Is Visible    xpath://p[normalize-space(text())='DEV Symphony']    60s

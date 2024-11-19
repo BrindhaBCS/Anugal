@@ -1,25 +1,26 @@
 *** Settings ***
 Library     SeleniumLibrary
 # Library    pyautogui
-Library    keyboard_actions.py
-Library    SAP_Tcode_Library.py
-Library    OperatingSystem
-Library    Process
+# Library    keyboard_actions.py
+# Library    SAP_Tcode_Library.py
+# Library    OperatingSystem
+# Library    Process
+Library    Anugal_library.py
 
 
 
 
 *** Keywords ***
 Start TestCase
-    Log    Opening browser
-    Open Browser    ${angvar('url')}    ${angvar('browser')}    #options=${global_browser_options}
+    # Log    Opening browser
+    Open Browser    ${wvar('url')}    ${wvar('browser')}    #options=${global_browser_options}
     
 Submit Anugal username and password
-    Wait until element is visible    ${angvar('user_text_box')}    60s
+    Wait until element is visible    ${wvar('user_text_box')}    60s
     
-    SeleniumLibrary.Input text    ${angvar('user_text_box')}        ${angvar('user_id')}
-    SeleniumLibrary.Input password    ${angvar('password_text_box')}    ${angvar('password')}
-    SeleniumLibrary.Click element    ${angvar('Login_anugal_button')}
+    SeleniumLibrary.Input text    ${wvar('user_text_box')}        ${wvar('user_id')}
+    SeleniumLibrary.Input password    ${wvar('password_text_box')}    ${wvar('password')}
+    SeleniumLibrary.Click element    ${wvar('Login_anugal_button')}
     Maximize Browser Window
     
     Wait Until Element Is Visible    xpath://img[@alt='IGA']    60s
@@ -46,24 +47,34 @@ SAP_login_EAM_lunchpad
     Sleep    2
     
 
-    keyboard_actions.Press Keys    TAB
+    Anugal_library.Press Keys    TAB
     Sleep    1
-    keyboard_actions.Press Keys    TAB
+    Anugal_library.Press Keys    TAB
     Sleep    1
-    keyboard_actions.Press Keys    TAB
+    Anugal_library.Press Keys    TAB
     Sleep    1
-    keyboard_actions.Press Keys    ENTER
+    Anugal_library.Press Keys    ENTER
     Sleep    1
     SeleniumLibrary.Click Element    xpath:/html/body/div[2]/div[3]/div/div[5]/button
     Sleep    4
-    keyboard_actions.Press Keys    TAB
+    Anugal_library.Press Keys    TAB
     Sleep    1
-    keyboard_actions.Press Keys    TAB
+    Anugal_library.Press Keys    TAB
     Sleep    1
-    keyboard_actions.Press Keys    ENTER
+    Anugal_library.Press Keys    ENTER
     Sleep    10
     
-    SAP_Tcode_Library.Terminate Process    process_name=saplogon.exe
+    
+    Anugal_library.Run Transaction    /nsu01
+    Sleep    2
+    
+    Anugal_library.Input Text	wnd[0]/usr/ctxtSUID_ST_BNAME-BNAME	Anugal
+	Sleep	2
+
+    Anugal_library.Run Transaction    /nsu10
+    Sleep    2
+
+    Anugal_library.Run Transaction    /nex
     Sleep    2
     SeleniumLibrary.Click Element    xpath://button[normalize-space(text())='Log Out']
     Sleep    2
