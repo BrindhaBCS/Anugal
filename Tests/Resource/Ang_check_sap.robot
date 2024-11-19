@@ -18,9 +18,9 @@ Start TestCase
 Submit Anugal username and password
     Wait until element is visible    ${angvar('user_text_box')}    60s
     
-    Input text    ${angvar('user_text_box')}        ${angvar('user_id')}
-    Input password    ${angvar('password_text_box')}    ${angvar('password')}
-    Click element    ${angvar('Login_anugal_button')}
+    SeleniumLibrary.Input text    ${angvar('user_text_box')}        ${angvar('user_id')}
+    SeleniumLibrary.Input password    ${angvar('password_text_box')}    ${angvar('password')}
+    SeleniumLibrary.Click element    ${angvar('Login_anugal_button')}
     Maximize Browser Window
     
     Wait Until Element Is Visible    xpath://img[@alt='IGA']    60s
