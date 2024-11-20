@@ -79,12 +79,12 @@ Anugal_password_reset
     Log    Password is:${password1}
     # Set Global Variable    ${password1}
    
-    Start Process     ${wvar('SAP_SERVER')}    
+    Start Process     ${angvar('SAP_SERVER')}    
     Sleep    2
     Connect To Session
-    Open Connection    ${wvar('SAP_connection')}    
-    SAP_Tcode_Library.Input Text    wnd[0]/usr/txtRSYST-MANDT    ${wvar('Client_Id')}
-    SAP_Tcode_Library.Input Text    wnd[0]/usr/txtRSYST-BNAME    ${wvar('User_Name')}    
+    Open Connection    ${angvar('SAP_connection')}    
+    SAP_Tcode_Library.Input Text    wnd[0]/usr/txtRSYST-MANDT    ${angvar('Client_Id')}
+    SAP_Tcode_Library.Input Text    wnd[0]/usr/txtRSYST-BNAME    ${angvar('User_Name')}    
     SAP_Tcode_Library.Input Password   wnd[0]/usr/pwdRSYST-BCODE    ${password1}
     Send Vkey    0
     Sleep    5
