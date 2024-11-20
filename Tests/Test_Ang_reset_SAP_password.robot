@@ -1,7 +1,7 @@
 *** Settings ***
-Resource    ../Tests/Resources/Ang_Password_reset.robot
-Suite Setup    Ang_Password_reset.Start TestCase
-Suite Teardown    Ang_Password_reset.Finish TestCase
+Resource    ../Tests/Resources/Ang_reset_SAP_password
+Suite Setup    Ang_reset_SAP_password.Start TestCase
+Suite Teardown    Ang_reset_SAP_password.Finish TestCase
 Test Tags    sap_reset
 
 *** Test Cases ***
