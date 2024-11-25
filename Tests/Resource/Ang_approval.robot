@@ -25,7 +25,7 @@ Approval_request
     Click Element    xpath://span[normalize-space(text())='Approval']
     Wait Until Keyword Succeeds    1 minute    5s    Wait until element is visible    xpath:(//td[contains(@class,'MuiTableCell-root MuiTableCell-body')]//button)[1]
     Sleep    2
-    Input Text    xpath:(//input[@placeholder='Search'])[2]    ${request_id}
+    Input Text    xpath:(//input[@placeholder='Search'])[2]    ${angvar('request_id')}
     Wait until element is visible    xpath://button[normalize-space(text())='View']    60s
     Sleep    1
     Click Element    xpath://button[normalize-space(text())='View'] 
