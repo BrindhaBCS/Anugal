@@ -2,9 +2,10 @@
 Library     SeleniumLibrary
 Library    DateTime
 
-*** Variables ***
-${Access_request}    IGA-109677
 
+*** Variables ***
+
+${Env}    DEV Symphony
 
 *** Keywords ***
 Start TestCase
@@ -12,39 +13,34 @@ Start TestCase
     Open Browser    ${angvar('url')}    ${angvar('browser')}    #options=${global_browser_options}
     
 Submit Anugal username and password
-    Wait until element is visible    ${angvar('user_text_box')}    60s
-    
-    Input text    ${angvar('user_text_box')}        ${angvar('user_id')}
-    Input password    ${angvar('password_text_box')}    ${angvar('password')}
-    Click element    ${angvar('Login_anugal_button')}
+    Wait Until Keyword Succeeds    2 minute    5s   Wait until element is visible    xpath://button[contains(.,'Azure')]
+    # Sleep    10
     Maximize Browser Window
+    SeleniumLibrary.Input text    id:emailId        ${angvar('user_id')}
+    SeleniumLibrary.Input password    id:password    ${angvar('password')}
+    SeleniumLibrary.Click element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[3]
+    Sleep    20
     
-    Wait Until Element Is Visible    xpath://img[@alt='IGA']    60s
+    Wait Until Element Is Visible    xpath:(//button[@type='button']//img)[1]    60s
 
 provisioning_status
     Wait Until Element Is Visible    xpath://button[contains(.,'Status')]    60s
-    Click Element    xpath://button[contains(.,'Status')]
+    SeleniumLibrary.Click Element    xpath://button[contains(.,'Status')]
     Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath:(//button[@type='button'][normalize-space()='View'])[1]    60s
-    Input Text    xpath:(//input[@id='search'])[2]    ${Access_request}
+    SeleniumLibrary.Input Text    xpath:(//input[@id='search'])[2]    ${request_id}
     Wait Until Element Is Visible    xpath://button[normalize-space()='View']
     Sleep    4
-    Click Element    xpath://button[normalize-space()='View']
+    SeleniumLibrary.Click Element    xpath://button[normalize-space()='View']
     Sleep    1
-    Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://h2[normalize-space(text())='DEV Symphony']    60s 
+    Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://h2[normalize-space(text())='${Env}']    60s 
     Sleep    1
-    # ${status}    Get Value    xpath://p[contains(@class, 'MuiTypography-root') and contains(@class, 'MuiTypography-body1') and (text()='Pending' or text()='Approved')]
-    # Sleep    1
-    # Log To Console    ${status}
-    # Sleep    1
-    # Click Element    xpath://button[normalize-space(text())='Status']
-    # Sleep    1
-    # ${status2}    Get Value    xpath:(//span[contains(@class,'MuiStepLabel-label Mui-active')]//h6)[2]
-    # Log To Console    ${status2}
-    # Sleep    1
-
-    Click Element    xpath://button[normalize-space(text())='Status']
-    Sleep    2
     
+
+    SeleniumLibrary.Click Element    xpath://button[normalize-space(text())='Status']
+    Sleep    2
+    ${Pr_status}    Get Text    xpath:(//h6[contains(@class,'MuiTypography-root MuiTypography-h3')])[3]
+    Log    ${Pr_status}
+    Log To Console    **gbStart**Copilot_Provisioning_Status**splitKeyValue**${Pr_status}**gbEnd**
 
 Finish TestCase
     Close All Browsers
