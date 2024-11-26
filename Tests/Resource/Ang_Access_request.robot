@@ -108,7 +108,7 @@ Request Status
     Sleep    2
     SeleniumLibrary.Click Element    xpath://button[normalize-space(text())='View']
     Sleep    3
-    Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://h2[normalize-space(text())='${Env}']
+    Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://h2[normalize-space(text())='${App}']
     Sleep    1
     SeleniumLibrary.Click Element    xpath://button[normalize-space(text())='Status']
     Sleep    2
