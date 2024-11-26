@@ -27,7 +27,7 @@ provisioning_status
     Wait Until Element Is Visible    xpath://button[contains(.,'Status')]    60s
     SeleniumLibrary.Click Element    xpath://button[contains(.,'Status')]
     Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath:(//button[@type='button'][normalize-space()='View'])[1]    60s
-    SeleniumLibrary.Input Text    xpath:(//input[@id='search'])[2]    ${request_id}
+    SeleniumLibrary.Input Text    xpath:(//input[@id='search'])[2]    ${angvar('request_id')}
     Wait Until Element Is Visible    xpath://button[normalize-space()='View']
     Sleep    4
     SeleniumLibrary.Click Element    xpath://button[normalize-space()='View']
