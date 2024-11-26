@@ -70,22 +70,37 @@ Anugal_password_reset
     Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://span[normalize-space(text())='New mail']
     SeleniumLibrary.Click Element    xpath:(//div[contains(@class,'C2IG3 LPIso')]//span)[1]
     Sleep    2
+
+    
+    SeleniumLibrary.Input Text    id:topSearchInput    Password Reset
+    Sleep    2
+    SeleniumLibrary.Click Element    xpath://span[contains(@class,'ms-Dropdown-caretDownWrapper BNxC5')]
+    Sleep    2
+    SeleniumLibrary.Click Element    xpath://button[@id='searchScopeButtonId-list1']/span[1]/span[1]
+    Sleep    2
+    SeleniumLibrary.Click Element    xpath://span[text()='Mail']
+    Sleep    2
     SeleniumLibrary.Click Element    xpath:(//div[@class='XG5Jd TszOG'])[1]
-    Sleep    4
+    Sleep    5
+
+
+    # SeleniumLibrary.Click Element    xpath:(//div[@class='XG5Jd TszOG'])[1]
+    # Sleep    4
     ${password}    Get Text    xpath:(//span[@lang='EN-US'])[3]
     Sleep    2
 
     ${parts}=    Split String    ${password}    :    max_split=1
     ${password1}=    Strip String    ${parts}[1]
     Log    Password is:${password1}
-    # Set Global Variable    ${password1}
-   
-    Start Process     ${angvar('SAP_SERVER')}    
+    Set Global Variable    ${password1}
+
+SAP_LOGIN   
+    Start Process     ${wvar('SAP_SERVER')}    
     Sleep    2
     Connect To Session
-    Open Connection    ${angvar('SAP_connection')}    
-    SAP_Tcode_Library.Input Text    wnd[0]/usr/txtRSYST-MANDT    ${angvar('Client_Id')}
-    SAP_Tcode_Library.Input Text    wnd[0]/usr/txtRSYST-BNAME    ${angvar('User_Name')}    
+    Open Connection    ${wvar('SAP_connection')}    
+    SAP_Tcode_Library.Input Text    wnd[0]/usr/txtRSYST-MANDT    ${wvar('Client_Id')}
+    SAP_Tcode_Library.Input Text    wnd[0]/usr/txtRSYST-BNAME    ${wvar('User_Name')}    
     SAP_Tcode_Library.Input Password   wnd[0]/usr/pwdRSYST-BCODE    ${password1}
     Send Vkey    0
     Sleep    5
@@ -110,3 +125,4 @@ New password Generate
 
 Finish TestCase
     Close All Browsers
+
