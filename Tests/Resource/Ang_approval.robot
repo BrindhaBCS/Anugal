@@ -3,7 +3,7 @@ Library     SeleniumLibrary
 Library    DateTime
 
 *** Variables ***
-${Env}    DEV Symphony
+${App}    Symphony
 
 *** Keywords ***
 Start TestCase
@@ -30,7 +30,7 @@ Approval_request
     Sleep    1
     Click Element    xpath://button[normalize-space(text())='View'] 
     Sleep    2
-    Wait Until Element Is Visible    xpath://p[normalize-space(text())='${Env}']    60s
+    Wait Until Element Is Visible    xpath://p[normalize-space(text())='${App}']    60s
     Sleep    2
     Click Element    xpath://input[@value='selectAll']
     Sleep    2
