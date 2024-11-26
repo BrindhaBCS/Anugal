@@ -55,12 +55,12 @@ Anugal_password_reset
     Execute Javascript    window.open('https://outlook.office365.com/mail/inbox/')
     Switch Window    new
     Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://*[@id="i0116"]
-    SeleniumLibrary.Input Text   xpath://*[@id="i0116"]    malayranjan.s@basiscloudsolutions.com
+    SeleniumLibrary.Input Text   xpath://*[@id="i0116"]    ${angvar('Mail_id')}
     Sleep    2
     SeleniumLibrary.Click Element    xpath://*[@id="idSIButton9"]
 
     Wait Until Element Is Visible    xpath://*[@id="i0118"]    60s
-    SeleniumLibrary.Input Text    xpath://*[@id="i0118"]    Malay@Ranjan12
+    SeleniumLibrary.Input Text    xpath://*[@id="i0118"]    ${angvar('Mail_password')}
     SeleniumLibrary.Click Element    xpath://*[@id="idSIButton9"]
     Sleep    2
     SeleniumLibrary.Click Element    xpath://*[@id="idBtn_Back"]
