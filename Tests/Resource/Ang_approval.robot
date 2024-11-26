@@ -14,8 +14,8 @@ Submit Anugal username and password
     Wait Until Keyword Succeeds    2 minute    5s   Wait until element is visible    xpath://button[contains(.,'Azure')]
     # Sleep    10
     Maximize Browser Window
-    SeleniumLibrary.Input text    id:emailId        ${angvar('approval_user_id')}
-    SeleniumLibrary.Input password    id:password    ${angvar('approval_password')}
+    SeleniumLibrary.Input text    id:emailId        ${angvar('user_id')}
+    SeleniumLibrary.Input password    id:password    ${angvar('password')}
     SeleniumLibrary.Click element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[3]
     Sleep    20
     
