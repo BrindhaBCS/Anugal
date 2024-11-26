@@ -8,7 +8,7 @@ Start TestCase
     Open Browser    ${angvar('url')}    ${angvar('browser')}    
     
 Submit Anugal username and password
-    Wait until element is visible    ${angvar('user_text_box')}
+    Wait until element is visible    id:emailId
     Sleep    10
    
     Click Element    xpath:(//div[@class='MuiStack-root css-1ed5314']//button)[2]
@@ -64,11 +64,11 @@ Access_Request
     Click Element    xpath://a[normalize-space()='Add']
     Sleep    1
 
-    Click Element    ${angvar('DATE_INPUT_from')}
+    Click Element    xpath:(//input[@type='date'])[1]
     Sleep    1
 
     # Clear the date input field
-    Press Keys    ${angvar('DATE_INPUT_from')}    CTRL+a    BACKSPACE
+    Press Keys    xpath:(//input[@type='date'])[1]    CTRL+a    BACKSPACE
     Sleep    2
     Capture Page Screenshot
 
@@ -91,7 +91,7 @@ Access_Request
     Log    Current Year: ${current_year}
     Log    Current Month: ${current_month}
     Log    Current Day: ${current_day}
-    Press Keys   ${angvar('DATE_INPUT_from')}     ARROW_RIGHT  ARROW_RIGHT     ${current_year}    ARROW_LEFT  ARROW_LEFT  ${current_day}  ${current_month}
+    Press Keys   xpath:(//input[@type='date'])[1]     ARROW_RIGHT  ARROW_RIGHT     ${current_year}    ARROW_LEFT  ARROW_LEFT  ${current_day}  ${current_month}
     Sleep    5
     Capture Page Screenshot
     ${Target_date}    Add Time To Date    ${current_date}    ${angvar('days_to_add')} days    result_format=%Y-%m-%d
@@ -103,12 +103,12 @@ Access_Request
     Log    Current Month: ${Target_month}
     Log    Current Day: ${Target_day}
 
-    Press Keys    ${angvar('DATE_INPUT_to')}    CTRL+a    BACKSPACE
+    Press Keys    xpath:(//input[@type='date'])[2]    CTRL+a    BACKSPACE
     Sleep    2
     Capture Page Screenshot
 
 
-    Press Keys   ${angvar('DATE_INPUT_to')}     ARROW_RIGHT  ARROW_RIGHT     ${Target_year}    ARROW_LEFT  ARROW_LEFT  ${Target_day}  ${Target_month}
+    Press Keys   xpath:(//input[@type='date'])[2]     ARROW_RIGHT  ARROW_RIGHT     ${Target_year}    ARROW_LEFT  ARROW_LEFT  ${Target_day}  ${Target_month}
     Sleep    5
     Capture Page Screenshot
     

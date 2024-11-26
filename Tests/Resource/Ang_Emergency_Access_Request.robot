@@ -12,14 +12,15 @@ Start TestCase
     Open Browser    ${angvar('url')}    ${angvar('browser')}    #options=${global_browser_options}
     
 Submit Anugal username and password
-    Wait until element is visible    ${angvar('user_text_box')}    60s
-    
-    Input text    ${angvar('user_text_box')}        ${angvar('user_id')}
-    Input password    ${angvar('password_text_box')}    ${angvar('password')}
-    Click element    ${angvar('Login_anugal_button')}
+    Wait Until Keyword Succeeds    2 minute    5s   Wait until element is visible    xpath://button[contains(.,'Azure')]
+    # Sleep    10
     Maximize Browser Window
+    SeleniumLibrary.Input text    id:emailId        ${angvar('user_id')}
+    SeleniumLibrary.Input password    id:password    ${angvar('password')}
+    SeleniumLibrary.Click element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[3]
+    Sleep    20
     
-    Wait Until Element Is Visible    xpath://img[@alt='IGA']    60s
+    Wait Until Element Is Visible    xpath:(//button[@type='button']//img)[1]    60s
 
 Emergency Access Request for Firefighter Onboarding   
     Click Element    xpath://button[contains(.,'Admin')]
