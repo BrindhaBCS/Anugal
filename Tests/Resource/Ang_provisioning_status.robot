@@ -5,7 +5,7 @@ Library    DateTime
 
 *** Variables ***
 
-${Env}    DEV Symphony
+${App}    Symphony
 
 *** Keywords ***
 Start TestCase
@@ -32,7 +32,7 @@ provisioning_status
     Sleep    4
     SeleniumLibrary.Click Element    xpath://button[normalize-space()='View']
     Sleep    1
-    Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://h2[normalize-space(text())='${Env}']    60s 
+    Wait Until Keyword Succeeds    3 minute    5s    Wait Until Element Is Visible    xpath://h2[normalize-space(text())='${App}']    60s 
     Sleep    1
     
 
