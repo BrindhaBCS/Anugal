@@ -49,7 +49,7 @@ search_icon
     ELSE
         Log To Console    message=Search-button header is missing on this page..
     END
-    Copy Images    ${OUTPUT_DIR}    ${symvar('vm_path_dir')}
+    Copy Images    ${OUTPUT_DIR}    ${angvar('vm_path_dir')}
     Sleep	1
 
 *** Keywords ***

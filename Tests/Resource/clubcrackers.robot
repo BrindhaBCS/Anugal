@@ -66,7 +66,7 @@ HomePage_menu_image_loading
         Capture Page Screenshot
     END
     Sleep    2
-    Copy Images    ${OUTPUT_DIR}    ${symvar('vm_path_dir')}
+    Copy Images    ${OUTPUT_DIR}    ${angvar('vm_path_dir')}
     Sleep	1
 
 Finish TestCase

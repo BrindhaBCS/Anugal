@@ -43,7 +43,7 @@ Logo_contains
     Click Element    locator=xpath://span[normalize-space(text())='Contact Us']
     Capture Element Screenshot    locator=xpath://img[@alt='Club Crackers']    filename=ContactUslogo.png
     Logo_Check
-    Copy Images    ${OUTPUT_DIR}    ${symvar('vm_path_dir')}
+    Copy Images    ${OUTPUT_DIR}    ${angvar('vm_path_dir')}
     Sleep	1
 
 
