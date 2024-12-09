@@ -2,6 +2,17 @@
 Library    SeleniumLibrary
 Library    kellanova.py
 
+*** Variables ***
+
+${con_1}    Our Food
+${con_2}    Recipes
+${con_3}    where to buy
+${con_4}    Contact Us
+
+${EXPECTED_TEXT}    Cookies On Our Website
+${OK_BUTTON_XPATH}    //button[@id='onetrust-accept-btn-handler']
+${BANNER_XPATH}       //div[@role='alertdialog' and @aria-describedby='onetrust-policy-text']//h3
+
 *** Keywords ***
 Start TestCase
     Log    Opening browser
@@ -16,10 +27,10 @@ HomePage_menu_image_loading
     # Step 1: Wait until the element is visible
     Wait Until Element Is Visible    xpath:(//div[@class='content_wrapper'])[3]    60s
     Sleep    2
-    ${menu_1}=    Run Keyword And Return Status    Element Should Be Visible    xpath://a[text()='Our Food']
-    ${menu_2}=    Run Keyword And Return Status    Element Should Be Visible    xpath://a[text()='Recipes']
-    ${menu_3}=    Run Keyword And Return Status    Element Should Be Visible    xpath://span[text()='where to buy']
-    ${menu_4}=    Run Keyword And Return Status    Element Should Be Visible    xpath://span[text()='Contact Us']
+    ${menu_1}=    Run Keyword And Return Status    Element Should Be Visible    xpath://a[text()='${con_1}']
+    ${menu_2}=    Run Keyword And Return Status    Element Should Be Visible    xpath://a[text()='${con_2}']
+    ${menu_3}=    Run Keyword And Return Status    Element Should Be Visible    xpath://span[text()='${con_3}']
+    ${menu_4}=    Run Keyword And Return Status    Element Should Be Visible    xpath://span[text()='${con_4}']
     
     IF    ${menu_1}
         Log    "Our Food is visible."
@@ -44,7 +55,7 @@ HomePage_menu_image_loading
     
     ${scroll_page} =    Run Keyword And Return Status    Element Should Be Visible    xpath:(//div[@class='content_wrapper'])[3]
     IF    ${scroll_page}
-        Execute Javascript    window.scrollTo(0, 500)
+        Execute Javascript    window.scrollTo(0, 600)
         Log    "Scrolled down successfully."
         Sleep    1
         
