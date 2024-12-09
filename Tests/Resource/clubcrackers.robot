@@ -4,8 +4,12 @@ Library    kellanova.py
 
 *** Keywords ***
 Start TestCase
+    Log    Opening browser
     Open Browser    ${angvar('clubcracker_url')}    ${angvar('clubcracker_browser')}
     Maximize Browser Window
+    Handle Pop-up
+    Sleep    2
+    Log    Browser opened successfully
 
 HomePage_menu_image_loading
     
@@ -71,3 +75,9 @@ HomePage_menu_image_loading
 
 Finish TestCase
     Close All Browsers
+
+Handle Pop-up
+    Wait Until Page Contains Element    ${BANNER_XPATH}    timeout=10
+    ${actual_text}=    Get Text    ${BANNER_XPATH}
+    Should Be Equal As Strings    ${actual_text}    ${EXPECTED_TEXT}
+    Click Element    ${OK_BUTTON_XPATH}
