@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../Tests/Resources/clubcracker.robot
+Resource    ../Tests/Resource/clubcracker.robot
 Suite Setup    clubcracker.Start TestCase
 Suite Teardown    clubcracker.Finish TestCase
 Test Tags    clubcracker
