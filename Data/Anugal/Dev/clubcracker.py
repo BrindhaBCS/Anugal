@@ -2,3 +2,4 @@
 # clubcracker_browser = "Chrome"
 clubcracker_url = "$clubcracker_url"
 clubcracker_browser = "$clubcracker_browser"
+vm_path_dir = "$vm_path_dir"
