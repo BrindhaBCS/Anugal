@@ -3,7 +3,7 @@ Library    SeleniumLibrary
 
 *** Keywords ***
 Start TestCase
-    Open Browser    ${wvar('clubcracker_url')}    ${wvar('clubcracker_browser')}
+    Open Browser    ${angvar('clubcracker_url')}    ${angvar('clubcracker_browser')}
     Maximize Browser Window
 
 HomePage_menu_image_loading
@@ -65,3 +65,6 @@ HomePage_menu_image_loading
         Capture Page Screenshot
     END
     Sleep    2
+
+Finish TestCase
+    Close All Browsers
