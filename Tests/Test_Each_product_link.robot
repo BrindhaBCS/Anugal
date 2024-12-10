@@ -5,8 +5,6 @@ Suite Teardown    Each_product_link.Finish TestCase
 Test Tags    Each_product
 
 *** Test Cases ***
-Start TestCase
-    Start TestCase
 
 Products should load on Product Pages
     Products should load on Product Pages 
