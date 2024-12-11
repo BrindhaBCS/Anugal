@@ -92,3 +92,4 @@ Handle Pop-up
     ${actual_text}=    Get Text    ${BANNER_XPATH}
     Should Be Equal As Strings    ${actual_text}    ${EXPECTED_TEXT}
     Click Element    ${OK_BUTTON_XPATH}
+    
