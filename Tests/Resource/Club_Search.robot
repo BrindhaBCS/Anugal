@@ -19,6 +19,7 @@ Response_check
     ELSE
         Log To Console    message=The application did not load properly and returned an unexpected result. Please check your internet connection and verify that the application is working correctly.......
         Close All Browsers
+        
     END
 
     Wait Until Keyword Succeeds    1 minute    2s    Click Element    locator=id:onetrust-accept-btn-handler
