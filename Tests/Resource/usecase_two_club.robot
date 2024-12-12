@@ -6,6 +6,7 @@ Library    string
 *** Variables ***
 ${URL}    ${angvar('clubcracker_url')}
 ${Browser}    ${angvar('clubcracker_browser')}
+
 *** Keywords ***
 Browser
     Open Browser    url=${URL}    browser=${Browser}    options=add_argument("--ignore-certificate-errors")
@@ -46,7 +47,7 @@ Our_Food_Menu
             IF  '${a}' == 'True'
                 Scroll Element Into View    locator=xpath:(//div[@class='product-list-title bvValues'])[${index}]
                 Click Element    locator=xpath:(//div[@class='product-list-title bvValues'])[${index}]
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_29.png
                 Sleep    1
                 Go Back
                 Sleep    1
@@ -62,49 +63,49 @@ Our_Food_Menu
         ${product_image}    Run Keyword And Return Status    Page Should Contain Image    locator=xpath:(//img[@alt='Club® Original Crackers'])[1]
         IF    '${product_image}' == 'True'
             #allproduct link verfication
-            Capture Page Screenshot
+            Capture Page Screenshot    filename=clube_crackers_30.png
             Click Element    locator=xpath://a[normalize-space(text())='All Products']
-            Capture Page Screenshot
+            Capture Page Screenshot    filename=clube_crackers_31.png
             Click Element    locator=xpath:(//div[@data-brandname='club_crackers'])[1]
             #description check
             ${descriptioncheck}    Run Keyword And Return Status    Page Should Contain Element    locator=xpath://p[@itemprop='description' and text()="Flaky and buttery with a hint of salt and a melt-in-your-mouth texture. Pair them with your favorite topping or not, because they're so good, you can leave the topping behind!"]
             Page Should Contain Element    locator=xpath://a[@aria-label='click to see where to buy']    message=Where to buy not cotains under that description..
-            Capture Page Screenshot
+            Capture Page Screenshot    filename=clube_crackers_32.png
             IF    '${descriptioncheck}' == 'True'
                 #review_over
                 Mouse Over    locator=xpath:(//button[@type='button'])[1]
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_33.png
                 Mouse Out    locator=xpath:(//button[@type='button'])[1]
                 #wheretobuy
                 Click Element    locator=xpath://a[@aria-label='click to see where to buy']
                 Wait Until Element Is Visible    locator=id:__ps-sku-selector-0_1    timeout=30s
                 Page Should Contain Element    locator=id:__ps-sku-selector-0_1
                 Page Should Contain Element    locator=id:__ps-sku-selector-1_1
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_34.png
                 Sleep    1
                 Input Text    locator=id:__ps-map-location-textbox_1    text=Orland Park, IL
                 Sleep    1
                 Click Element    locator=xpath://span[@aria-label='Search for this product by city or zip code.']
                 Sleep    1
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_35.png
                 Wait Until Element Is Visible    locator=xpath:(//span[contains(text(),'BUY NOW')])[1]    timeout=30s
                 Click Element    locator=xpath:(//span[contains(text(),'BUY NOW')])[1]
                 Sleep    1
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_36.png
                 Switch Window    NEW
                 Sleep    1
                 Switch Window    main
                 Sleep    3
                 Click Element    locator=xpath:(//span[contains(text(),'VIEW ONLINE')])[1]
                 Sleep    1
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_37.png
                 Switch Window    NEW
                 Sleep    1
                 Switch Window    main
                 Sleep    3
                 Click Element    locator=xpath:(//span[contains(text(),'GET DIRECTIONS')])[2]
                 Sleep    1
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_38.png
                 Switch Window    NEW
                 Sleep    1
                 Switch Window    main
@@ -113,75 +114,75 @@ Our_Food_Menu
                 Sleep    1
                 #Nutritionvalue
                 Execute JavaScript  window.scrollBy(0, 700)
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_39.png
                 Page Should Contain Element    locator=xpath://h2[normalize-space(text())='Nutrition']
                 Page Should Contain Element    locator=xpath://h3[normalize-space(text())='Ingredients']
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_40.png
                 #Sizeofpacket
                 Scroll Element Into View    locator=id:gtin
                 Click Element    locator=id:sizes
                 Select From List By Index    id=sizes    1
                 Sleep    1
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_41.png
                 Click Element    locator=id:gtin
                 #Nutrition Facts
                 Switch Window    NEW
                 Wait Until Keyword Succeeds    1 minute    2s    Click Element    locator=id:onetrust-accept-btn-handler
                 Sleep    1
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_42.png
                 Page Should Contain Element    locator=xpath://div[@class='product-header-netweight sub-header']
                 Page Should Contain Element    locator=xpath://table[@class='nutrition-facts__table']
                 Click Element    locator=xpath://div[normalize-space(text())='Ingredients']
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_43.png
                 Sleep    1
                 Click Element    locator=xpath://div[normalize-space(text())='Allergens']
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_44.png
                 Sleep    1
                 Click Element    locator=xpath://div[normalize-space(text())='About']
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_45.png
                 Sleep    1
                 Click Element    locator=xpath://div[normalize-space(text())='Company, Brand']
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_46.png
                 Sleep    1
                 Switch Window    main
                 #review
                 #shadow dom
                 Scroll Element Into View    locator=xpath://div[@data-bv-show='reviews']
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_47.png
                 Page Should Contain Element    locator=xpath://div[@data-bv-show='reviews']
                 #people also tried
                 Scroll Element Into View    locator=xpath://h2[normalize-space(text())='people also tried:']
                 Page Should Contain Element    locator=xpath://h2[normalize-space(text())='people also tried:']
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_48.png
                 Sleep    1
                 Execute JavaScript  window.scrollBy(0,600)
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_49.png
                 Sleep    1
                 Click Element    locator=xpath:(//div[@class='product-list-title'])[1]
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_50.png
                 Sleep    1
                 Go Back
                 Sleep    1
                 Click Element    locator=xpath:(//div[@class='product-list-title'])[2]
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_51.png
                 Sleep    1
                 Go Back
                 Sleep    1
                 Click Element    locator=xpath:(//div[@class='product-list-title'])[3]
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_52.png
                 Sleep    1
                 Go Back
                 Sleep    1
                 Execute JavaScript  window.scrollBy(0,200)
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_53.png
                 Sleep    1
                 Wait Until Element Is Visible    locator=xpath://span[normalize-space()='Check Out Our Recipes!']    timeout=30s
                 Page Should Contain Element    locator=xpath://span[normalize-space()='Check Out Our Recipes!']
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_54.png
                 Sleep    1
                 Wait Until Element Is Visible    locator=xpath://span[normalize-space()='Keep up with Club on Instagram!']    timeout=30s
                 Click Element    locator=xpath://span[normalize-space()='Keep up with Club on Instagram!']
-                Capture Page Screenshot
+                Capture Page Screenshot    filename=clube_crackers_55.png
                 Sleep    3
                 Switch Window    main
 
@@ -546,7 +547,8 @@ Our_Food_Menu
         Close All Browsers
     END
     Copy Images    ${OUTPUT_DIR}    ${angvar('vm_path_dir')}
-    Sleep	1
+        Sleep   1
+ 
 
 
 
@@ -554,4 +556,7 @@ Our_Food_Menu
 Title_match
     ${Get_Window_Titles}    Get Window Titles
     ${condition}    Run Keyword And Return Status    Should Be Equal As Strings    first=${Get_Window_Titles}    second=['Buttery Crackers | Club® Crackers']
-    [Return]    ${condition} 
+    [Return]    ${condition}   
+
+
+

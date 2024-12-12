@@ -146,20 +146,20 @@ Homepage Menu
             
             ${screenshot} =    Run Keyword And Return Status    Element Should Be Visible    xpath://h2[text()='Our Food']/following-sibling::div
             IF    ${screenshot}
-                Capture Element Screenshot    xpath://h2[text()='Our Food']/following-sibling::div
+                Capture Element Screenshot    xpath://h2[text()='Our Food']/following-sibling::div    clube_crackers_01.png
                 Sleep    2
                 Log    "Screenshot captured successfully."
             ELSE
                 Log    "Failed to capture screenshot as the product image element is not visible."
-                Capture Page Screenshot
+                Capture Page Screenshot    clube_crackers_02.png
             END
         ELSE
             Log    "Product image element is not visible. Skipping screenshot capture."
-            Capture Page Screenshot
+            Capture Page Screenshot    clube_crackers_03.png
         END
     ELSE
         Log    "Content wrapper is not visible. Cannot scroll."
-        Capture Page Screenshot
+        Capture Page Screenshot    clube_crackers_04.png
     END
     Sleep    2
 
@@ -180,7 +180,7 @@ Homepage CTA
         Sleep    2
         Wait Until Element Is Visible     xpath://a[contains(@class,'button-cta button-cta-red')]    60s
         Sleep    2
-        Capture Page Screenshot
+        Capture Page Screenshot    clube_crackers_05.png
     ELSE
         Log    "WARN:Club Crackers Image is not visible" 
     END
@@ -199,7 +199,7 @@ Homepage CTA
         Sleep    2
         Wait Until Element Is Visible     xpath://a[contains(@class,'button-cta button-cta-red')]    60s
         Sleep    2
-        Capture Page Screenshot
+        Capture Page Screenshot    clube_crackers_06.png
     ELSE
         Log    "WARN:Club Crackers Image is not visible" 
     END
@@ -221,7 +221,7 @@ Homepage CTA
         Sleep    2
         Wait Until Element Is Visible     xpath://a[contains(@class,'button-cta button-cta-red')]    60s
         Sleep    2
-        Capture Page Screenshot
+        Capture Page Screenshot    clube_crackers_07.png
     ELSE
         Log    "WARN:Club Crackers Image is not visible" 
     END
@@ -244,7 +244,7 @@ Homepage CTA
         Sleep    2
         Wait Until Element Is Visible     xpath://a[contains(@class,'button-cta button-cta-red')]    60s
         Sleep    2
-        Capture Page Screenshot
+        Capture Page Screenshot    clube_crackers_08.png
     ELSE
         Log    "WARN:Club Crackers Image is not visible" 
     END
@@ -261,7 +261,7 @@ Homepage CTA
         Click Element    xpath:(//span[@class='button-cta'])[1]
         Sleep    2
         Wait Until Element Is Visible     xpath://div[@class='recipe-list']    60s
-        Capture Page Screenshot
+        Capture Page Screenshot    clube_crackers_09.png
     ELSE
         Log    "WARN:Club Crackers Image is not visible" 
     END
@@ -281,10 +281,10 @@ Homepage CTA
         Sleep    2
         ${Insta}=    Run Keyword And Return Status    Element Should Be Visible    xpath:/(//div[@class='_ab1y _ab1z']//div)[1]
         IF    ${Insta}
-            Capture Page Screenshot
+            Capture Page Screenshot    clube_crackers_10.png
             Wait Until Element Is Visible     xpath:(//div[@class='_ab1y _ab1z']//div)[1]    60s
         ELSE
-            Capture Page Screenshot
+            Capture Page Screenshot    clube_crackers_11.png
             Log    "Instagram page is not visible"
         END
         Switch Window    main
@@ -307,7 +307,7 @@ Homepage Footer
         Sleep    2
         ${is_club_img_visible}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath://img[@alt='Club Crackers']    60s
         IF    ${is_club_img_visible}
-            Capture Page Screenshot
+            Capture Page Screenshot    clube_crackers_12.png
             Log To Console    "Successfully navigated to Home section."
         ELSE
             Log To Console    "Club Crackers image not visible after navigation."
@@ -324,7 +324,7 @@ Homepage Footer
         Sleep    2
         ${is_recipes_list_visible}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath://div[@class='recipe-list']    60s
         IF    ${is_recipes_list_visible}
-            Capture Page Screenshot
+            Capture Page Screenshot    clube_crackers_13.png
             Log To Console    "Successfully navigated to Recipes section."
         ELSE
             Log To Console    "Recipes list not visible after navigation."
@@ -341,7 +341,7 @@ Homepage Footer
         Sleep    2
         ${is_products_list_visible}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath://div[@class='products-list-product']    60s
         IF    ${is_products_list_visible}
-            Capture Page Screenshot
+            Capture Page Screenshot    clube_crackers_14.png
             Log To Console    "Successfully navigated to Products section."
         ELSE
             Log To Console    "Products list not visible after navigation."
@@ -358,7 +358,7 @@ Homepage Footer
         Sleep    2
         ${is_buy_select_visible}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath://label[@for='__ps-sku-selector-0_0']/following-sibling::select[1]    60s
         IF    ${is_buy_select_visible}
-            Capture Page Screenshot
+            Capture Page Screenshot    clube_crackers_15.png
             Click Element    xpath://span[@data-ps-shift-tab='[data-ps-tab=".ps-lightbox-close"]']
             Sleep    2
             Log To Console    "Successfully checked 'Where to Buy' section."
@@ -377,7 +377,7 @@ Homepage Footer
         Sleep    2
         ${is_sitemap_list_visible}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath:(//div[contains(@class,'sitemapV2 aem-GridColumn')])[2]    60s
         IF    ${is_sitemap_list_visible}
-            Capture Page Screenshot
+            Capture Page Screenshot    clube_crackers_16.png
             Log To Console    "Successfully navigated to Site Map section."
         ELSE
             Log To Console    "Site Map list not visible after navigation."
@@ -394,7 +394,7 @@ Homepage Footer
         Sleep    2
         ${is_contact_section_visible}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath:(//section[@class='section--in-viewport'])[2]    10s
         IF    ${is_contact_section_visible}
-            Capture Page Screenshot
+            Capture Page Screenshot    clube_crackers_17.png
             Log To Console    "Successfully navigated to Contact Us section."
         ELSE
             Log To Console    "Contact Us section not visible after navigation."
@@ -421,7 +421,7 @@ Homepage Footer
         Sleep    2
         ${facebook}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath:(//input[@name='email'])[2]    10s
         IF    ${facebook}
-            Capture Page Screenshot
+            Capture Page Screenshot    clube_crackers_18.png
             Log To Console    "Email input is visible"
             Wait Until Element Is Visible    xpath:(//input[@name='email'])[2]    60s
             Click Element    xpath://div[@aria-label='Close']
@@ -444,7 +444,7 @@ Homepage Footer
         Sleep    3
         ${Instagram}=    Run Keyword And Return Status    Element Should Be Visible    xpath://span[text()='See more from clubcrackersus']
         IF    ${Instagram}
-            Capture Page Screenshot
+            Capture Page Screenshot    clube_crackers_19.png
             Wait Until Element Is Visible     xpath://span[text()='See more from clubcrackersus']    60s
             Log    "Instagram page is visible"
         ELSE
@@ -466,7 +466,7 @@ Homepage Footer
         Sleep    2
         ${youtube}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath://div[@id='page-header-banner-sizer']/yt-image-banner-view-model[1]/img[1]    10s
         IF    ${youtube}
-            Capture Page Screenshot
+            Capture Page Screenshot    clube_crackers_20.png
             Log To Console    "YouTube banner is visible"
         ELSE
             Log To Console    "YouTube banner not visible"
@@ -486,7 +486,7 @@ Homepage Footer
         Sleep    2
         ${pinterest}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath://img[@alt='Club Crackers']    10s
         IF    ${pinterest}
-            Capture Page Screenshot
+            Capture Page Screenshot    clube_crackers_21.png
             Log To Console    "Pinterest image is visible"
         ELSE
             Log To Console    "Pinterest image not visible"
@@ -507,7 +507,7 @@ Homepage Footer
         IF    ${twitter}
             Log To Console    "Twitter viewport is visible."
             Wait Until Element Is Visible    xpath:(//div[@data-viewportview='true']//div)[1]    60s
-            Capture Page Screenshot
+            Capture Page Screenshot    clube_crackers_22.png
             # Click Element    xpath:(//button[@type='button']//div)[1]
             Sleep    2
         ELSE
@@ -531,7 +531,7 @@ Homepage Footer
         Click Element    xpath:(//ul[@id='lowerfooterlinks']//a)[1]
         Sleep    2
         Wait Until Element Is Visible    xpath://div[@role='alertdialog']    60s
-        Capture Page Screenshot
+        Capture Page Screenshot    clube_crackers_23.png
         Click Element    xpath://button[@aria-label='Close']
         Sleep    2
         Log To Console    First link is visible
@@ -550,7 +550,7 @@ Homepage Footer
         IF  ${privacy_notice}
             # Wait Until Element Is Visible    xpath://div[@id='otnotice-4fccfc07-c99f-4fed-96dd-27de30836495']/div[1]    60s
             Sleep    1
-            Capture Page Screenshot
+            Capture Page Screenshot    clube_crackers_24.png
             
             Sleep    2
             Log To Console    Second link is visible
@@ -574,7 +574,7 @@ Homepage Footer
         IF  ${us_privacy}
             # Wait Until Element Is Visible    xpath:(//section[@class='otnotice-section'])[1]    60s
             Sleep    2
-            Capture Page Screenshot
+            Capture Page Screenshot    clube_crackers_25.png
             Log To Console    Third link is visible
         END
         Switch Window    main
@@ -596,7 +596,7 @@ Homepage Footer
         IF  ${Terms_of_use}
             # Wait Until Element Is Visible    xpath:(//div[@class='otnotice']//div)[1]    60s
             Sleep    2
-            Capture Page Screenshot
+            Capture Page Screenshot    clube_crackers_26.png
             
             Log To Console    Fourth link is visible
             
@@ -619,7 +619,7 @@ Homepage Footer
         IF  ${Accessibility}
             # Wait Until Element Is Visible    xpath:(//div[@class='otnotice']//div)[1]    60s
             Sleep    2
-            Capture Page Screenshot
+            Capture Page Screenshot    clube_crackers_27.png
             
             Log To Console    Fifth link is visible
         END
@@ -641,7 +641,7 @@ Homepage Footer
         IF  ${Persnoal_information}
             Wait Until Element Is Visible    xpath:(//div[@class='otnotice']//div)[1]    60s
             Sleep    2
-            Capture Page Screenshot
+            Capture Page Screenshot    clube_crackers_28.png
             
             Log To Console    Sixth link is visible
         END
