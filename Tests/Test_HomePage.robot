@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../Tests/Resources/HomePage.robot
+Resource    ../Tests/Resource/HomePage.robot
 Suite Setup    HomePage.Start TestCase
 Test Tags    HomePage
 
