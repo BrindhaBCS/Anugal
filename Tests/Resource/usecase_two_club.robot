@@ -112,7 +112,7 @@ Our_Food_Menu
                 Click Element    locator=xpath://span[@aria-label='Close the shop now shopping interface.']
                 Sleep    1
                 #Nutritionvalue
-                Execute JavaScript  window.scrollBy(0, 1000)
+                Execute JavaScript  window.scrollBy(0, 700)
                 Capture Page Screenshot
                 Page Should Contain Element    locator=xpath://h2[normalize-space(text())='Nutrition']
                 Page Should Contain Element    locator=xpath://h3[normalize-space(text())='Ingredients']
