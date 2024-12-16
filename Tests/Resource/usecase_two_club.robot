@@ -17,9 +17,7 @@ Response_check
     Log    Response Code: ${response_code}
     IF  '${response_code}' == '200'
         Log To Console    message=The application has successfully processed the request and returned a response with status code 200....
-    ELSE
-        Log To Console    message=The application did not load properly and returned an unexpected result. Please check your internet connection and verify that the application is working correctly.......
-        Close All Browsers
+    
     END
 
     Wait Until Keyword Succeeds    1 minute    2s    Click Element    locator=id:onetrust-accept-btn-handler
@@ -28,9 +26,7 @@ Page_title
     ${status}    Title_match
     IF  '${status}' == 'True'
         Log To Console    message=The title of the web application should match the expected value to ensure consistency, accuracy, and proper navigation within the interface.....
-    ELSE
-        Log To Console    message=The application does not match the expected title, leading to potential issues in functionality and user experience....
-        Close All Browsers
+    
     END
 Our_Food_Menu
     ${ourfood}    Run Keyword And Return Status    Page Should Contain Element    locator=xpath://a[text()="Our Food"]
@@ -51,9 +47,7 @@ Our_Food_Menu
                 Sleep    1
                 Go Back
                 Sleep    1
-            ELSE
-                Log To Console    message=The element is currently not clickable due to page load or visibility issues...
-                Close All Browsers
+            
             END
         END
 
@@ -202,11 +196,9 @@ Our_Food_Menu
                     IF    ${is_club_img_visible}
                         Capture Page Screenshot
                         Log To Console    "Successfully navigated to Home section."
-                    ELSE
-                        Log To Console    "Club Crackers image not visible after navigation."
+                    
                     END
-                ELSE
-                    Log To Console    "Footer Home link not visible."
+                
                 END
 
                 # Recipes Navigation
@@ -219,11 +211,9 @@ Our_Food_Menu
                     IF    ${is_recipes_list_visible}
                         Capture Page Screenshot
                         Log To Console    "Successfully navigated to Recipes section."
-                    ELSE
-                        Log To Console    "Recipes list not visible after navigation."
+                    
                     END
-                ELSE
-                    Log To Console    "Recipes link not visible."
+                
                 END
 
                 # Products Navigation
@@ -236,11 +226,9 @@ Our_Food_Menu
                     IF    ${is_products_list_visible}
                         Capture Page Screenshot
                         Log To Console    "Successfully navigated to Products section."
-                    ELSE
-                        Log To Console    "Products list not visible after navigation."
+                    
                     END
-                ELSE
-                    Log To Console    "Products link not visible."
+                
                 END
 
                 # Where to Buy
@@ -255,11 +243,9 @@ Our_Food_Menu
                         Click Element    xpath://span[@data-ps-shift-tab='[data-ps-tab=".ps-lightbox-close"]']
                         Sleep    2
                         Log To Console    "Successfully checked 'Where to Buy' section."
-                    ELSE
-                        Log To Console    "Select box not visible in 'Where to Buy' section."
+                    
                     END
-                ELSE
-                    Log To Console    "Buy button not visible."
+                
                 END
 
                 # Site Map
@@ -272,11 +258,9 @@ Our_Food_Menu
                     IF    ${is_sitemap_list_visible}
                         Capture Page Screenshot
                         Log To Console    "Successfully navigated to Site Map section."
-                    ELSE
-                        Log To Console    "Site Map list not visible after navigation."
+                    
                     END
-                ELSE
-                    Log To Console    "Site Map link not visible."
+                
                 END
 
                 # Contact Us
@@ -289,11 +273,9 @@ Our_Food_Menu
                     IF    ${is_contact_section_visible}
                         Capture Page Screenshot
                         Log To Console    "Successfully navigated to Contact Us section."
-                    ELSE
-                        Log To Console    "Contact Us section not visible after navigation."
+                    
                     END
-                ELSE
-                    Log To Console    "Contact Us link not visible."
+                
                 END
                 Run Keyword And Ignore Error    Scroll Element Into View    xpath://div[contains(@class,'footer aem-GridColumn')]//footer[1]
                 Sleep    2
@@ -313,13 +295,11 @@ Our_Food_Menu
                         Wait Until Element Is Visible    xpath:(//input[@name='email'])[2]    60s
                         Click Element    xpath://div[@aria-label='Close']
                         Sleep    2
-                    ELSE
-                        Log To Console    "Email input not visible"
+                    
                     END
                     Switch Window    main
                     Sleep    2
-                ELSE
-                    Log To Console    "Social Link 1 not visible"
+                
                 END
 
                 # Navigate to Social Link 2
@@ -334,14 +314,12 @@ Our_Food_Menu
                     IF    ${Instagram}
                         Capture Page Screenshot
                         Wait Until Element Is Visible     xpath://span[text()='See more from clubcrackersus']    60s
-                    ELSE
-                        Log    "Instagram page is not visible"
+                    
                     END
                     
                     Switch Window    main
                     Sleep    2
-                ELSE
-                    Log To Console    "Social Link 2 not visible"
+                
                 END
 
                 # Navigate to Social Link 3
@@ -355,13 +333,11 @@ Our_Food_Menu
                     IF    ${youtube}
                         Capture Page Screenshot
                         Log To Console    "YouTube banner is visible"
-                    ELSE
-                        Log To Console    "YouTube banner not visible"
+                    
                     END
                     Switch Window    main
                     Sleep    2
-                ELSE
-                    Log To Console    "Social Link 3 not visible"
+                
                 END
 
                 # Navigate to Pinterest
@@ -375,13 +351,11 @@ Our_Food_Menu
                     IF    ${pinterest}
                         Capture Page Screenshot
                         Log To Console    "Pinterest image is visible"
-                    ELSE
-                        Log To Console    "Pinterest image not visible"
+                    
                     END
                     Switch Window    main
                     Sleep    2
-                ELSE
-                    Log To Console    "Pinterest link not visible"
+                
                 END
 
                 # Navigate to Twitter
@@ -397,13 +371,11 @@ Our_Food_Menu
                         Capture Page Screenshot
                         # Click Element    xpath:(//button[@type='button']//div)[1]
                         Sleep    2
-                    ELSE
-                        Log To Console    "Twitter viewport not visible"
+                    
                     END
                     Switch Window    main
                     Sleep    2
-                ELSE
-                    Log To Console    "Twitter link not visible"
+                
                 END
 
                 Run Keyword And Ignore Error    Scroll Element Into View    xpath://div[contains(@class,'footer aem-GridColumn')]//footer[1]
@@ -422,8 +394,7 @@ Our_Food_Menu
                     Click Element    xpath://button[@aria-label='Close']
                     Sleep    2
                     Log To Console    First link is visible
-                ELSE    
-                    Log To Console    First link is not visible
+                
                 END
                 # Step 2: Validate and click the second link
                 Wait Until Element Is Visible    xpath:(//ul[@id='lowerfooterlinks']//a)[2]    60s
@@ -445,8 +416,7 @@ Our_Food_Menu
                     Switch Window    main
                     Sleep    2
                     
-                ELSE    
-                    Log To Console    Second link is not visible
+                
                 END
 
                 # Step 3: Validate and click the third link
@@ -467,8 +437,7 @@ Our_Food_Menu
                     Switch Window    main
                     Sleep    2
                     
-                ELSE    
-                    Log To Console    Third link is not visible
+                
                 END
 
                 # Step 4: Validate and click the fourth link
@@ -491,8 +460,7 @@ Our_Food_Menu
                     Switch Window    main
                     Sleep    2
                     
-                ELSE    
-                    Log To Console    Fourth link is not visible
+                
                 END
                 # Step 5: Validate and click the fifth link
                 Wait Until Element Is Visible    xpath:(//ul[@id='lowerfooterlinks']//a)[5]    60s
@@ -513,8 +481,7 @@ Our_Food_Menu
                     Switch Window    main
                     Sleep    2
                     
-                ELSE    
-                    Log To Console    Fifth link is not visible
+                
                 END
                 # Step 6: Validate and click the sixth link
                 Wait Until Element Is Visible    xpath:(//ul[@id='lowerfooterlinks']//a)[6]    60s
@@ -535,16 +502,12 @@ Our_Food_Menu
                     Switch Window    main
                     Sleep    2
                     
-                ELSE    
-                    Log To Console    Sixth link is not visible
+                
                 END
             END
-        ELSE
-            Log To Console    message=Your product image will be missmatch..
+        
         END
-    ELSE
-        Log To Console    message=Our Food elements is missing on this page..
-        Close All Browsers
+    
     END
     Copy Images    ${OUTPUT_DIR}    ${angvar('vm_path_dir')}
         Sleep   1

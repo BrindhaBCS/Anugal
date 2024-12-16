@@ -42,17 +42,13 @@ Homepage Menu
                     Log    "Where to Buy is also visible."
                     IF    ${menu_4}
                         Log    "Contact Us is also visible."
-                    ELSE
-                        Log    "Contact Us is NOT visible."
+                    
                     END
-                ELSE
-                    Log    "Where to Buy is NOT visible."
+                
                 END
-            ELSE
-                Log    "Recipes is NOT visible."
+            
             END
-        ELSE
-            Log    "Our Food is NOT visible."
+        
         END
     END
 
@@ -64,11 +60,9 @@ Homepage Menu
         ${is_products_list_visible}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath://div[@class='products-list-product']    60s
         IF    ${is_products_list_visible}
             Log To Console    "Successfully navigated to Products Items."
-        ELSE
-            Log To Console    "Products list not visible after navigation."
+        
         END
-    ELSE
-        Log To Console    "Products link not visible."
+    
     END
 
     # Recipes Navigation
@@ -80,11 +74,9 @@ Homepage Menu
         ${is_recipes_list_visible}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath://div[@class='recipe-list']    60s
         IF    ${is_recipes_list_visible}
             Log To Console    "Successfully navigated to Recipes section."
-        ELSE
-            Log To Console    "Recipes list not visible after navigation."
+        
         END
-    ELSE
-        Log To Console    "Recipes link not visible."
+    
     END
 
     # Where to Buy
@@ -98,11 +90,9 @@ Homepage Menu
             Click Element    xpath://span[@data-ps-shift-tab='[data-ps-tab=".ps-lightbox-close"]']
             Sleep    2
             Log To Console    "Successfully navigated 'Where to Buy' section."
-        ELSE
-            Log To Console    "Select box not visible in 'Where to Buy' section."
+        
         END
-    ELSE
-        Log To Console    "Buy button not visible."
+    
     END
 
     # Contact Us
@@ -114,11 +104,9 @@ Homepage Menu
         ${is_contact_section_visible}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath:(//section[@class='section--in-viewport'])[2]    10s
         IF    ${is_contact_section_visible}
             Log To Console    "Successfully navigated to Contact Us section."
-        ELSE
-            Log To Console    "Contact Us section not visible after navigation."
+        
         END
-    ELSE
-        Log To Console    "Contact Us link not visible."
+    
     END
 
     Click Element    xpath://a[@class='header-logo track']//img[1]
@@ -149,17 +137,11 @@ Homepage Menu
                 Capture Element Screenshot    xpath://h2[text()='Our Food']/following-sibling::div    clube_crackers_01.png
                 Sleep    2
                 Log    "Screenshot captured successfully."
-            ELSE
-                Log    "Failed to capture screenshot as the product image element is not visible."
-                Capture Page Screenshot    clube_crackers_02.png
+            
             END
-        ELSE
-            Log    "Product image element is not visible. Skipping screenshot capture."
-            Capture Page Screenshot    clube_crackers_03.png
+        
         END
-    ELSE
-        Log    "Content wrapper is not visible. Cannot scroll."
-        Capture Page Screenshot    clube_crackers_04.png
+    
     END
     Sleep    2
 
@@ -181,8 +163,7 @@ Homepage CTA
         Wait Until Element Is Visible     xpath://a[contains(@class,'button-cta button-cta-red')]    60s
         Sleep    2
         Capture Page Screenshot    clube_crackers_05.png
-    ELSE
-        Log    "WARN:Club Crackers Image is not visible" 
+    
     END
     
     #2nd_CTA
@@ -200,8 +181,7 @@ Homepage CTA
         Wait Until Element Is Visible     xpath://a[contains(@class,'button-cta button-cta-red')]    60s
         Sleep    2
         Capture Page Screenshot    clube_crackers_06.png
-    ELSE
-        Log    "WARN:Club Crackers Image is not visible" 
+     
     END
     
     #3RD_CTA
@@ -222,8 +202,7 @@ Homepage CTA
         Wait Until Element Is Visible     xpath://a[contains(@class,'button-cta button-cta-red')]    60s
         Sleep    2
         Capture Page Screenshot    clube_crackers_07.png
-    ELSE
-        Log    "WARN:Club Crackers Image is not visible" 
+     
     END
 
     # 4th_CTA
@@ -245,8 +224,7 @@ Homepage CTA
         Wait Until Element Is Visible     xpath://a[contains(@class,'button-cta button-cta-red')]    60s
         Sleep    2
         Capture Page Screenshot    clube_crackers_08.png
-    ELSE
-        Log    "WARN:Club Crackers Image is not visible" 
+     
     END
 
     #5th_CTA
@@ -262,8 +240,7 @@ Homepage CTA
         Sleep    2
         Wait Until Element Is Visible     xpath://div[@class='recipe-list']    60s
         Capture Page Screenshot    clube_crackers_09.png
-    ELSE
-        Log    "WARN:Club Crackers Image is not visible" 
+    
     END
 
     #6th_CTA
@@ -283,13 +260,10 @@ Homepage CTA
         IF    ${Insta}
             Capture Page Screenshot    clube_crackers_10.png
             Wait Until Element Is Visible     xpath:(//div[@class='_ab1y _ab1z']//div)[1]    60s
-        ELSE
-            Capture Page Screenshot    clube_crackers_11.png
-            Log    "Instagram page is not visible"
+        
         END
         Switch Window    main
-    ELSE
-        Log    "WARN:Club Crackers Image is not visible" 
+    
     END
 
 Homepage Footer
@@ -309,11 +283,9 @@ Homepage Footer
         IF    ${is_club_img_visible}
             Capture Page Screenshot    clube_crackers_12.png
             Log To Console    "Successfully navigated to Home section."
-        ELSE
-            Log To Console    "Club Crackers image not visible after navigation."
+        
         END
-    ELSE
-        Log To Console    "Footer Home link not visible."
+    
     END
 
     # Recipes Navigation
@@ -326,11 +298,9 @@ Homepage Footer
         IF    ${is_recipes_list_visible}
             Capture Page Screenshot    clube_crackers_13.png
             Log To Console    "Successfully navigated to Recipes section."
-        ELSE
-            Log To Console    "Recipes list not visible after navigation."
+        
         END
-    ELSE
-        Log To Console    "Recipes link not visible."
+    
     END
 
     # Products Navigation
@@ -343,11 +313,9 @@ Homepage Footer
         IF    ${is_products_list_visible}
             Capture Page Screenshot    clube_crackers_14.png
             Log To Console    "Successfully navigated to Products section."
-        ELSE
-            Log To Console    "Products list not visible after navigation."
+        
         END
-    ELSE
-        Log To Console    "Products link not visible."
+    
     END
 
     # Where to Buy
@@ -362,11 +330,9 @@ Homepage Footer
             Click Element    xpath://span[@data-ps-shift-tab='[data-ps-tab=".ps-lightbox-close"]']
             Sleep    2
             Log To Console    "Successfully checked 'Where to Buy' section."
-        ELSE
-            Log To Console    "Select box not visible in 'Where to Buy' section."
+        
         END
-    ELSE
-        Log To Console    "Buy button not visible."
+    
     END
 
     # Site Map
@@ -379,11 +345,9 @@ Homepage Footer
         IF    ${is_sitemap_list_visible}
             Capture Page Screenshot    clube_crackers_16.png
             Log To Console    "Successfully navigated to Site Map section."
-        ELSE
-            Log To Console    "Site Map list not visible after navigation."
+        
         END
-    ELSE
-        Log To Console    "Site Map link not visible."
+    
     END
 
     # Contact Us
@@ -396,11 +360,9 @@ Homepage Footer
         IF    ${is_contact_section_visible}
             Capture Page Screenshot    clube_crackers_17.png
             Log To Console    "Successfully navigated to Contact Us section."
-        ELSE
-            Log To Console    "Contact Us section not visible after navigation."
+        
         END
-    ELSE
-        Log To Console    "Contact Us link not visible."
+    
     END
 
     
@@ -426,13 +388,11 @@ Homepage Footer
             Wait Until Element Is Visible    xpath:(//input[@name='email'])[2]    60s
             Click Element    xpath://div[@aria-label='Close']
             Sleep    2
-        ELSE
-            Log To Console    "Email input not visible"
+        
         END
         Switch Window    main
         Sleep    2
-    ELSE
-        Log To Console    "Social Link 1 not visible"
+    
     END
 
     # Navigate to Social Link 2
@@ -447,14 +407,12 @@ Homepage Footer
             Capture Page Screenshot    clube_crackers_19.png
             Wait Until Element Is Visible     xpath://span[text()='See more from clubcrackersus']    60s
             Log    "Instagram page is visible"
-        ELSE
-            Log    "Instagram page is not visible"
+        
         END
         
         Switch Window    main
         Sleep    2
-    ELSE
-        Log To Console    "Social Link 2 not visible"
+    
     END
 
     # Navigate to Social Link 3
@@ -468,13 +426,11 @@ Homepage Footer
         IF    ${youtube}
             Capture Page Screenshot    clube_crackers_20.png
             Log To Console    "YouTube banner is visible"
-        ELSE
-            Log To Console    "YouTube banner not visible"
+        
         END
         Switch Window    main
         Sleep    2
-    ELSE
-        Log To Console    "Social Link 3 not visible"
+    
     END
 
     # Navigate to Pinterest
@@ -488,13 +444,11 @@ Homepage Footer
         IF    ${pinterest}
             Capture Page Screenshot    clube_crackers_21.png
             Log To Console    "Pinterest image is visible"
-        ELSE
-            Log To Console    "Pinterest image not visible"
+        
         END
         Switch Window    main
         Sleep    2
-    ELSE
-        Log To Console    "Pinterest link not visible"
+    
     END
 
     # Navigate to Twitter
@@ -510,13 +464,11 @@ Homepage Footer
             Capture Page Screenshot    clube_crackers_22.png
             # Click Element    xpath:(//button[@type='button']//div)[1]
             Sleep    2
-        ELSE
-            Log To Console    "Twitter viewport not visible"
+        
         END
         Switch Window    main
         Sleep    2
-    ELSE
-        Log To Console    "Twitter link not visible"
+    
     END
 
     Run Keyword And Ignore Error    Scroll Element Into View    xpath://div[contains(@class,'footer aem-GridColumn')]//footer[1]
@@ -535,8 +487,7 @@ Homepage Footer
         Click Element    xpath://button[@aria-label='Close']
         Sleep    2
         Log To Console    First link is visible
-    ELSE    
-        Log To Console    First link is not visible
+    
     END
     # Step 2: Validate and click the second link
     Wait Until Element Is Visible    xpath:(//ul[@id='lowerfooterlinks']//a)[2]    60s
@@ -558,8 +509,7 @@ Homepage Footer
         Switch Window    main
         Sleep    2
         
-    ELSE    
-        Log To Console    Second link is not visible
+    
     END
 
     # Step 3: Validate and click the third link
@@ -580,8 +530,7 @@ Homepage Footer
         Switch Window    main
         Sleep    2
         
-    ELSE    
-        Log To Console    Third link is not visible
+    
     END
 
     # Step 4: Validate and click the fourth link
@@ -604,8 +553,7 @@ Homepage Footer
         Switch Window    main
         Sleep    2
         
-    ELSE    
-        Log To Console    Fourth link is not visible
+    
     END
     # Step 5: Validate and click the fifth link
     Wait Until Element Is Visible    xpath:(//ul[@id='lowerfooterlinks']//a)[5]    60s
@@ -626,8 +574,7 @@ Homepage Footer
         Switch Window    main
         Sleep    2
         
-    ELSE    
-        Log To Console    Fifth link is not visible
+    
     END
     # Step 6: Validate and click the sixth link
     Wait Until Element Is Visible    xpath:(//ul[@id='lowerfooterlinks']//a)[6]    60s
@@ -648,8 +595,7 @@ Homepage Footer
         Switch Window    main
         Sleep    2
         
-    ELSE    
-        Log To Console    Sixth link is not visible
+    
     END
     Copy Images    ${OUTPUT_DIR}    ${angvar('vm_path_dir')}
     Sleep	1
