@@ -500,6 +500,7 @@ Homepage Footer
         ${privacy_notice}=    Run Keyword And Return Status    Element Should Be Visible    xpath://div[@id='otnotice-4fccfc07-c99f-4fed-96dd-27de30836495']/div[1]
         IF  ${privacy_notice}
             # Wait Until Element Is Visible    xpath://div[@id='otnotice-4fccfc07-c99f-4fed-96dd-27de30836495']/div[1]    60s
+            Handle Pop-up
             Sleep    1
             Capture Page Screenshot    clube_crackers_24.png
             
@@ -523,6 +524,7 @@ Homepage Footer
         ${us_privacy}=    Run Keyword And Return Status    Element Should Be Visible    xpath:(//section[@class='otnotice-section'])[1]
         IF  ${us_privacy}
             # Wait Until Element Is Visible    xpath:(//section[@class='otnotice-section'])[1]    60s
+            Handle Pop-up
             Sleep    2
             Capture Page Screenshot    clube_crackers_25.png
             Log To Console    Third link is visible
@@ -544,6 +546,7 @@ Homepage Footer
         ${Terms_of_use}=    Run Keyword And Return Status    Element Should Be Visible    xpath:(//div[@class='otnotice']//div)[1]
         IF  ${Terms_of_use}
             # Wait Until Element Is Visible    xpath:(//div[@class='otnotice']//div)[1]    60s
+            Handle Pop-up
             Sleep    2
             Capture Page Screenshot    clube_crackers_26.png
             
@@ -566,6 +569,7 @@ Homepage Footer
         ${Accessibility}=    Run Keyword And Return Status    Element Should Be Visible    xpath:(//div[@class='otnotice']//div)[1]
         IF  ${Accessibility}
             # Wait Until Element Is Visible    xpath:(//div[@class='otnotice']//div)[1]    60s
+            Handle Pop-up
             Sleep    2
             Capture Page Screenshot    clube_crackers_27.png
             
@@ -584,9 +588,11 @@ Homepage Footer
         Sleep    2
         Switch Window    new
         Sleep    2
+        
         ${Persnoal_information}=    Run Keyword And Return Status    Element Should Be Visible    xpath:(//div[@class='otnotice']//div)[1]
         IF  ${Persnoal_information}
-            Wait Until Element Is Visible    xpath:(//div[@class='otnotice']//div)[1]    60s
+            # Wait Until Element Is Visible    xpath:(//div[@class='otnotice']//div)[1]    60s
+            Handle Pop-up
             Sleep    2
             Capture Page Screenshot    clube_crackers_28.png
             
