@@ -149,7 +149,7 @@ Our_Food_Menu
                 Page Should Contain Element    locator=xpath://h2[normalize-space(text())='people also tried:']
                 Capture Page Screenshot    filename=clube_crackers_48.png
                 Sleep    1
-                Execute JavaScript  window.scrollBy(0,600)
+                Execute JavaScript  window.scrollBy(0,400)
                 Capture Page Screenshot    filename=clube_crackers_49.png
                 Sleep    1
                 Click Element    locator=xpath:(//div[@class='product-list-title'])[1]
