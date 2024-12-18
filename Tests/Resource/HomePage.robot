@@ -524,7 +524,7 @@ Homepage Footer
         ${us_privacy}=    Run Keyword And Return Status    Element Should Be Visible    xpath:(//section[@class='otnotice-section'])[1]
         IF  ${us_privacy}
             # Wait Until Element Is Visible    xpath:(//section[@class='otnotice-section'])[1]    60s
-            Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
+            # Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
             Sleep    2
             Capture Page Screenshot    clube_crackers_25.png
             Log To Console    Third link is visible
@@ -546,7 +546,7 @@ Homepage Footer
         ${Terms_of_use}=    Run Keyword And Return Status    Element Should Be Visible    xpath:(//div[@class='otnotice']//div)[1]
         IF  ${Terms_of_use}
             # Wait Until Element Is Visible    xpath:(//div[@class='otnotice']//div)[1]    60s
-            Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
+            # Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
             Sleep    2
             Capture Page Screenshot    clube_crackers_26.png
             
@@ -569,7 +569,7 @@ Homepage Footer
         ${Accessibility}=    Run Keyword And Return Status    Element Should Be Visible    xpath:(//div[@class='otnotice']//div)[1]
         IF  ${Accessibility}
             # Wait Until Element Is Visible    xpath:(//div[@class='otnotice']//div)[1]    60s
-            Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
+            # Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
             Sleep    2
             Capture Page Screenshot    clube_crackers_27.png
             
@@ -592,7 +592,7 @@ Homepage Footer
         ${Persnoal_information}=    Run Keyword And Return Status    Element Should Be Visible    xpath:(//div[@class='otnotice']//div)[1]
         IF  ${Persnoal_information}
             # Wait Until Element Is Visible    xpath:(//div[@class='otnotice']//div)[1]    60s
-            Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
+            # Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
             Sleep    2
             Capture Page Screenshot    clube_crackers_28.png
             
