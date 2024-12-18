@@ -407,7 +407,7 @@ Our_Food_Menu
                     ${privacy_notice}=    Run Keyword And Return Status    Element Should Be Visible    xpath://div[@id='otnotice-4fccfc07-c99f-4fed-96dd-27de30836495']/div[1]
                     IF  ${privacy_notice}
                         # Wait Until Element Is Visible    xpath://div[@id='otnotice-4fccfc07-c99f-4fed-96dd-27de30836495']/div[1]    60s
-                        Handle Pop-up
+                        Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
                         Sleep    1
                         Capture Page Screenshot
                         
@@ -431,7 +431,7 @@ Our_Food_Menu
                     ${us_privacy}=    Run Keyword And Return Status    Element Should Be Visible    xpath:(//section[@class='otnotice-section'])[1]
                     IF  ${us_privacy}
                         # Wait Until Element Is Visible    xpath:(//section[@class='otnotice-section'])[1]    60s
-                        Handle Pop-up
+                        Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
                         Sleep    2
                         Capture Page Screenshot
                         Log To Console    Third link is visible
@@ -453,7 +453,7 @@ Our_Food_Menu
                     ${Terms_of_use}=    Run Keyword And Return Status    Element Should Be Visible    xpath:(//div[@class='otnotice']//div)[1]
                     IF  ${Terms_of_use}
                         # Wait Until Element Is Visible    xpath:(//div[@class='otnotice']//div)[1]    60s
-                        Handle Pop-up
+                        Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
                         Sleep    2
                         Capture Page Screenshot
                         
@@ -476,7 +476,7 @@ Our_Food_Menu
                     ${Accessibility}=    Run Keyword And Return Status    Element Should Be Visible    xpath:(//div[@class='otnotice']//div)[1]
                     IF  ${Accessibility}
                         # Wait Until Element Is Visible    xpath:(//div[@class='otnotice']//div)[1]    60s
-                        Handle Pop-up
+                        Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
                         Sleep    2
                         Capture Page Screenshot
                         
@@ -498,7 +498,7 @@ Our_Food_Menu
                     ${Persnoal_information}=    Run Keyword And Return Status    Element Should Be Visible    xpath:(//div[@class='otnotice']//div)[1]
                     IF  ${Persnoal_information}
                         Wait Until Element Is Visible    xpath:(//div[@class='otnotice']//div)[1]    60s
-                        Handle Pop-up
+                        Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
                         Sleep    2
                         Capture Page Screenshot
                         

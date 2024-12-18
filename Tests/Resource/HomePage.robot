@@ -10,8 +10,7 @@ ${con_4}    Contact Us
 
 ${EXPECTED_TEXT}    Cookies On Our Website
 ${OK_BUTTON_XPATH}    //button[@id='onetrust-accept-btn-handler']
-${BANNER_XPATH_1}       //div[@role='alertdialog' and @aria-describedby='onetrust-policy-text']//h3
-${BANNER_XPATH_2}    //div[@aria-describedby='onetrust-policy-text']
+${BANNER_XPATH}       //div[@role='alertdialog' and @aria-describedby='onetrust-policy-text']//h3
 
 ${BUY_BUTTON}    //a[@aria-label='click to see where to buy']
 
@@ -21,7 +20,7 @@ Start TestCase
     Log    Opening browser
     Open Browser    ${angvar('clubcracker_url')}    ${angvar('clubcracker_browser')}
     Maximize Browser Window
-    Handle Pop-up_1
+    Handle Pop-up
     Sleep    2
     Log    Browser opened successfully
 Homepage Menu
@@ -501,7 +500,7 @@ Homepage Footer
         ${privacy_notice}=    Run Keyword And Return Status    Element Should Be Visible    xpath://div[@id='otnotice-4fccfc07-c99f-4fed-96dd-27de30836495']/div[1]
         IF  ${privacy_notice}
             # Wait Until Element Is Visible    xpath://div[@id='otnotice-4fccfc07-c99f-4fed-96dd-27de30836495']/div[1]    60s
-            Handle Pop-up_2
+            Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
             Sleep    1
             Capture Page Screenshot    clube_crackers_24.png
             
@@ -525,7 +524,7 @@ Homepage Footer
         ${us_privacy}=    Run Keyword And Return Status    Element Should Be Visible    xpath:(//section[@class='otnotice-section'])[1]
         IF  ${us_privacy}
             # Wait Until Element Is Visible    xpath:(//section[@class='otnotice-section'])[1]    60s
-            Handle Pop-up_2
+            Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
             Sleep    2
             Capture Page Screenshot    clube_crackers_25.png
             Log To Console    Third link is visible
@@ -547,7 +546,7 @@ Homepage Footer
         ${Terms_of_use}=    Run Keyword And Return Status    Element Should Be Visible    xpath:(//div[@class='otnotice']//div)[1]
         IF  ${Terms_of_use}
             # Wait Until Element Is Visible    xpath:(//div[@class='otnotice']//div)[1]    60s
-            Handle Pop-up_2
+            Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
             Sleep    2
             Capture Page Screenshot    clube_crackers_26.png
             
@@ -570,7 +569,7 @@ Homepage Footer
         ${Accessibility}=    Run Keyword And Return Status    Element Should Be Visible    xpath:(//div[@class='otnotice']//div)[1]
         IF  ${Accessibility}
             # Wait Until Element Is Visible    xpath:(//div[@class='otnotice']//div)[1]    60s
-            Handle Pop-up_2
+            Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
             Sleep    2
             Capture Page Screenshot    clube_crackers_27.png
             
@@ -593,7 +592,7 @@ Homepage Footer
         ${Persnoal_information}=    Run Keyword And Return Status    Element Should Be Visible    xpath:(//div[@class='otnotice']//div)[1]
         IF  ${Persnoal_information}
             # Wait Until Element Is Visible    xpath:(//div[@class='otnotice']//div)[1]    60s
-            Handle Pop-up_2
+            Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
             Sleep    2
             Capture Page Screenshot    clube_crackers_28.png
             
@@ -607,14 +606,9 @@ Homepage Footer
     Copy Images    ${OUTPUT_DIR}    ${angvar('vm_path_dir')}
     Sleep	1
 
-Handle Pop-up_1
-    Wait Until Page Contains Element    ${BANNER_XPATH_1}    timeout=10
-    ${actual_text}=    Get Text    ${BANNER_XPATH_1}
+Handle Pop-up
+    Wait Until Page Contains Element    ${BANNER_XPATH}    timeout=10
+    ${actual_text}=    Get Text    ${BANNER_XPATH}
     Should Be Equal As Strings    ${actual_text}    ${EXPECTED_TEXT}
     Click Element    ${OK_BUTTON_XPATH}
 
-Handle Pop-up_2
-    Wait Until Page Contains Element    ${BANNER_XPATH_2}    timeout=10
-    ${actual_text}=    Get Text    ${BANNER_XPATH_2}
-    Should Be Equal As Strings    ${actual_text}    ${EXPECTED_TEXT}
-    Click Element    ${OK_BUTTON_XPATH}
