@@ -10,7 +10,8 @@ ${con_4}    Contact Us
 
 ${EXPECTED_TEXT}    Cookies On Our Website
 ${OK_BUTTON_XPATH}    //button[@id='onetrust-accept-btn-handler']
-${BANNER_XPATH}       //div[@role='alertdialog' and @aria-describedby='onetrust-policy-text']//h3
+# ${BANNER_XPATH}       //div[@role='alertdialog' and @aria-describedby='onetrust-policy-text']//h3
+${BANNER_XPATH}    //div[@aria-describedby='onetrust-policy-text']
 
 ${BUY_BUTTON}    //a[@aria-label='click to see where to buy']
 
