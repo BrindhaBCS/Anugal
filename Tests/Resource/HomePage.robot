@@ -801,7 +801,9 @@ Homepage Footer
     Append To List    ${HomePage_report}    ${all_CTA}
     Append To List    ${HomePage_report}    ${footer_page}
     # Log To Console    **gbStart**HomePage_Result**splitKeyValue**${HomePage_report}**gbEnd**
-    Check HomePage Report
+    ${all_empty_report}=    Evaluate    all(not sublist for sublist in ${HomePage_report})
+    Run Keyword If    ${all_empty_report}    Log To Console    **gbStart**HomePage_Result**splitKeyValue**${EMPTY_MESSAGE}**gbEnd**
+    ...    ELSE    Log To Console    **gbStart**HomePage_Result**splitKeyValue**${HomePage_report}**gbEnd**
 
     Copy Images    ${OUTPUT_DIR}    ${angvar('vm_path_dir')}
 
@@ -810,8 +812,3 @@ Handle Pop-up
     ${actual_text}=    Get Text    ${BANNER_XPATH}
     Should Be Equal As Strings    ${actual_text}    ${EXPECTED_TEXT}
     Click Element    ${OK_BUTTON_XPATH}
-
-Check HomePage Report
-    ${is_empty}=    Evaluate    len(${HomePage_report}) == 0
-    Run Keyword If    ${is_empty}    Log To Console    **gbStart**HomePage_Result**splitKeyValue**${EMPTY_MESSAGE}**gbEnd**
-    ...    ELSE    Log To Console    **gbStart**HomePage_Result**splitKeyValue**${HomePage_report}**gbEnd**
