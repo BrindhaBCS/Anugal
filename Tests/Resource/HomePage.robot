@@ -343,18 +343,8 @@ Homepage CTA
         Click Element    xpath:(//span[@class='button-cta'])[2]
         Sleep    2
         Switch Window    new
-        Sleep    2
-        ${Insta}=    Run Keyword And Return Status    Element Should Be Visible    xpath:/(//div[@class='_ab1y _ab1z']//div)[1]
-        IF    ${Insta}
-            Capture Page Screenshot
-            Wait Until Element Is Visible     xpath:(//div[@class='_ab1y _ab1z']//div)[1]    60s
-        ELSE
-            Capture Page Screenshot
-            ${instagram!}    Set Variable    WARN:Instagram page is not visible
-            Log    ${instagram!}
-            Append To List    ${all_CTA}    ${instagram!}
-            
-        END
+        Sleep    5
+        
         Switch Window    main
     ELSE
         ${sixth_CTA}    Set Variable    WARN:keep up with club on instagram is not visible

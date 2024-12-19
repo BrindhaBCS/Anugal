@@ -195,9 +195,9 @@ Our_Food_Menu
                 Sleep    1
                 Go Back
                 Sleep    1
-                Scroll Element Into View    locator=xpath://span[normalize-space()='Check Out Our Recipes!']
+                Execute JavaScript  window.scrollBy(0,200)
                 Capture Page Screenshot    filename=clube_crackers_53.png
-                Sleep    1
+                Sleep    
                 Wait Until Element Is Visible    locator=xpath://span[normalize-space()='Check Out Our Recipes!']    timeout=30s
                 Page Should Contain Element    locator=xpath://span[normalize-space()='Check Out Our Recipes!']
                 Capture Page Screenshot    filename=clube_crackers_54.png
