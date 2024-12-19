@@ -635,13 +635,16 @@ Our_Food_Menu
     END
     Set Global Variable    ${Our_Food_Menu}
     Copy Images    ${OUTPUT_DIR}    ${angvar('vm_path_dir')}
-        Sleep   1
+    Sleep   1
     ${FoodPage_report}    Create List
     Append To List    ${FoodPage_report}    ${Response_check}
     Append To List    ${FoodPage_report}    ${page_title}
     Append To List    ${FoodPage_report}    ${Our_Food_Menu}
     # Log To Console    **gbStart**FoodPage_Result**splitKeyValue**${final}**gbEnd**
-    Check FoodPage Report
+    ${length}    Get Length    ${FoodPage_report}
+    ${is_empty}=    Evaluate    len(${FoodPage_report}) == 0
+    Run Keyword If    ${is_empty}    Log To Console    **gbStart**FoodPage_Result**splitKeyValue**${EMPTY_MESSAGE}**gbEnd**
+    ...    ELSE    Log To Console    **gbStart**FoodPage_Result**splitKeyValue**${FoodPage_report}**gbEnd**
 
 *** Keywords ***
 Title_match
@@ -649,10 +652,7 @@ Title_match
     ${condition}    Run Keyword And Return Status    Should Be Equal As Strings    first=${Get_Window_Titles}    second=['Buttery Crackers | Club® Crackers']
     [Return]    ${condition} 
 
-Check FoodPage Report
-    ${is_empty}=    Evaluate    len(${FoodPage_report}) == 0
-    Run Keyword If    ${is_empty}    Log To Console    **gbStart**FoodPage_Result**splitKeyValue**${EMPTY_MESSAGE}**gbEnd**
-    ...    ELSE    Log To Console    **gbStart**FoodPage_Result**splitKeyValue**${FoodPage_report}**gbEnd**
+
 
 
 
