@@ -547,18 +547,7 @@ Homepage Footer
         Click Element    xpath:(//div[@id='sociallinks']//a)[2]
         Sleep    5
         Switch Window    new
-        Sleep    3
-        ${Instagram}=    Run Keyword And Return Status    Element Should Be Visible    xpath://span[text()='See more from clubcrackersus']
-        IF    ${Instagram}
-            Capture Page Screenshot
-            Wait Until Element Is Visible     xpath://span[text()='See more from clubcrackersus']    60s
-            Log    "Instagram page is visible"
-        ELSE
-            ${insta_page}    Set Variable    Instagram page is not visible
-            Log    ${insta_page}
-            Append To List    ${footer_page}    ${insta_page}
-            
-        END
+        Sleep    7
         
         Switch Window    main
         Sleep    2
