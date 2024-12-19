@@ -641,10 +641,10 @@ Our_Food_Menu
     Append To List    ${FoodPage_report}    ${page_title}
     Append To List    ${FoodPage_report}    ${Our_Food_Menu}
     # Log To Console    **gbStart**FoodPage_Result**splitKeyValue**${final}**gbEnd**
-    ${length}    Get Length    ${FoodPage_report}
-    ${is_empty}=    Evaluate    len(${FoodPage_report}) == 0
-    Run Keyword If    ${is_empty}    Log To Console    **gbStart**FoodPage_Result**splitKeyValue**${EMPTY_MESSAGE}**gbEnd**
+    ${all_empty}=    Evaluate    all(not sublist for sublist in ${FoodPage_report})
+    Run Keyword If    ${all_empty}    Log To Console    **gbStart**FoodPage_Result**splitKeyValue**${EMPTY_MESSAGE}**gbEnd**
     ...    ELSE    Log To Console    **gbStart**FoodPage_Result**splitKeyValue**${FoodPage_report}**gbEnd**
+    
 
 *** Keywords ***
 Title_match
