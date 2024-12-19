@@ -163,6 +163,7 @@ Homepage Menu
         
     END
     Log    ${Home_page_details}
+    Set Global Variable    ${Home_page_details}
     Log To Console    **gbStart**check_menu**splitKeyValue**${Home_page_details}**gbEnd**
 
     Click Element    xpath://a[@class='header-logo track']//img[1]
@@ -360,6 +361,7 @@ Homepage CTA
          
     END
     Log    ${all_CTA}
+    Set Global Variable    ${all_CTA}
     Log To Console    **gbStart**check_CTA**splitKeyValue**${all_CTA}**gbEnd**
 Homepage Footer
      
@@ -809,6 +811,7 @@ Homepage Footer
         
     END
     Log    ${footer_page}
+    Set Global Variable    ${footer_page}
     Log To Console    **gbStart**Footer_total_link**splitKeyValue**${footer_page}**gbEnd**
 
 Handle Pop-up
