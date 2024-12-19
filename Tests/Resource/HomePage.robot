@@ -166,7 +166,7 @@ Homepage Menu
     END
     Log    ${Home_page_details}
     Set Global Variable    ${Home_page_details}
-    Log To Console    **gbStart**check_menu**splitKeyValue**${Home_page_details}**gbEnd**
+    
 
     Click Element    xpath://a[@class='header-logo track']//img[1]
     Sleep    2
@@ -354,7 +354,7 @@ Homepage CTA
     END
     Log    ${all_CTA}
     Set Global Variable    ${all_CTA}
-    Log To Console    **gbStart**check_CTA**splitKeyValue**${all_CTA}**gbEnd**
+ 
 Homepage Footer
      
     Go To    https://www.clubcrackers.com/en_US/home.html
@@ -793,7 +793,14 @@ Homepage Footer
     END
     Log    ${footer_page}
     Set Global Variable    ${footer_page}
-    Log To Console    **gbStart**Footer_total_link**splitKeyValue**${footer_page}**gbEnd**
+    
+    
+    ${HomePage_report}    Create List
+    Append To List    ${HomePage_report}    ${Home_page_details}
+    Append To List    ${HomePage_report}    ${all_CTA}
+    Append To List    ${HomePage_report}    ${footer_page}
+    Log To Console    **gbStart**OurfoodFailedoutput**splitKeyValue**${HomePage_report}**gbEnd**
+
     Copy Images    ${OUTPUT_DIR}    ${angvar('vm_path_dir')}
 
 Handle Pop-up
