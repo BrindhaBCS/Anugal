@@ -19,7 +19,7 @@ ${BUY_BUTTON}    //a[@aria-label='click to see where to buy']
 Start TestCase
     delete specific files in folder    ${angvar('vm_path_dir')}
     Log    Opening browser
-    Open Browser    ${wvar('clubcracker_url')}    ${wvar('clubcracker_browser')}
+    Open Browser    ${angvar('clubcracker_url')}    ${angvar('clubcracker_browser')}
     Maximize Browser Window
     Handle Pop-up
     Sleep    2
