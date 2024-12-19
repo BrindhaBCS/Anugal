@@ -1,6 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    Collections
+Library    kellanova.py
 
 *** Variables ***
 ${con_1}    Our Food
@@ -16,6 +17,7 @@ ${BUY_BUTTON}    //a[@aria-label='click to see where to buy']
 
 *** Keywords ***
 Start TestCase
+    delete specific files in folder    ${angvar('vm_path_dir')}
     Log    Opening browser
     Open Browser    ${wvar('clubcracker_url')}    ${wvar('clubcracker_browser')}
     Maximize Browser Window
@@ -813,6 +815,7 @@ Homepage Footer
     Log    ${footer_page}
     Set Global Variable    ${footer_page}
     Log To Console    **gbStart**Footer_total_link**splitKeyValue**${footer_page}**gbEnd**
+    Copy Images    ${OUTPUT_DIR}    ${angvar('vm_path_dir')}
 
 Handle Pop-up
     Wait Until Page Contains Element    ${BANNER_XPATH}    timeout=10
