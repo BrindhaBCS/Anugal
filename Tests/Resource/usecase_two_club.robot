@@ -639,7 +639,7 @@ Our_Food_Menu
     Append To List    ${final}    ${Response_check}
     Append To List    ${final}    ${page_title}
     Append To List    ${final}    ${Our_Food_Menu}
-    Log To Console    **gbStart**OurfoodFailedoutput**splitKeyValue**${final}**gbEnd**
+    Log To Console    **gbStart**FoodPage_Result**splitKeyValue**${final}**gbEnd**
  
 *** Keywords ***
 Title_match
