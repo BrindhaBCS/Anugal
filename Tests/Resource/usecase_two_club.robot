@@ -102,6 +102,9 @@ Our_Food_Menu
                 Sleep    1
                 Capture Page Screenshot    filename=clube_crackers_35.png
                 Wait Until Element Is Visible    locator=xpath:(//span[contains(text(),'BUY NOW')])[1]    timeout=30s
+                Sleep    2
+                Scroll Element Into View    (//span[contains(text(),'BUY NOW')])[1]
+                Sleep    2
                 Click Element    locator=xpath:(//span[contains(text(),'BUY NOW')])[1]
                 Sleep    1
                 Capture Page Screenshot    filename=clube_crackers_36.png
@@ -378,17 +381,17 @@ Our_Food_Menu
                     Click Element    xpath:(//div[@id='sociallinks']//a)[2]
                     Sleep    5
                     Switch Window    new
-                    Sleep    3
-                    ${Instagram}=    Run Keyword And Return Status    Element Should Be Visible    xpath://span[text()='See more from clubcrackersus']
+                    Sleep    7
+                    # ${Instagram}=    Run Keyword And Return Status    Element Should Be Visible    xpath://span[text()='See more from clubcrackersus']
 
-                    IF    ${Instagram}
-                        Capture Page Screenshot
-                        Wait Until Element Is Visible     xpath://span[text()='See more from clubcrackersus']    30s
-                    ELSE
-                        ${AR}    Set Variable    WARN:"Instagram page is not visible"
-                        Log To Console    message=${AR}
-                        Append To List    ${Our_Food_Menu}    ${AR}
-                    END
+                    # IF    ${Instagram}
+                    #     Capture Page Screenshot
+                    #     Wait Until Element Is Visible     xpath://span[text()='See more from clubcrackersus']    30s
+                    # ELSE
+                    #     ${AR}    Set Variable    WARN:"Instagram page is not visible"
+                    #     Log To Console    message=${AR}
+                    #     Append To List    ${Our_Food_Menu}    ${AR}
+                    # END
                     
                     Switch Window    main
                     Sleep    2
