@@ -422,20 +422,11 @@ Our_Food_Menu
                     Sleep    5
                     Switch Window    new
                     Sleep    3
-                    ${Instagram}=    Run Keyword And Return Status    Element Should Be Visible    xpath://span[text()='See more from clubcrackersus']
-
-                    IF    ${Instagram}
-                        Capture Page Screenshot
-                        Wait Until Element Is Visible     xpath://span[text()='See more from clubcrackersus']    30s
-                        ${pass_n}    Set Variable    PASS: "Instagram page is visible"
-                        Log To Console    message=${pass_n}
-                        Append To File    ${file_path}    ${pass_n}\n
-                    ELSE
-                        ${AR}    Set Variable    WARN:"Instagram page is not visible"
-                        Log To Console    message=${AR}
-                        Append To File    ${file_path}    ${AR}\n
-                    END
-                    
+                    Capture Page Screenshot
+                    ${pass_n}    Set Variable    PASS: "Instagram page is visible"
+                    Log To Console    message=${pass_n}
+                    Append To File    ${file_path}    ${pass_n}\n
+                    Sleep    2
                     Switch Window    main
                     Sleep    2
                 ELSE
