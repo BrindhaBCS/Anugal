@@ -120,6 +120,9 @@ Our_Food_Menu
                 Click Element    locator=xpath://span[@aria-label='Search for this product by city or zip code.']
                 Sleep    1
                 Capture Page Screenshot    filename=clube_crackers_35.png
+                Sleep    2
+                Scroll Element Into View    locator=xpath:(//span[contains(text(),'BUY NOW')])[1]
+                Sleep    1
                 Wait Until Element Is Visible    locator=xpath:(//span[contains(text(),'BUY NOW')])[1]    timeout=30s
                 Click Element    locator=xpath:(//span[contains(text(),'BUY NOW')])[1]
                 Sleep    1
@@ -128,6 +131,7 @@ Our_Food_Menu
                 Sleep    1
                 Switch Window    main
                 Sleep    3
+                Scroll Element Into View    locator=xpath:(//span[contains(text(),'VIEW ONLINE')])[1]
                 Click Element    locator=xpath:(//span[contains(text(),'VIEW ONLINE')])[1]
                 Sleep    1
                 Capture Page Screenshot    filename=clube_crackers_37.png
@@ -135,6 +139,7 @@ Our_Food_Menu
                 Sleep    1
                 Switch Window    main
                 Sleep    3
+                Scroll Element Into View    locator=xpath:(//span[contains(text(),'GET DIRECTIONS')])[2]
                 Click Element    locator=xpath:(//span[contains(text(),'GET DIRECTIONS')])[2]
                 Sleep    1
                 Capture Page Screenshot    filename=clube_crackers_38.png
@@ -547,6 +552,7 @@ Our_Food_Menu
                     Sleep    2
                     Switch Window    new
                     Sleep    2
+                    Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
                     ${pass_s}    Set Variable    PASS: "Second link is visible"
                     Log To Console    message=${pass_s}
                     Append To File    ${file_path}    ${pass_s}\n
