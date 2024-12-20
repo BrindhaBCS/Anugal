@@ -4,28 +4,31 @@ Library    RequestsLibrary
 Library    kellanova.py
 Library    string
 Library    Collections
+Library    OperatingSystem
 
 *** Variables ***
 ${URL}    ${angvar('clubcracker_url')}
 ${Browser}    ${angvar('clubcracker_browser')}
-${EMPTY_MESSAGE}    The Foodpage is successfully passed without any issues.
-
+${file_path}    C:\\tmp\\Food_Page.txt
 *** Keywords ***
 Browser
+    Remove File    path=${file_path}
     Open Browser    url=${URL}    browser=${Browser}    options=add_argument("--ignore-certificate-errors")
     Maximize Browser Window
+    Create File    path=${file_path}
 Response_check
     ${Response_check}    Create List
     ${response_code}=    Execute JavaScript    return fetch("${URL}").then(response => response.status)
     Should Be Equal As Numbers    ${response_code}    200
     Log    Response Code: ${response_code}
     IF  '${response_code}' == '200'
-        Log To Console    message=The application has successfully processed the request and returned a response with status code 200....
+        ${pass_a}    Set Variable    PASS: "The application has successfully processed the request and returned a response with status code 200.."
+        Log To Console    message=${pass_a}
+        Append To File    ${file_path}    ${pass_a}\n
     ELSE
-        ${AA}    Set Variable    WARN:The application did not load properly and returned an unexpected result..
+        ${AA}    Set Variable    WARN: "The application did not load properly and returned an unexpected result.."
         Log To Console    message=${AA}
-        Append To List    ${Response_check}    ${AA}
-        
+        Append To File    ${file_path}    ${AA}\n
     END
     Run Keyword And Ignore Error    Wait Until Keyword Succeeds    1 minute    2s    Click Element    locator=id:onetrust-accept-btn-handler
 
@@ -36,17 +39,22 @@ Page_title
     ${page_title}    Create List
     ${status}    Title_match
     IF  '${status}' == 'True'
-        Log To Console    message=The title of the web application should match the expected value to ensure consistency, accuracy, and proper navigation within the interface.....
+        ${pass_b}    Set Variable    PASS: "The title of the web application should match the expected value.."
+        Log To Console    message=${pass_b}
+        Append To File    ${file_path}    ${pass_b}\n
     ELSE
-        ${AB}    Set Variable    WARN:The application does not match the expected title..
+        ${AB}    Set Variable    WARN: "The application does not match the expected title.."
         Log To Console    message=${AB}
-        Append To List    ${page_title}    ${AB}
+        Append To File    ${page_title}    ${AB}\n
     END
     Set Global Variable    ${page_title}
 Our_Food_Menu
     ${Our_Food_Menu}    Create List
     ${ourfood}    Run Keyword And Return Status    Page Should Contain Element    locator=xpath://a[text()="Our Food"]
     IF  '${ourfood}' == 'True'
+        ${pass_c}    Set Variable    PASS: "The Our Food element should be contains this page.."
+        Log To Console    message=${pass_c}
+        Append To File    ${file_path}    ${pass_c}\n
         Execute JavaScript  window.scrollBy(0, 800)
         Sleep    1
         Click Element    locator=xpath://a[text()="Our Food"]
@@ -63,10 +71,13 @@ Our_Food_Menu
                 Sleep    1
                 Go Back
                 Sleep    1
+                ${pass_d}    Set Variable    PASS: "products-list-product element should be contains this page.."
+                Log To Console    message=${pass_d}
+                Append To File    ${file_path}    ${pass_d}\n
             ELSE
-                ${AC}    Set Variable    WARN:The productverfication element is currently not clickable due to page load or visibility issues...
+                ${AC}    Set Variable    WARN: "The productverfication element is currently not clickable due to page load or visibility issues..."
                 ${AC}    Log To Console    message=${AC}
-                Append To List    ${Our_Food_Menu}    ${AC}
+                Append To File    ${file_path}    ${AC}\n
             END
         END
 
@@ -75,6 +86,9 @@ Our_Food_Menu
         Sleep    1
         ${product_image}    Run Keyword And Return Status    Page Should Contain Image    locator=xpath:(//img[@alt='Club® Original Crackers'])[1]
         IF    '${product_image}' == 'True'
+            ${pass_e}    Set Variable    PASS: "Allproduct link verfication element should be contains this page.."
+            Log To Console    message=${pass_e}
+            Append To File    ${file_path}    ${pass_e}\n
             #allproduct link verfication
             Capture Page Screenshot    filename=clube_crackers_30.png
             Click Element    locator=xpath://a[normalize-space(text())='All Products']
@@ -85,6 +99,10 @@ Our_Food_Menu
             Page Should Contain Element    locator=xpath://a[@aria-label='click to see where to buy']    message=Where to buy not cotains under that description..
             Capture Page Screenshot    filename=clube_crackers_32.png
             IF    '${descriptioncheck}' == 'True'
+                ${pass_f}    Set Variable    PASS: "Description check element should be contains this page.."
+                Log To Console    message=${pass_f}
+                Append To File    ${file_path}    ${pass_f}\n
+
                 #review_over
                 Mouse Over    locator=xpath:(//button[@type='button'])[1]
                 Capture Page Screenshot    filename=clube_crackers_33.png
@@ -103,9 +121,6 @@ Our_Food_Menu
                 Sleep    1
                 Capture Page Screenshot    filename=clube_crackers_35.png
                 Wait Until Element Is Visible    locator=xpath:(//span[contains(text(),'BUY NOW')])[1]    timeout=30s
-                Sleep    2
-                Scroll Element Into View    (//span[contains(text(),'BUY NOW')])[1]
-                Sleep    2
                 Click Element    locator=xpath:(//span[contains(text(),'BUY NOW')])[1]
                 Sleep    1
                 Capture Page Screenshot    filename=clube_crackers_36.png
@@ -227,16 +242,19 @@ Our_Food_Menu
                     ${is_club_img_visible}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath://img[@alt='Club Crackers']    30s
                     IF    ${is_club_img_visible}
                         Capture Page Screenshot
-                        Log To Console    "Successfully navigated to Home section."
+                        ${pass_g}    Set Variable    PASS: "Successfully navigated to Home section."
+                        Log To Console    message=${pass_g}
+                        Append To File    ${file_path}    ${pass_g}\n
+                        
                     ELSE
                         ${AD}    Set Variable    WARN:"Club Crackers image not visible after navigation."
                         Log To Console    message=${AD}
-                        Append To List    ${Our_Food_Menu}    ${AD}
+                        Append To File    ${file_path}    ${AD}\n
                     END
                 ELSE
                     ${AE}    Set Variable    WARN:"Footer Home link not visible."
                     Log To Console    message=${AE}
-                    Append To List    ${Our_Food_Menu}    ${AE}
+                    Append To File    ${file_path}    ${AE}\n
                 END
 
                 # Recipes Navigation
@@ -248,16 +266,18 @@ Our_Food_Menu
                     ${is_recipes_list_visible}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath://div[@class='recipe-list']    30s
                     IF    ${is_recipes_list_visible}
                         Capture Page Screenshot
-                        Log To Console    "Successfully navigated to Recipes section."
+                        ${pass_h}    Set Variable    PASS: "Successfully navigated to Recipes section."
+                        Log To Console    message=${pass_h}
+                        Append To File    ${file_path}    ${pass_h}\n
                     ELSE
                         ${AF}    Set Variable    WARN:"Recipes list not visible after navigation."
                         Log To Console    message=${AF}
-                        Append To List    ${Our_Food_Menu}    ${AF}
+                        Append To File    ${file_path}    ${AF}\n
                     END
                 ELSE
                     ${AG}    Set Variable    WARN:"Recipes link not visible."
                     Log To Console    message=${AG}
-                    Append To List    ${Our_Food_Menu}    ${AG}
+                    Append To File    ${file_path}    ${AG}\n
                 END
 
                 # Products Navigation
@@ -269,16 +289,18 @@ Our_Food_Menu
                     ${is_products_list_visible}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath://div[@class='products-list-product']    30s
                     IF    ${is_products_list_visible}
                         Capture Page Screenshot
-                        Log To Console    "Successfully navigated to Products section."
+                        ${pass_i}    Set Variable    PASS: "Successfully navigated to Products section."
+                        Log To Console    message=${pass_i}
+                        Append To File    ${file_path}    ${pass_i}\n
                     ELSE
                         ${AH}    Set Variable    WARN:"Products list not visible after navigation."
                         Log To Console    message=${AH}
-                        Append To List    ${Our_Food_Menu}    ${AH}
+                        Append To File    ${file_path}    ${AH}\n
                     END
                 ELSE
                     ${AI}    Set Variable    WARN:"Products link not visible."
                     Log To Console    message=${AI}
-                    Append To List    ${Our_Food_Menu}    ${AI}
+                    Append To File    ${file_path}    ${AI}\n
                 END
 
                 # Where to Buy
@@ -292,16 +314,18 @@ Our_Food_Menu
                         Capture Page Screenshot
                         Click Element    xpath://span[@data-ps-shift-tab='[data-ps-tab=".ps-lightbox-close"]']
                         Sleep    2
-                        Log To Console    "Successfully checked 'Where to Buy' section."
+                        ${pass_j}    Set Variable    PASS: "Successfully checked 'Where to Buy' section."
+                        Log To Console    message=${pass_j}
+                        Append To File    ${file_path}    ${pass_j}\n
                     ELSE
                         ${AJ}    Set Variable    WARN:"Select box not visible in 'Where to Buy' section."
                         Log To Console    message=${AJ}
-                        Append To List    ${Our_Food_Menu}    ${AJ}
+                        Append To File    ${file_path}    ${AJ}\n
                     END
                 ELSE
                     ${AK}    Set Variable    WARN:"Buy button not visible."
                     Log To Console    message=${AK}
-                    Append To List    ${Our_Food_Menu}    ${AK}
+                    Append To File    ${file_path}    ${AK}\n
                 END
 
                 # Site Map
@@ -313,16 +337,18 @@ Our_Food_Menu
                     ${is_sitemap_list_visible}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath:(//div[contains(@class,'sitemapV2 aem-GridColumn')])[2]    30s
                     IF    ${is_sitemap_list_visible}
                         Capture Page Screenshot
-                        Log To Console    "Successfully navigated to Site Map section."
+                        ${pass_k}    Set Variable    PASS: "Successfully navigated to Site Map section."
+                        Log To Console    message=${pass_k}
+                        Append To File    ${file_path}    ${pass_k}\n
                     ELSE
                         ${AL}    Set Variable    WARN:"Site Map list not visible after navigation."
                         Log To Console    message=${AL}
-                        Append To List    ${Our_Food_Menu}    ${AL}
+                        Append To File    ${file_path}    ${AL}\n
                     END
                 ELSE
                     ${AM}    Set Variable    WARN:"Site Map link not visible."
                     Log To Console    message=${AM}
-                    Append To List    ${Our_Food_Menu}    ${AM}
+                    Append To File    ${file_path}    ${AM}\n
                 END
 
                 # Contact Us
@@ -334,16 +360,18 @@ Our_Food_Menu
                     ${is_contact_section_visible}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath:(//section[@class='section--in-viewport'])[2]    10s
                     IF    ${is_contact_section_visible}
                         Capture Page Screenshot
-                        Log To Console    "Successfully navigated to Contact Us section."
+                        ${pass_l}    Set Variable    PASS: "Successfully navigated to Contact Us section."
+                        Log To Console    message=${pass_l}
+                        Append To File    ${file_path}    ${pass_l}\n
                     ELSE
                         ${AN}    Set Variable    WARN:"Contact Us section not visible after navigation."
                         Log To Console    message=${AN}
-                        Append To List    ${Our_Food_Menu}    ${AN}
+                        Append To File    ${file_path}    ${AN}\n
                     END
                 ELSE
                     ${AO}    Set Variable    WARN:"Contact Us link not visible."
                     Log To Console    message=${AO}
-                    Append To List    ${Our_Food_Menu}    ${AO}
+                    Append To File    ${file_path}    ${AO}\n
                 END
                 Run Keyword And Ignore Error    Scroll Element Into View    xpath://div[contains(@class,'footer aem-GridColumn')]//footer[1]
                 Sleep    2
@@ -359,21 +387,23 @@ Our_Food_Menu
                     ${facebook}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath:(//input[@name='email'])[2]    10s
                     IF    ${facebook}
                         Capture Page Screenshot
-                        Log To Console    "Email input is visible"
                         Wait Until Element Is Visible    xpath:(//input[@name='email'])[2]    30s
                         Click Element    xpath://div[@aria-label='Close']
                         Sleep    2
+                        ${pass_m}    Set Variable    PASS: "Email input is visible"
+                        Log To Console    message=${pass_m}
+                        Append To File    ${file_path}    ${pass_m}\n
                     ELSE
                         ${AP}    Set Variable    WARN:"Email input not visible"
                         Log To Console    message=${AP}
-                        Append To List    ${Our_Food_Menu}    ${AP}
+                        Append To File    ${file_path}    ${AP}\n
                     END
                     Switch Window    main
                     Sleep    2
                 ELSE
                     ${AQ}    Set Variable    WARN:"Social Link 1 not visible"
                     Log To Console    message=${AQ}
-                    Append To List    ${Our_Food_Menu}    ${AQ}
+                    Append To File    ${file_path}    ${AQ}\n
                 END
 
                 # Navigate to Social Link 2
@@ -382,24 +412,27 @@ Our_Food_Menu
                     Click Element    xpath:(//div[@id='sociallinks']//a)[2]
                     Sleep    5
                     Switch Window    new
-                    Sleep    7
-                    # ${Instagram}=    Run Keyword And Return Status    Element Should Be Visible    xpath://span[text()='See more from clubcrackersus']
+                    Sleep    3
+                    ${Instagram}=    Run Keyword And Return Status    Element Should Be Visible    xpath://span[text()='See more from clubcrackersus']
 
-                    # IF    ${Instagram}
-                    #     Capture Page Screenshot
-                    #     Wait Until Element Is Visible     xpath://span[text()='See more from clubcrackersus']    30s
-                    # ELSE
-                    #     ${AR}    Set Variable    WARN:"Instagram page is not visible"
-                    #     Log To Console    message=${AR}
-                    #     Append To List    ${Our_Food_Menu}    ${AR}
-                    # END
+                    IF    ${Instagram}
+                        Capture Page Screenshot
+                        Wait Until Element Is Visible     xpath://span[text()='See more from clubcrackersus']    30s
+                        ${pass_n}    Set Variable    PASS: "Instagram page is visible"
+                        Log To Console    message=${pass_n}
+                        Append To File    ${file_path}    ${pass_n}\n
+                    ELSE
+                        ${AR}    Set Variable    WARN:"Instagram page is not visible"
+                        Log To Console    message=${AR}
+                        Append To File    ${file_path}    ${AR}\n
+                    END
                     
                     Switch Window    main
                     Sleep    2
                 ELSE
                     ${AS}    Set Variable    WARN:"Social Link 2 not visible"
                     Log To Console    message=${AS}
-                    Append To List    ${Our_Food_Menu}    ${AS}
+                    Append To File    ${file_path}    ${AS}\n
                 END
 
                 # Navigate to Social Link 3
@@ -412,18 +445,20 @@ Our_Food_Menu
                     ${youtube}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath://div[@id='page-header-banner-sizer']/yt-image-banner-view-model[1]/img[1]    10s
                     IF    ${youtube}
                         Capture Page Screenshot
-                        Log To Console    "YouTube banner is visible"
+                        ${pass_o}    Set Variable    PASS: "YouTube banner is visible"
+                        Log To Console    message=${pass_o}
+                        Append To File    ${file_path}    ${pass_o}\n
                     ELSE
                         ${AT}    Set Variable    WARN:"YouTube banner not visible"
                         Log To Console    message=${AT}
-                        Append To List    ${Our_Food_Menu}    ${AT}
+                        Append To File    ${file_path}    ${AT}\n
                     END
                     Switch Window    main
                     Sleep    2
                 ELSE
                     ${AU}    Set Variable    WARN:"Social Link 3 not visible"
                     Log To Console    message=${AU}
-                    Append To List    ${Our_Food_Menu}    ${AU}
+                    Append To File    ${file_path}    ${AU}\n
                 END
 
                 # Navigate to Pinterest
@@ -436,18 +471,20 @@ Our_Food_Menu
                     ${pinterest}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath://img[@alt='Club Crackers']    10s
                     IF    ${pinterest}
                         Capture Page Screenshot
-                        Log To Console    "Pinterest image is visible"
+                        ${pass_p}    Set Variable    PASS: "Pinterest image is visible"
+                        Log To Console    message=${pass_p}
+                        Append To File    ${file_path}    ${pass_p}\n
                     ELSE
                         ${AV}    Set Variable    WARN:"Pinterest image not visible"
                         Log To Console    message=${AV}
-                        Append To List    ${Our_Food_Menu}    ${AV}
+                        Append To File    ${file_path}    ${AV}\n
                     END
                     Switch Window    main
                     Sleep    2
                 ELSE
                     ${AW}    Set Variable    WARN:"Pinterest link not visible"
                     Log To Console    message=${AW}
-                    Append To List    ${Our_Food_Menu}    ${AW}
+                    Append To File    ${file_path}    ${AW}\n
                 END
 
                 # Navigate to Twitter
@@ -458,22 +495,24 @@ Our_Food_Menu
                     Switch Window    new
                     ${twitter}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath:(//div[@data-viewportview='true']//div)[1]    10s
                     IF    ${twitter}
-                        Log To Console    "Twitter viewport is visible."
                         Wait Until Element Is Visible    xpath:(//div[@data-viewportview='true']//div)[1]    30s
                         Capture Page Screenshot
                         # Click Element    xpath:(//button[@type='button']//div)[1]
                         Sleep    2
+                        ${pass_q}    Set Variable    PASS: "Twitter viewport is visible."
+                        Log To Console    message=${pass_q}
+                        Append To File    ${file_path}    ${pass_q}\n
                     ELSE
                         ${AX}    Set Variable    WARN:"Twitter viewport not visible"
                         Log To Console    message=${AX}
-                        Append To List    ${Our_Food_Menu}    ${AX}
+                        Append To File    ${file_path}    ${AX}\n
                     END
                     Switch Window    main
                     Sleep    2
                 ELSE
                     ${AY}    Set Variable    WARN:"Twitter link not visible"
                     Log To Console    message=${AY}
-                    Append To List    ${Our_Food_Menu}    ${AY}
+                    Append To File    ${file_path}    ${AY}\n
                 END
 
                 Run Keyword And Ignore Error    Scroll Element Into View    xpath://div[contains(@class,'footer aem-GridColumn')]//footer[1]
@@ -491,11 +530,13 @@ Our_Food_Menu
                     Capture Page Screenshot
                     Click Element    xpath://button[@aria-label='Close']
                     Sleep    2
-                    Log To Console    First link is visible
+                    ${pass_r}    Set Variable    PASS: "First link is visible"
+                    Log To Console    message=${pass_r}
+                    Append To File    ${file_path}    ${pass_r}\n
                 ELSE    
                     ${AZ}    Set Variable    WARN:First link is not visible
                     Log To Console    message=${AZ}
-                    Append To List    ${Our_Food_Menu}    ${AZ}
+                    Append To File    ${file_path}    ${AZ}\n
                 END
 
                 # Step 2: Validate and click the second link
@@ -506,23 +547,16 @@ Our_Food_Menu
                     Sleep    2
                     Switch Window    new
                     Sleep    2
-                    ${privacy_notice}=    Run Keyword And Return Status    Element Should Be Visible    xpath://div[@id='otnotice-4fccfc07-c99f-4fed-96dd-27de30836495']/div[1]
-                    IF  ${privacy_notice}
-                        Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
-                        # Wait Until Element Is Visible    xpath://div[@id='otnotice-4fccfc07-c99f-4fed-96dd-27de30836495']/div[1]    60s
-                        Sleep    1
-                        Capture Page Screenshot
-                        
-                        Sleep    2
-                        Log To Console    Second link is visible
-                    END
+                    ${pass_s}    Set Variable    PASS: "Second link is visible"
+                    Log To Console    message=${pass_s}
+                    Append To File    ${file_path}    ${pass_s}\n
                     Switch Window    main
                     Sleep    2
                     
                 ELSE    
                     ${BA}    Set Variable    WARN:Second link is not visible
                     Log To Console    message=${BA}
-                    Append To List    ${Our_Food_Menu}    ${BA}
+                    Append To File    ${file_path}    ${BA}\n
                 END
 
                 # Step 3: Validate and click the third link
@@ -538,7 +572,9 @@ Our_Food_Menu
                         # Wait Until Element Is Visible    xpath:(//section[@class='otnotice-section'])[1]    60s
                         Sleep    2
                         Capture Page Screenshot
-                        Log To Console    Third link is visible
+                        ${pass_t}    Set Variable    PASS: "Third link is visible"
+                        Log To Console    message=${pass_t}
+                        Append To File    ${file_path}    ${pass_t}\n
                     END
                     Switch Window    main
                     Sleep    2
@@ -546,7 +582,7 @@ Our_Food_Menu
                 ELSE    
                     ${BB}    Set Variable    WARN:Third link is not visible
                     Log To Console    message=${BB}
-                    Append To List    ${Our_Food_Menu}    ${BB}
+                    Append To File    ${file_path}    ${BB}\n
                 END
 
                 # Step 4: Validate and click the fourth link
@@ -563,7 +599,9 @@ Our_Food_Menu
                         Sleep    2
                         Capture Page Screenshot
                         
-                        Log To Console    Fourth link is visible
+                        ${pass_u}    Set Variable    PASS: "Fourth link is visible"
+                        Log To Console    message=${pass_u}
+                        Append To File    ${file_path}    ${pass_u}\n
                         
                     END
                     Switch Window    main
@@ -572,7 +610,7 @@ Our_Food_Menu
                 ELSE    
                     ${BC}    Set Variable    WARN:Fourth link is not visible
                     Log To Console    message=${BC}
-                    Append To List    ${Our_Food_Menu}    ${BC}
+                    Append To File    ${file_path}    ${BC}\n
                 END
                 # Step 5: Validate and click the fifth link
                 Wait Until Element Is Visible    xpath:(//ul[@id='lowerfooterlinks']//a)[5]    30s
@@ -588,7 +626,9 @@ Our_Food_Menu
                         Sleep    2
                         Capture Page Screenshot
                         
-                        Log To Console    Fifth link is visible
+                        ${pass_v}    Set Variable    PASS: "Fifth link is visible"
+                        Log To Console    message=${pass_v}
+                        Append To File    ${file_path}    ${pass_v}\n
                     END
                     Switch Window    main
                     Sleep    2
@@ -596,7 +636,7 @@ Our_Food_Menu
                 ELSE    
                     ${BD}    Set Variable    WARN:Fifth link is not visible
                     Log To Console    message=${BD}
-                    Append To List    ${Our_Food_Menu}    ${BD}
+                    Append To File    ${file_path}    ${BD}\n
                 END
                 # Step 6: Validate and click the sixth link
                 Wait Until Element Is Visible    xpath:(//ul[@id='lowerfooterlinks']//a)[6]    30s
@@ -612,7 +652,9 @@ Our_Food_Menu
                         Sleep    2
                         Capture Page Screenshot
                         
-                        Log To Console    Sixth link is visible
+                        ${pass_w}    Set Variable    PASS: "Sixth link is visible"
+                        Log To Console    message=${pass_w}
+                        Append To File    ${file_path}    ${pass_w}\n
                     END
                     Switch Window    main
                     Sleep    2
@@ -620,32 +662,25 @@ Our_Food_Menu
                 ELSE    
                     ${BD}    Set Variable    WARN:Sixth link is not visible
                     Log To Console    message=${BD}
-                    Append To List    ${Our_Food_Menu}    ${BD}
+                    Append To File    ${file_path}    ${BD}\n
                 END
             END
         ELSE
             ${BE}    Set Variable    WARN:Your product image will be missmatch..
             Log To Console    message=${BE}
-            Append To List    ${Our_Food_Menu}    ${BE}
+            Append To File    ${file_path}    ${BE}\n
         END
     ELSE
         ${BF}    Set Variable    WARN:Our Food elements is missing on this page..
         Log To Console    message=${BF}
-        Append To List    ${Our_Food_Menu}    ${BF}
+        Append To File    ${file_path}    ${BF}\n
     END
-    Set Global Variable    ${Our_Food_Menu}
     Copy Images    ${OUTPUT_DIR}    ${angvar('vm_path_dir')}
     Sleep   1
-    ${FoodPage_report}    Create List
-    Append To List    ${FoodPage_report}    ${Response_check}
-    Append To List    ${FoodPage_report}    ${page_title}
-    Append To List    ${FoodPage_report}    ${Our_Food_Menu}
-    # Log To Console    **gbStart**FoodPage_Result**splitKeyValue**${final}**gbEnd**
-    ${all_empty}=    Evaluate    all(not sublist for sublist in ${FoodPage_report})
-    Run Keyword If    ${all_empty}    Log To Console    **gbStart**FoodPage_Result**splitKeyValue**${EMPTY_MESSAGE}**gbEnd**
-    ...    ELSE    Log To Console    **gbStart**FoodPage_Result**splitKeyValue**${FoodPage_report}**gbEnd**
-    
+    ${Result}    Extract And Txt    ${file_path}
+    Log To Console    **gbStart**FoodPage_Result**splitKeyValue**${Result}**gbEnd**
 
+ 
 *** Keywords ***
 Title_match
     ${Get_Window_Titles}    Get Window Titles
