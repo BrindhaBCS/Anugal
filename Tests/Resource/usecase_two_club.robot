@@ -21,7 +21,7 @@ Response_check
     ${response_code}=    Execute JavaScript    return fetch("${URL}").then(response => response.status)
     Should Be Equal As Numbers    ${response_code}    200
     Log    Response Code: ${response_code}
-    IF  '${response_code}' == '200'
+    IF  '${response_code}' == '400'
         ${pass_a}    Set Variable    PASS: "The application has successfully processed the request and returned a response with status code 200.."
         Log To Console    message=${pass_a}
         Append To File    ${file_path}    ${pass_a}\n
