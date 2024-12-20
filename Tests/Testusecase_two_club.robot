@@ -5,5 +5,5 @@ Test Tags    Club_usecasetwo
 *** Test Cases ***
 Usecase
     Response_check
-    # Page_title
-    # Our_Food_Menu
+    Page_title
+    Our_Food_Menu
