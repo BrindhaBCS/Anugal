@@ -20,7 +20,7 @@ ${BUY_BUTTON}    //a[@aria-label='click to see where to buy']
 *** Keywords ***
 Start TestCase
     Log    Opening browser
-    Open Browser    ${wvar('clubcracker_url')}    ${wvar('clubcracker_browser')}
+    Open Browser    ${angvar('clubcracker_url')}    ${angvar('clubcracker_browser')}
     Maximize Browser Window
     Run Keyword And Ignore Error    Remove File    ${file_path}
     Handle Pop-up
