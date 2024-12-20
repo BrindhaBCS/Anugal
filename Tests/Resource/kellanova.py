@@ -3,7 +3,7 @@ import re
 import shutil
 from PIL import Image
 from fpdf import FPDF
-import os
+import re
 
 
 def copy_images(source_dir, target_dir):
@@ -61,16 +61,17 @@ def delete_specific_files_in_folder(folder_path):
     except Exception as e:
         print(f"An error occurred: {e}")
 
-    def extract_and_txt(file_path):
-        with open(file_path, 'r') as file:
-            lines = file.readlines()
+def extract_and_txt(file_path):
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
 
-        formatted_lines = []
+    formatted_lines = []
 
-        for line in lines:
-            match = re.match(r'^(PASS|WARN):\s*"(.+)"', line.strip())
-            if match:
-                status = match.group(1)  # Either PASS or WARN
-                message = match.group(2)  # The message inside the quotes
-                formatted_lines.append(f'{status}: "{message}"')
-        return "\n".join(formatted_lines)
+    for line in lines:
+        match = re.match(r'^(PASS|WARN):\s*"(.+)"', line.strip())
+        if match:
+            status = match.group(1)  # Either PASS or WARN
+            message = match.group(2)  # The message inside the quotes
+            formatted_lines.append(f'{status}: "{message}"')
+    return "\n".join(formatted_lines)
+
