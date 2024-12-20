@@ -678,7 +678,7 @@ Our_Food_Menu
     Copy Images    ${OUTPUT_DIR}    ${angvar('vm_path_dir')}
     Sleep   1
     ${Result}    Extract And Txt    ${file_path}
-    Log To Console    **gbStart**FoodPage_Result**splitKeyValue**${Result}**gbEnd**
+    Log To Console    **gbStart**FoodPage_Result**splitKeyValue**"${Result}"**gbEnd**
 
  
 *** Keywords ***
