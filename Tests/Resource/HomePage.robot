@@ -713,7 +713,7 @@ Homepage Footer
         ${youtube}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath://div[@id='page-header-banner-sizer']/yt-image-banner-view-model[1]/img[1]    10s
         IF    ${youtube}
             Capture Page Screenshot
-            Log To Console    "YouTube banner is visible"
+            
  
             ${youtube_ban_1}    Set Variable    PASS: YouTube banner is visible
             Log    ${youtube_ban_1}
@@ -778,7 +778,6 @@ Homepage Footer
         Append To File    ${file_path}    ${twit_1}\n
         ${twitter}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath:(//div[@data-viewportview='true']//div)[1]    10s
         IF    ${twitter}
-            Log To Console    "Twitter viewport is visible."
             Wait Until Element Is Visible    xpath:(//div[@data-viewportview='true']//div)[1]    60s
             Capture Page Screenshot
             # Click Element    xpath:(//button[@type='button']//div)[1]
@@ -993,8 +992,9 @@ Homepage Footer
     END
     Copy Images    ${OUTPUT_DIR}    ${angvar('vm_path_dir')}
     Sleep   1
-    ${Result}    Extract And Txt    ${file_path}
-    Log To Console    **gbStart**HomePage_Result**splitKeyValue**${Result}**gbEnd**
+
+    ${local}    Extract And Txt    ${file_path}
+    Log To Console    **gbStart**HomePage_Result**splitKeyValue**${local}**gbEnd**
    
  
 Handle Pop-up
