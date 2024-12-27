@@ -8,7 +8,7 @@ Library    kellanova.py
 *** Variables ***
 ${URL}    ${angvar('clubcracker_url')}
 ${Browser}    ${angvar('clubcracker_browser')}
-${file_path}    C:\\tmp\\Food_Page_New.txt
+${file_path}    C:\\tmp\\Kellanova\\Food_Page_New.txt
 *** Keywords ***
 Browser
     Remove File    path=${file_path}
@@ -711,7 +711,7 @@ Our_Food_Menu
     Sleep   1
     ${Result}    Extract And Txt    ${file_path}
     Log To Console    **gbStart**FoodPage_Result**splitKeyValue**${Result}**gbEnd**
-    Generate Report Html    input_file=${file_path}    output_file=C:\\tmp\\Food_Page_New.html    report_name=Food Page Report
+    Generate Report Html    input_file=${file_path}    output_file=C:\\tmp\\Kellanova\\Food_Page_New.html    report_name=Food Page Report
     Sleep    2
 
  

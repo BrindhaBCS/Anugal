@@ -12,7 +12,7 @@ ${con_1}    Our Food
 ${con_2}    Recipes
 ${con_3}    where to buy
 ${con_4}    Contact Us
-${file_path}    C:\\tmp\\Home_Page.txt
+${file_path}    C:\\tmp\\Kellanova\\Home_Page.txt
  
 ${EXPECTED_TEXT}    Cookies On Our Website
 ${OK_BUTTON_XPATH}    //button[@id='onetrust-accept-btn-handler']
@@ -995,7 +995,7 @@ Homepage Footer
 
     ${local}    Extract And Txt    ${file_path}
     Log To Console    **gbStart**HomePage_Result**splitKeyValue**${local}**gbEnd**
-    Generate Report Html    input_file=${file_path}    output_file=C:\\tmp\\Home_Page_New.html    report_name=Home Page Report
+    Generate Report Html    input_file=${file_path}    output_file=C:\\tmp\\Kellanova\\Home_Page_New.html    report_name=Home Page Report
     Sleep    2
    
  
