@@ -94,7 +94,7 @@ Our_Food_Menu
                             Log To Console    message=${Nutritionvalue}
                             Append To File    ${file_path}    ${Nutritionvalue}\n
                         ELSE
-                            ${Nutritionvalue}    Set Variable    WARN: "${pl} Ingredients  Items does not contains in this page.. "
+                            ${Nutritionvalue}    Set Variable     WARN: "${pl} Ingredients Items does not contains in this page.. "
                             Log To Console    message=${Nutritionvalue}
                             Append To File    ${file_path}    ${Nutritionvalue}\n
                         END
