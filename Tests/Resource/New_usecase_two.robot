@@ -253,6 +253,7 @@ Our_Food_Menu
                 Page Should Contain Element    locator=xpath://span[normalize-space()='Check Out Our Recipes!']
                 Capture Page Screenshot    filename=clube_crackers_54.png
                 Sleep    1
+                Scroll Element Into View    locator=xpath://span[normalize-space()='Keep up with Club on Instagram!']
                 Wait Until Element Is Visible    locator=xpath://span[normalize-space()='Keep up with Club on Instagram!']    timeout=30s
                 Click Element    locator=xpath://span[normalize-space()='Keep up with Club on Instagram!']
                 Capture Page Screenshot    filename=clube_crackers_55.png
