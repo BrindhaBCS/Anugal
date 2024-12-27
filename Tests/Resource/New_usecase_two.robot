@@ -255,10 +255,8 @@ Our_Food_Menu
                 Sleep    1
                 Scroll Element Into View    locator=xpath://span[normalize-space()='Keep up with Club on Instagram!']
                 Wait Until Element Is Visible    locator=xpath://span[normalize-space()='Keep up with Club on Instagram!']    timeout=30s
-                Click Element    locator=xpath://span[normalize-space()='Keep up with Club on Instagram!']
                 Capture Page Screenshot    filename=clube_crackers_55.png
                 Sleep    3
-                Switch Window    main
 
                 #Footer
                 Execute JavaScript  window.scrollBy(0,600)
