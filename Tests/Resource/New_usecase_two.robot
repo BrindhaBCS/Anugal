@@ -570,6 +570,7 @@ Our_Food_Menu
                     Sleep    2
                     Switch Window    new
                     Sleep    2
+                    Run Keyword And Ignore Error    Wait Until Keyword Succeeds    30s   2s    Click Element    locator=id:onetrust-accept-btn-handler
                     ${pass_s}    Set Variable    PASS: "Second link is visible"
                     Log To Console    message=${pass_s}
                     Append To File    ${file_path}    ${pass_s}\n
