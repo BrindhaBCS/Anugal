@@ -116,22 +116,24 @@ Our_Food_Menu
                 Capture Page Screenshot    filename=clube_crackers_34.png
                 Sleep    1
                 Input Text    locator=id:__ps-map-location-textbox_1    text=Orland Park, IL
-                Sleep    1
+                Sleep    3
                 Click Element    locator=xpath://span[@aria-label='Search for this product by city or zip code.']
-                Sleep    1
+                Sleep    4
                 Capture Page Screenshot    filename=clube_crackers_35.png
                 Sleep    2
                 Scroll Element Into View    locator=xpath:(//span[contains(text(),'BUY NOW')])[1]
-                Sleep    1
+                Sleep    3
                 Wait Until Element Is Visible    locator=xpath:(//span[contains(text(),'BUY NOW')])[1]    timeout=30s
+                Sleep    2
                 Click Element    locator=xpath:(//span[contains(text(),'BUY NOW')])[1]
-                Sleep    1
+                Sleep    2
                 Capture Page Screenshot    filename=clube_crackers_36.png
                 Switch Window    NEW
                 Sleep    1
                 Switch Window    main
                 Sleep    3
                 Scroll Element Into View    locator=xpath:(//span[contains(text(),'VIEW ONLINE')])[1]
+                Sleep    1
                 Click Element    locator=xpath:(//span[contains(text(),'VIEW ONLINE')])[1]
                 Sleep    1
                 Capture Page Screenshot    filename=clube_crackers_37.png
@@ -172,18 +174,19 @@ Our_Food_Menu
                 Capture Page Screenshot    filename=clube_crackers_42.png
                 Page Should Contain Element    locator=xpath://div[@class='product-header-netweight sub-header']
                 Page Should Contain Element    locator=xpath://table[@class='nutrition-facts__table']
+                Sleep    2
                 Click Element    locator=xpath://div[normalize-space(text())='Ingredients']
                 Capture Page Screenshot    filename=clube_crackers_43.png
-                Sleep    1
+                Sleep    2
                 Click Element    locator=xpath://div[normalize-space(text())='Allergens']
                 Capture Page Screenshot    filename=clube_crackers_44.png
-                Sleep    1
+                Sleep    2
                 Click Element    locator=xpath://div[normalize-space(text())='About']
                 Capture Page Screenshot    filename=clube_crackers_45.png
-                Sleep    1
+                Sleep    2
                 Click Element    locator=xpath://div[normalize-space(text())='Company, Brand']
                 Capture Page Screenshot    filename=clube_crackers_46.png
-                Sleep    1
+                Sleep    2
                 Switch Window    main
 
                 #review
@@ -196,7 +199,7 @@ Our_Food_Menu
                 Scroll Element Into View    locator=xpath://h2[normalize-space(text())='people also tried:']
                 Page Should Contain Element    locator=xpath://h2[normalize-space(text())='people also tried:']
                 Capture Page Screenshot    filename=clube_crackers_48.png
-                Sleep    1
+                Sleep    2
 
                 # Execute JavaScript  window.scrollBy(0,600)
                 Capture Page Screenshot    filename=clube_crackers_49.png
