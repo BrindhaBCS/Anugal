@@ -145,15 +145,16 @@ Our_Food_Menu
                 Page Should Contain Element    locator=id:__ps-sku-selector-0_1
                 Page Should Contain Element    locator=id:__ps-sku-selector-1_1
                 Capture Page Screenshot    filename=clube_crackers_34.png
-                Sleep    1
+                Sleep    2
                 Input Text    locator=id:__ps-map-location-textbox_1    text=Orland Park, IL
-                Sleep    1
+                Sleep    4
                 Click Element    locator=xpath://span[@aria-label='Search for this product by city or zip code.']
-                Sleep    1
+                Sleep    3
                 Capture Page Screenshot    filename=clube_crackers_35.png
                 Wait Until Element Is Visible    locator=xpath:(//span[contains(text(),'BUY NOW')])[1]    timeout=30s
+                Sleep    2
                 Click Element    locator=xpath:(//span[contains(text(),'BUY NOW')])[1]
-                Sleep    1
+                Sleep    2
                 Capture Page Screenshot    filename=clube_crackers_36.png
                 Switch Window    NEW
                 Sleep    1
