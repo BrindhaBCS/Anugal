@@ -29,7 +29,7 @@ Start TestCase
     Create File    ${file_path}
     
 
-    
+
 Homepage Menu
     # Step 1: Wait until the element is visible
     Wait Until Element Is Visible    xpath:(//div[@class='content_wrapper'])[3]    60s
@@ -184,7 +184,7 @@ Homepage Menu
         Append To File    ${file_path}    ${Where to Buy_button}\n
         
     END
-
+    
     # Contact Us
     # Run Keyword And Ignore Error    Scroll Element Into View    xpath://div[contains(@class,'footer aem-GridColumn')]//footer[1]
     ${is_contact_us_visible}=    Run Keyword And Return Status    Wait Until Element Is Visible    xpath://span[normalize-space(text())='Contact Us']    60s
