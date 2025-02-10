@@ -1,15 +1,14 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    RequestsLibrary
-Library    kellanova.py
 Library    string
 Library    Collections
 Library    OperatingSystem
-
+Library    kellanova.py
 *** Variables ***
 ${URL}    ${angvar('clubcracker_url')}
 ${Browser}    ${angvar('clubcracker_browser')}
-${file_path}    C:\\tmp\\Food_Page.txt
+${file_path}    C:\\tmp\\Kellanova\\Food_Page_New.txt
 *** Keywords ***
 Browser
     Remove File    path=${file_path}
@@ -17,7 +16,6 @@ Browser
     Maximize Browser Window
     Create File    path=${file_path}
 Response_check
-    ${Response_check}    Create List
     ${response_code}=    Execute JavaScript    return fetch("${URL}").then(response => response.status)
     Should Be Equal As Numbers    ${response_code}    200
     Log    Response Code: ${response_code}
@@ -34,9 +32,7 @@ Response_check
 
     Wait Until Keyword Succeeds    1 minute    2s    Click Element    locator=id:onetrust-accept-btn-handler
     ${Get_Cookies}    Get Cookies
-    Set Global Variable    ${Response_check}
 Page_title
-    ${page_title}    Create List
     ${status}    Title_match
     IF  '${status}' == 'True'
         ${pass_b}    Set Variable    PASS: "The title of the web application should match the expected value.."
@@ -45,9 +41,8 @@ Page_title
     ELSE
         ${AB}    Set Variable    WARN: "The application does not match the expected title.."
         Log To Console    message=${AB}
-        Append To File    ${page_title}    ${AB}\n
+        Append To File    ${file_path}    ${AB}\n
     END
-    Set Global Variable    ${page_title}
 Our_Food_Menu
     ${Our_Food_Menu}    Create List
     ${ourfood}    Run Keyword And Return Status    Page Should Contain Element    locator=xpath://a[text()="Our Food"]
@@ -60,20 +55,56 @@ Our_Food_Menu
         Click Element    locator=xpath://a[text()="Our Food"]
         Sleep    1
         #productverfication 
+
         ${product_count}=    Get Element Count    xpath://div[@class='products-list-product']
         Log    Total products found: ${product_count}
         FOR    ${index}    IN RANGE    1    ${product_count + 1}
             ${a}    Run Keyword And Return Status    Page Should Contain Element    locator=xpath:(//div[@class='product-list-title bvValues'])[${index}]
             IF  '${a}' == 'True'
                 Scroll Element Into View    locator=xpath:(//div[@class='product-list-title bvValues'])[${index}]
+                ${pl}    Get Text    locator=xpath:(//div[@class='product-list-title bvValues'])[${index}]
                 Click Element    locator=xpath:(//div[@class='product-list-title bvValues'])[${index}]
-                Capture Page Screenshot    filename=clube_crackers_29.png
+                Capture Page Screenshot    filename=${index}_clube_crackers_29.png
                 Sleep    1
-                Go Back
-                Sleep    1
-                ${pass_d}    Set Variable    PASS: "products-list-product element should be contains this page.."
+                ${pass_d}    Set Variable    PASS: "${pl} -- products-list-product element should be contains this page.."
                 Log To Console    message=${pass_d}
                 Append To File    ${file_path}    ${pass_d}\n
+                Sleep    2
+                ${descriptioncheck}    Run Keyword And Return Status    Page Should Contain Element    locator=xpath://p[@itemprop='description']
+                Page Should Contain Element    locator=xpath://a[@aria-label='click to see where to buy']    message=Where to buy not cotains under that description..
+                    IF    '${descriptioncheck}' == 'True'
+                        ${pass_fqq}    Set Variable    PASS: "Description check element should be contains this page.."
+                        Log To Console    message=${pass_fqq}
+                        Append To File    ${file_path}    ${pass_fqq}\n
+
+                        #reviewcount
+                        Mouse Over    locator=xpath:(//button[@type='button'])[1]
+                        Capture Page Screenshot    filename=clube_crackers_33.png
+                        Mouse Out    locator=xpath:(//button[@type='button'])[1]
+                        Sleep    2
+                        ${reviewcount}    Get Text    locator=xpath:(//div[@class='bv_numReviews_component_container'])[1]
+                        ${pass_ff}    Set Variable    PASS: "${pl} ${reviewcount} Review count contains this page.."
+                        Log To Console    message=${pass_ff}
+                        Append To File    ${file_path}    ${pass_ff}\n
+
+                        ##Nutritionvalue
+                        ${Nutritionvalue}    Run Keyword And Return Status    Scroll Element Into View    locator=xpath://div[@class='product-nutrition-highlights']
+                        IF    '${Nutritionvalue}' == 'True'
+                            ${Nutritionvalue}    Set Variable    PASS: "${pl} Ingredients will be contans in this page.. "
+                            Log To Console    message=${Nutritionvalue}
+                            Append To File    ${file_path}    ${Nutritionvalue}\n
+                        ELSE
+                            ${Nutritionvalue}    Set Variable     WARN: "${pl} Ingredients Items does not contains in this page.. "
+                            Log To Console    message=${Nutritionvalue}
+                            Append To File    ${file_path}    ${Nutritionvalue}\n
+                        END
+                    ELSE
+                        ${pass_fqq}    Set Variable    WARN: "Description not contains this page.."
+                        Log To Console    message=${pass_fqq}
+                        Append To File    ${file_path}    ${pass_fqq}\n
+                    END
+                Go Back
+                Sleep    1
             ELSE
                 ${AC}    Set Variable    WARN: "The productverfication element is currently not clickable due to page load or visibility issues..."
                 ${AC}    Log To Console    message=${AC}
@@ -114,15 +145,12 @@ Our_Food_Menu
                 Page Should Contain Element    locator=id:__ps-sku-selector-0_1
                 Page Should Contain Element    locator=id:__ps-sku-selector-1_1
                 Capture Page Screenshot    filename=clube_crackers_34.png
-                Sleep    1
-                Input Text    locator=id:__ps-map-location-textbox_1    text=Orland Park, IL
-                Sleep    3
-                Click Element    locator=xpath://span[@aria-label='Search for this product by city or zip code.']
-                Sleep    4
-                Capture Page Screenshot    filename=clube_crackers_35.png
                 Sleep    2
-                Scroll Element Into View    locator=xpath:(//span[contains(text(),'BUY NOW')])[1]
+                Input Text    locator=id:__ps-map-location-textbox_1    text=Orland Park, IL
+                Sleep    4
+                Click Element    locator=xpath://span[@aria-label='Search for this product by city or zip code.']
                 Sleep    3
+                Capture Page Screenshot    filename=clube_crackers_35.png
                 Wait Until Element Is Visible    locator=xpath:(//span[contains(text(),'BUY NOW')])[1]    timeout=30s
                 Sleep    2
                 Click Element    locator=xpath:(//span[contains(text(),'BUY NOW')])[1]
@@ -132,8 +160,6 @@ Our_Food_Menu
                 Sleep    1
                 Switch Window    main
                 Sleep    3
-                Scroll Element Into View    locator=xpath:(//span[contains(text(),'VIEW ONLINE')])[1]
-                Sleep    1
                 Click Element    locator=xpath:(//span[contains(text(),'VIEW ONLINE')])[1]
                 Sleep    1
                 Capture Page Screenshot    filename=clube_crackers_37.png
@@ -141,7 +167,6 @@ Our_Food_Menu
                 Sleep    1
                 Switch Window    main
                 Sleep    3
-                Scroll Element Into View    locator=xpath:(//span[contains(text(),'GET DIRECTIONS')])[2]
                 Click Element    locator=xpath:(//span[contains(text(),'GET DIRECTIONS')])[2]
                 Sleep    1
                 Capture Page Screenshot    filename=clube_crackers_38.png
@@ -158,6 +183,7 @@ Our_Food_Menu
                 Page Should Contain Element    locator=xpath://h2[normalize-space(text())='Nutrition']
                 Page Should Contain Element    locator=xpath://h3[normalize-space(text())='Ingredients']
                 Capture Page Screenshot    filename=clube_crackers_40.png
+                
 
                 #Sizeofpacket
                 Scroll Element Into View    locator=id:gtin
@@ -174,19 +200,18 @@ Our_Food_Menu
                 Capture Page Screenshot    filename=clube_crackers_42.png
                 Page Should Contain Element    locator=xpath://div[@class='product-header-netweight sub-header']
                 Page Should Contain Element    locator=xpath://table[@class='nutrition-facts__table']
-                Sleep    2
                 Click Element    locator=xpath://div[normalize-space(text())='Ingredients']
                 Capture Page Screenshot    filename=clube_crackers_43.png
-                Sleep    2
+                Sleep    1
                 Click Element    locator=xpath://div[normalize-space(text())='Allergens']
                 Capture Page Screenshot    filename=clube_crackers_44.png
-                Sleep    2
+                Sleep    1
                 Click Element    locator=xpath://div[normalize-space(text())='About']
                 Capture Page Screenshot    filename=clube_crackers_45.png
-                Sleep    2
+                Sleep    1
                 Click Element    locator=xpath://div[normalize-space(text())='Company, Brand']
                 Capture Page Screenshot    filename=clube_crackers_46.png
-                Sleep    2
+                Sleep    1
                 Switch Window    main
 
                 #review
@@ -199,7 +224,7 @@ Our_Food_Menu
                 Scroll Element Into View    locator=xpath://h2[normalize-space(text())='people also tried:']
                 Page Should Contain Element    locator=xpath://h2[normalize-space(text())='people also tried:']
                 Capture Page Screenshot    filename=clube_crackers_48.png
-                Sleep    2
+                Sleep    1
 
                 # Execute JavaScript  window.scrollBy(0,600)
                 Capture Page Screenshot    filename=clube_crackers_49.png
@@ -222,21 +247,17 @@ Our_Food_Menu
                 Sleep    1
                 Go Back
                 Sleep    1
-                Execute JavaScript  window.scrollBy(0,100)
-                Capture Page Screenshot    filename=clube_crackers_53.png
-                Sleep    2    
                 Scroll Element Into View    locator=xpath://span[normalize-space()='Check Out Our Recipes!']
-                Sleep    2
+                Capture Page Screenshot    filename=clube_crackers_53.png
+                Sleep    1
                 Wait Until Element Is Visible    locator=xpath://span[normalize-space()='Check Out Our Recipes!']    timeout=30s
                 Page Should Contain Element    locator=xpath://span[normalize-space()='Check Out Our Recipes!']
                 Capture Page Screenshot    filename=clube_crackers_54.png
                 Sleep    1
-                Scroll Element Into View    locator=xpath://span[normalize-space()='Keep up with Club on Instagram!'] 
-                Sleep    2
+                Scroll Element Into View    locator=xpath://span[normalize-space()='Keep up with Club on Instagram!']
                 Wait Until Element Is Visible    locator=xpath://span[normalize-space()='Keep up with Club on Instagram!']    timeout=30s
                 Capture Page Screenshot    filename=clube_crackers_55.png
                 Sleep    3
-                Switch Window    main
 
                 #Footer
                 Execute JavaScript  window.scrollBy(0,600)
@@ -424,11 +445,12 @@ Our_Food_Menu
                     Sleep    5
                     Switch Window    new
                     Sleep    3
+
                     Capture Page Screenshot
                     ${pass_n}    Set Variable    PASS: "Instagram page is visible"
                     Log To Console    message=${pass_n}
                     Append To File    ${file_path}    ${pass_n}\n
-                    Sleep    2
+                    
                     Switch Window    main
                     Sleep    2
                 ELSE
@@ -681,7 +703,9 @@ Our_Food_Menu
     Copy Images    ${OUTPUT_DIR}    ${angvar('vm_path_dir')}
     Sleep   1
     ${Result}    Extract And Txt    ${file_path}
-    Log To Console    **gbStart**FoodPage_Result**splitKeyValue**"${Result}"**gbEnd**
+    Log To Console    **gbStart**FoodPage_Result**splitKeyValue**${Result}**gbEnd**
+    Generate Report Html    input_file=${file_path}    output_file=C:\\tmp\\Kellanova\\Food_Page_New.html    report_name=Food Page Report
+    Sleep    2
 
  
 *** Keywords ***
@@ -689,8 +713,3 @@ Title_match
     ${Get_Window_Titles}    Get Window Titles
     ${condition}    Run Keyword And Return Status    Should Be Equal As Strings    first=${Get_Window_Titles}    second=['Buttery Crackers | Club® Crackers']
     [Return]    ${condition} 
-
-
-
-
-
