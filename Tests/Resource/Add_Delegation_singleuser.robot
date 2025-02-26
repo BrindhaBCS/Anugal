@@ -6,6 +6,7 @@ Library    DateTime
 *** Variables ***
 
 ${user_name}    Varsha
+${outlook}    https://outlook.office365.com/mail/inbox/
 
 *** Keywords ***
 Start TestCase
@@ -20,7 +21,7 @@ Start TestCase
     SeleniumLibrary.Click element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[3]
     # Sleep    20
     Wait Until Element Is Visible    xpath:(//input[@inputmode='text'])    60s
-    Execute Javascript    window.open(${angvar('outlook')})
+    Execute Javascript    window.open('${outlook}')
     Switch Window    new
 
     Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://*[@id="i0116"]
