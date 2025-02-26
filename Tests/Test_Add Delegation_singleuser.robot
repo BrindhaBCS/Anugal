@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../Tests/Resources/Add_Delegation_singleuser.robot
+Resource    ../Tests/Resource/Add_Delegation_singleuser.robot
 Suite Setup    Add_Delegation_singleuser.Start TestCase
 Suite Teardown    Add_Delegation_singleuser.Finish TestCase
 Test Tags    single_add_delegation
