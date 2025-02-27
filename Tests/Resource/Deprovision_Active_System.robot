@@ -88,7 +88,7 @@ Deprovision_active_system
         Sleep    1
 
         
-        IF    '${Env_name}' == '${wvar('ENV')}'  
+        IF    '${Env_name}' == '${angvar('ENV')}'  
             SeleniumLibrary.Click Element    xpath:(//div[@data-colindex='0'])[${sym_env}]
             Sleep    2
             SeleniumLibrary.Click Element    xpath:(//img[@alt='View'])[${sym_env}]
