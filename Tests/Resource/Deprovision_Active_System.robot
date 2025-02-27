@@ -98,7 +98,7 @@ Deprovision_active_system
 
     END
 
-    ${valid_to}=    Get Current Date    result_format=%d-%m-%Y    increment=10 day
+    ${valid_to}=    Get Current Date    result_format=%m-%d-%Y    increment=10 day
     SeleniumLibrary.Input Text    xpath:(//input[@type='date'])[2]    ${valid_to}
     Sleep    2
     SeleniumLibrary.Input Text    xpath://textarea[@placeholder='Comments']    Renew
