@@ -103,3 +103,42 @@ class Anugal_library:
             self.take_screenshot()
             message = "Cannot find element with id '%s'" % element_id
             raise ValueError(message)
+        
+    def extract_order_number(self,sentence):
+        """
+        Extracts the integer value from the given sentence.
+
+        Args:
+            sentence (str): The sentence containing the order number.
+
+        Returns:
+            int: The extracted order number.
+        """
+        # Use regular expression to extract the integer value
+        import re
+        pattern = r'\b(\d+)\b'
+        match = re.search(pattern, sentence)
+        if match:
+            return int(match.group(1))
+        else:
+            raise ValueError("No order number found in the sentence") 
+    
+    def extract_order_number_otp(self, sentence):
+        """
+        Extracts the 6-digit OTP from the given sentence.
+    
+        Args:
+            sentence (str): The sentence containing the OTP.
+    
+        Returns:
+            str: The extracted OTP as a string to preserve leading zeros.
+        """
+        # Use regular expression to extract a 6-digit OTP
+        pattern = r'\b\d{6}\b'  # Matches exactly 6-digit numbers
+        matches = re.findall(pattern, sentence)  # Find all matches
+    
+        if matches:
+            return matches[-1]  # Return the last 6-digit number (most likely the OTP) as a string
+        else:
+            raise ValueError("No OTP found in the sentence")
+        
