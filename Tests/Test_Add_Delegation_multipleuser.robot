@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../Tests/Resources/Add_Delegation_multipleuser.robot
+Resource    ../Tests/Resource/Add_Delegation_multipleuser.robot
 Suite Setup    Add_Delegation_multipleuser.Start TestCase
 Suite Teardown    Add_Delegation_multipleuser.Finish TestCase
 Test Tags    multiple_add_delegation

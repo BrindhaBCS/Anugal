@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../Tests/Resources/Deprovision_Active_System.robot
+Resource    ../Tests/Resource/Deprovision_Active_System.robot
 Suite Setup    Deprovision_Active_System.Start TestCase
 Suite Teardown    Deprovision_Active_System.Finish TestCase
 Test Tags    Deprovision
