@@ -9,3 +9,4 @@ Mail_password = "$Mail_password"
 outlook = "$outlook"
 ENV = "BTP -APPS"
 env_list = ["DEV Symphony", "QA Symphony"]  
+ticket_id = "$Deprovision_Active_system_id"

@@ -46,6 +46,7 @@ Start TestCase
     Sleep    4
     SeleniumLibrary.Click Element    xpath://button[@title='Search']
     Sleep    2
+    Wait Until Element Is Visible    xpath://span[text()='Mail']    40s
     SeleniumLibrary.Click Element    xpath://span[text()='Mail']
     Sleep    2
     SeleniumLibrary.Click Element    xpath:(//div[@class='XG5Jd TszOG'])[1]
