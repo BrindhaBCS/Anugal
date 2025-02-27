@@ -108,7 +108,7 @@ approver
     SeleniumLibrary.Click Element    xpath://span[normalize-space(text())='Status']
     Sleep    5
     Wait Until Element Is Visible    xpath://button[text()='View']    50s
-    SeleniumLibrary.Input Text    xpath:(//input[@id='search'])[2]    ${angvar('ticket_id')}
+    SeleniumLibrary.Input Text    xpath://input[@name='search']    ${angvar('ticket_id')}
     Sleep    5
     Wait Until Element Is Visible    xpath://button[text()='View']    50s
     SeleniumLibrary.Click Element    xpath://button[text()='View']
@@ -141,7 +141,7 @@ approver
         Sleep    1
 
         # Check if Env_name matches a specific value
-        IF    '${Env_name}' == '${wvar('ENV')}'  
+        IF    '${Env_name}' == '${angvar('ENV')}'  
             # SeleniumLibrary.Click Element    xpath:(//div[@data-colindex='0'])[${sym_env}]
             # Sleep    2
             # SeleniumLibrary.Click Element    xpath:(//img[@alt='View'])[${sym_env}]
