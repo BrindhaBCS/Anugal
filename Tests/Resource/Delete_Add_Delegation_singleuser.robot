@@ -70,7 +70,7 @@ Delete_add delegation for single user
     SeleniumLibrary.Click Element    xpath://div[normalize-space(text())='Delegate']
     Sleep    2
     
-    SeleniumLibrary.Input Text    xpath:(//input[@id='search'])[2]    ${user_name}
+    SeleniumLibrary.Input Text    xpath://input[@placeholder='Search...']    ${user_name}
     Wait Until Element Is Visible    xpath://img[@alt='Delete']    40s
     SeleniumLibrary.Click Element    xpath://img[@alt='Delete']
     Sleep    3
