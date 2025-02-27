@@ -84,8 +84,8 @@ add delegation for multiple user multiple roles
     Sleep    1
     
 
-    ${Valid_from}    Get Current Date    result_format=%d-%m-%Y    increment=1 day
-    ${valid_to}    Get Current Date    result_format=%d-%m-%Y    increment=2 day
+    ${Valid_from}    Get Current Date    result_format=%m-%d-%Y    increment=1 day
+    ${valid_to}    Get Current Date    result_format=%m-%d-%Y    increment=2 day
 
     SeleniumLibrary.Input Text    xpath:(//input[@type='date'])[1]    ${Valid_from}
     Sleep    1
