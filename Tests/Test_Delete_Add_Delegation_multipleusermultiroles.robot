@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../Tests/Resources/Delete_Add_Delegation_multipleusermultiroles.robot
+Resource    ../Tests/Resource/Delete_Add_Delegation_multipleusermultiroles.robot
 Suite Setup    Delete_Add_Delegation_multipleusermultiroles.Start TestCase
 Suite Teardown    Delete_Add_Delegation_multipleusermultiroles.Finish TestCase
 Test Tags    Delete_multipleusers_and_roles
