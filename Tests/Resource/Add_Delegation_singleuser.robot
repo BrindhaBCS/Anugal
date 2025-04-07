@@ -64,22 +64,21 @@ Start TestCase
     
 
 add delegation for single user
-    Wait Until Keyword Succeeds    1 minute    5s     Wait Until Element Is Visible    xpath://p[normalize-space(text())='Peers']
-    SeleniumLibrary.Click Element    xpath://div[@class='MuiBox-root css-1dzplvk']
+    ait Until Element Is Visible    xpath://h1[text()='My Team']    40s
+    SeleniumLibrary.Click Element    xpath://h1[normalize-space()='My Team']//*[name()='svg']
     Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath:(//div[@class='react-flow__renderer']//div)[1] 
     SeleniumLibrary.Click Element    xpath://div[normalize-space(text())='Delegate']
     Sleep    2
     SeleniumLibrary.Click Element    xpath://button[normalize-space(text())='Add Delegation']
-    Wait Until Element Is Visible    xpath://button[normalize-space(text())='Add']    30s
+    Wait Until Element Is Visible    xpath://input[@placeholder='Enter Username']    30s
     SeleniumLibrary.Click Element    xpath://input[@placeholder='Enter Username']
     Sleep    2
     SeleniumLibrary.Input Text    xpath://input[@role='combobox']    ${user_name}
     SeleniumLibrary.Press Keys    xpath://input[@role='combobox']    ARROW_DOWN
     SeleniumLibrary.Press Keys    xpath://input[@role='combobox']    ENTER
-    Sleep    3
 
-    ${Valid_from}    Get Current Date    result_format=%m-%d-%Y    increment=1 day
-    ${valid_to}    Get Current Date    result_format=%m-%d-%Y    increment=2 day
+    ${Valid_from}    Get Current Date    result_format=%d-%m-%Y    increment=1 day
+    ${valid_to}    Get Current Date    result_format=%d-%m-%Y    increment=2 day
 
     SeleniumLibrary.Input Text    xpath:(//input[@type='date'])[1]    ${Valid_from}
     Sleep    1
