@@ -64,7 +64,7 @@ Start TestCase
     
 
 add delegation for single user
-    ait Until Element Is Visible    xpath://h1[text()='My Team']    40s
+    wait Until Element Is Visible    xpath://h1[text()='My Team']    40s
     SeleniumLibrary.Click Element    xpath://h1[normalize-space()='My Team']//*[name()='svg']
     Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath:(//div[@class='react-flow__renderer']//div)[1] 
     SeleniumLibrary.Click Element    xpath://div[normalize-space(text())='Delegate']
