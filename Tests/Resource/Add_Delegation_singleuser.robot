@@ -39,7 +39,7 @@ Start TestCase
 
     Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://span[normalize-space(text())='New mail']
     Wait Until Keyword Succeeds    2 minute    5s    Wait Until Element Is Visible    xpath:(//div[@data-folder-name='inbox'])[1]
-    SeleniumLibrary.Input Text    id:topSearchInput    Anugal Administrator (Lab)
+    SeleniumLibrary.Input Text    xpath://input[@placeholder='Search']    Anugal Administrator (Lab)
     Sleep    2
     SeleniumLibrary.Click Element    xpath:(//i[@fill='currentColor'])[3]
     Sleep    2
