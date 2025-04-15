@@ -38,17 +38,16 @@ Start TestCase
     Sleep    5
 
     Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://span[normalize-space(text())='New mail']
-    Wait Until Keyword Succeeds    2 minute    5s    Wait Until Element Is Visible    xpath:(//div[@data-folder-name='inbox'])[1]
+    Wait Until Element Is Visible    xpath:(//div[@data-folder-name='inbox'])[1]    30s
     SeleniumLibrary.Click Element    xpath:(//div[@data-folder-name='inbox'])[1]
-    Sleep    3
-    SeleniumLibrary.Input Text    id:topSearchInput    Anugal Administrator (Lab)
-    Sleep    4
-    SeleniumLibrary.Click Element    xpath://button[@title='Search']
     Sleep    2
-    Wait Until Element Is Visible    xpath://span[text()='Mail']    40s
+    SeleniumLibrary.Input Text    xpath://input[@id='topSearchInput']    Anugal Administrator (Lab)
+    Sleep    2
+    SeleniumLibrary.Click Element    xpath:(//i[@fill='currentColor'])[3]
+    Sleep    2
     SeleniumLibrary.Click Element    xpath://span[text()='Mail']
     Sleep    5
-    SeleniumLibrary.Click Element    xpath:(//div[@class='XG5Jd TszOG'])[1]
+    SeleniumLibrary.Click Element    xpath:(//div[@class='xc0ZS TszOG'])[1]
     Sleep    2
     
     Wait Until Element Is Visible    xpath:(//button[@aria-label='Reply'])[3]    20s
@@ -60,7 +59,7 @@ Start TestCase
     SeleniumLibrary.Input Text    xpath:(//input[@inputmode='text'])    ${otp}
     Sleep    2
     SeleniumLibrary.Click Element    xpath:(//button[@type='button'])[1]
-    Sleep    2
+    Sleep    10
     
 
 add delegation for single user
