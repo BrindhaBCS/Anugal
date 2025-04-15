@@ -41,7 +41,7 @@ Start TestCase
     Wait Until Keyword Succeeds    2 minute    5s    Wait Until Element Is Visible    xpath:(//div[@data-folder-name='inbox'])[1]
     SeleniumLibrary.Click Element    xpath:(//div[@data-folder-name='inbox'])[1]
     Sleep    3
-    SeleniumLibrary.Input Text    id:topSearchInput    Anugal Administrator (Lab)
+    SeleniumLibrary.Input Text    xpath://input[@id='topSearchInput']    Anugal Administrator (Lab)
     Sleep    4
     SeleniumLibrary.Click Element    xpath://button[@title='Search']
     Sleep    2
