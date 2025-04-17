@@ -11,12 +11,12 @@ ${outlook}    https://outlook.office365.com/mail/inbox/
 *** Keywords ***
 Start TestCase
     Log    Opening browser
-    Open Browser    ${wvar('url')}    ${wvar('browser')}    #options=${global_browser_options}
+    Open Browser    ${angvar('url')}    ${angvar('browser')}    #options=${global_browser_options}
     
     Wait Until Keyword Succeeds    2 minute    5s   Wait until element is visible    xpath://button[contains(.,'Azure')]
     # Sleep    10
     Maximize Browser Window
-    SeleniumLibrary.Input text    id:emailId        ${wvar('user_id')}
+    SeleniumLibrary.Input text    id:emailId        ${angvar('user_id')}
     Input password    id:password    ${wvar('password')}
     SeleniumLibrary.Click element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[3]
     # Sleep    20
@@ -25,12 +25,12 @@ Start TestCase
     Switch Window    new
 
     Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://*[@id="i0116"]
-    SeleniumLibrary.Input Text   xpath://*[@id="i0116"]    ${Mail_id}
+    SeleniumLibrary.Input Text   xpath://*[@id="i0116"]    ${angvar('Mail_id')}
     Sleep    2
     SeleniumLibrary.Click Element    xpath://*[@id="idSIButton9"]
     Sleep    2
     Wait Until Element Is Visible    xpath://*[@id="i0118"]    60s
-    SeleniumLibrary.Input Text    xpath://*[@id="i0118"]    ${Mail_password}
+    SeleniumLibrary.Input Text    xpath://*[@id="i0118"]    ${angvar('Mail_password')}
     Sleep    2
     SeleniumLibrary.Click Element    xpath://*[@id="idSIButton9"]
     Sleep    2
