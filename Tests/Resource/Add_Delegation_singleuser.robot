@@ -42,7 +42,7 @@ Start TestCase
     SeleniumLibrary.Input Text    xpath://input[@placeholder='Search']    Anugal Administrator (Lab)
     Sleep    2
     SeleniumLibrary.Click Element    xpath:(//i[@fill='currentColor'])[3]
-    Sleep    2
+    Sleep    5
     SeleniumLibrary.Click Element    xpath://span[text()='Mail']    
     Sleep    2
     SeleniumLibrary.Click Element    xpath:(//div[@class='XG5Jd TszOG'])[1]
