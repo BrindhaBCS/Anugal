@@ -17,7 +17,7 @@ Start TestCase
     # Sleep    10
     Maximize Browser Window
     SeleniumLibrary.Input text    id:emailId        ${angvar('user_id')}
-    Input password    id:password    ${wvar('password')}
+    Input password    id:password    ${angvar('password')}
     SeleniumLibrary.Click element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[3]
     # Sleep    20
     Wait Until Element Is Visible    xpath:(//input[@inputmode='text'])    60s
