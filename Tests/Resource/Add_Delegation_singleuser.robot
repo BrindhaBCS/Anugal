@@ -35,15 +35,19 @@ Start TestCase
     SeleniumLibrary.Click Element    xpath://*[@id="idSIButton9"]
     Sleep    2
     SeleniumLibrary.Click Element    xpath://*[@id="idBtn_Back"]
-    Sleep    5
+    Sleep    15
 
-    Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://span[normalize-space(text())='New mail']
-    Wait Until Element Is Visible    xpath:(//div[@data-folder-name='inbox'])[1]    30s
-    SeleniumLibrary.Click Element    xpath:(//div[@data-folder-name='inbox'])[1]
-    Sleep    4
-    SeleniumLibrary.Input Text    xpath://input[@placeholder='Search']    Anugal Administrator (Lab)
-    Sleep    5
-    SeleniumLibrary.Click Element    xpath:(//i[@fill='currentColor'])[3]
+    # Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://span[normalize-space(text())='New mail']
+    # Wait Until Element Is Visible    xpath:(//div[@data-folder-name='inbox'])[1]    30s
+    # SeleniumLibrary.Click Element    xpath:(//div[@data-folder-name='inbox'])[1]
+    # Sleep    4
+
+
+    SeleniumLibrary.Click Element    xpath=//input[@id='topSearchInput']
+    SeleniumLibrary.Input Text       xpath=//input[@id='topSearchInput']    Anugal login otp
+    Sleep    2
+    SeleniumLibrary.Press Keys       xpath=//input[@id='topSearchInput']    ENTER
+
     Sleep    5
     SeleniumLibrary.Click Element    xpath://span[text()='Mail']    
     Sleep    2
@@ -76,8 +80,8 @@ add delegation for single user
     SeleniumLibrary.Press Keys    xpath://input[@role='combobox']    ARROW_DOWN
     SeleniumLibrary.Press Keys    xpath://input[@role='combobox']    ENTER
 
-    ${Valid_from}    Get Current Date    result_format=%d-%m-%Y    increment=1 day
-    ${valid_to}    Get Current Date    result_format=%d-%m-%Y    increment=2 day
+    ${Valid_from}    Get Current Date    result_format=%m-%d-%Y    increment=1 day
+    ${valid_to}    Get Current Date    result_format=%m-%d-%Y    increment=2 day
 
     SeleniumLibrary.Input Text    xpath:(//input[@type='date'])[1]    ${Valid_from}
     Sleep    1
