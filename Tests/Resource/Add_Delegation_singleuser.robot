@@ -79,14 +79,15 @@ add delegation for single user
     SeleniumLibrary.Input Text    xpath://input[@role='combobox']    ${user_name}
     SeleniumLibrary.Press Keys    xpath://input[@role='combobox']    ARROW_DOWN
     SeleniumLibrary.Press Keys    xpath://input[@role='combobox']    ENTER
-
+    Sleep    3
+        
     ${Valid_from}    Get Current Date    result_format=%m-%d-%Y    increment=1 day
     ${valid_to}    Get Current Date    result_format=%m-%d-%Y    increment=2 day
 
     SeleniumLibrary.Input Text    xpath:(//input[@type='date'])[1]    ${Valid_from}
-    Sleep    1
+    Sleep    2
     SeleniumLibrary.Input Text    xpath:(//input[@type='date'])[2]    ${valid_to}
-    Sleep    1
+    Sleep    2
     SeleniumLibrary.Click Element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[2]
     Sleep    1
     SeleniumLibrary.Click Element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[3]
