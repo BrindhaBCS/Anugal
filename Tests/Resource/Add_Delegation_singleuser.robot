@@ -21,51 +21,51 @@ Start TestCase
     SeleniumLibrary.Click element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[3]
     Sleep    5
 
-    Sleep    20
-    Wait Until Element Is Visible    xpath:(//input[@inputmode='text'])    60s
-    Execute Javascript    window.open('https://outlook.office365.com/mail/inbox/')
-    Switch Window    new
+    # Sleep    20
+    # Wait Until Element Is Visible    xpath:(//input[@inputmode='text'])    60s
+    # Execute Javascript    window.open('https://outlook.office365.com/mail/inbox/')
+    # Switch Window    new
 
-    Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://*[@id="i0116"]
-    SeleniumLibrary.Input Text   xpath://*[@id="i0116"]    ${angvar('Mail_id')}
-    Sleep    2
-    SeleniumLibrary.Click Element    xpath://*[@id="idSIButton9"]
-    Sleep    2
-    Wait Until Element Is Visible    xpath://*[@id="i0118"]    60s
-    SeleniumLibrary.Input Text    xpath://*[@id="i0118"]    ${angvar('Mail_password')}
-    Sleep    2
-    SeleniumLibrary.Click Element    xpath://*[@id="idSIButton9"]
-    Sleep    2
-    SeleniumLibrary.Click Element    xpath://*[@id="idBtn_Back"]
-    Sleep    15
+    # Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://*[@id="i0116"]
+    # SeleniumLibrary.Input Text   xpath://*[@id="i0116"]    ${angvar('Mail_id')}
+    # Sleep    2
+    # SeleniumLibrary.Click Element    xpath://*[@id="idSIButton9"]
+    # Sleep    2
+    # Wait Until Element Is Visible    xpath://*[@id="i0118"]    60s
+    # SeleniumLibrary.Input Text    xpath://*[@id="i0118"]    ${angvar('Mail_password')}
+    # Sleep    2
+    # SeleniumLibrary.Click Element    xpath://*[@id="idSIButton9"]
+    # Sleep    2
+    # SeleniumLibrary.Click Element    xpath://*[@id="idBtn_Back"]
+    # Sleep    15
 
-    # # Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://span[normalize-space(text())='New mail']
-    # # Wait Until Element Is Visible    xpath:(//div[@data-folder-name='inbox'])[1]    30s
-    # # SeleniumLibrary.Click Element    xpath:(//div[@data-folder-name='inbox'])[1]
-    # # Sleep    4
+    # # # Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://span[normalize-space(text())='New mail']
+    # # # Wait Until Element Is Visible    xpath:(//div[@data-folder-name='inbox'])[1]    30s
+    # # # SeleniumLibrary.Click Element    xpath:(//div[@data-folder-name='inbox'])[1]
+    # # # Sleep    4
 
 
-    SeleniumLibrary.Click Element    xpath=//input[@id='topSearchInput']
-    SeleniumLibrary.Input Text       xpath=//input[@id='topSearchInput']    Anugal login otp
-    Sleep    2
-    SeleniumLibrary.Press Keys       xpath=//input[@id='topSearchInput']    ENTER
+    # SeleniumLibrary.Click Element    xpath=//input[@id='topSearchInput']
+    # SeleniumLibrary.Input Text       xpath=//input[@id='topSearchInput']    Anugal login otp
+    # Sleep    2
+    # SeleniumLibrary.Press Keys       xpath=//input[@id='topSearchInput']    ENTER
 
-    Sleep    5
-    SeleniumLibrary.Click Element    xpath://span[text()='Mail']    
-    Sleep    2
-    SeleniumLibrary.Click Element    xpath:(//div[@class='XG5Jd TszOG'])[1]
-    Sleep    2
+    # Sleep    5
+    # SeleniumLibrary.Click Element    xpath://span[text()='Mail']    
+    # Sleep    2
+    # SeleniumLibrary.Click Element    xpath:(//div[@class='XG5Jd TszOG'])[1]
+    # Sleep    2
     
-    Wait Until Element Is Visible    xpath:(//button[@aria-label='Reply'])[3]    20s
-    ${text_otp}    Get Text    xpath://div[@class='BodyFragment']//div[1]
-    Sleep    1
-    Log    ${text_otp}
-    ${otp}    Extract Order Number otp    ${text_otp}
-    Switch Window    main
-    SeleniumLibrary.Input Text    xpath:(//input[@inputmode='text'])    ${otp}
-    Sleep    2
-    SeleniumLibrary.Click Element    xpath:(//button[@type='button'])[1]
-    Sleep    10
+    # Wait Until Element Is Visible    xpath:(//button[@aria-label='Reply'])[3]    20s
+    # ${text_otp}    Get Text    xpath://div[@class='BodyFragment']//div[1]
+    # Sleep    1
+    # Log    ${text_otp}
+    # ${otp}    Extract Order Number otp    ${text_otp}
+    # Switch Window    main
+    # SeleniumLibrary.Input Text    xpath:(//input[@inputmode='text'])    ${otp}
+    # Sleep    2
+    # SeleniumLibrary.Click Element    xpath:(//button[@type='button'])[1]
+    # Sleep    10
     
 
 add delegation for single user
