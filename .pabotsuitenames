@@ -1,6 +1,5 @@
-datasources:37469e5013fbe1c3d6d2be83d63cc0e6f2b0cb18
-commandlineoptions:fd9dbcacd6d0f2d992a7693f31ff4e249d4f5d9f
+datasources:2c5bffd256daeaccbf701dbb70b46f85389c8038
+commandlineoptions:51c1af8fd16eb1bcb016bb8b9d5be34087119c6a
 suitesfrom:no-suites-from-option
-file:56fc0f92eff9d2af12cea75b91c0c56eaa4ecc79
---suite Tests.Test Role configuration
---suite Tests.TestRoleconfiguration
+file:56a372e2c0f0fa908b98d51e053ba89119340a43
+--suite Tests.Test Add Delegation singleuser

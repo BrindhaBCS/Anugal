@@ -15,14 +15,14 @@ ${password_length}
 *** Keywords ***
 Start TestCase
     # Log    Opening browser
-    Open Browser    ${wvar('url')}    ${wvar('browser')}    #options=${global_browser_options}
+    Open Browser    ${angvar('url')}    ${angvar('browser')}    #options=${global_browser_options}
     
 Submit Anugal username and password
-    Wait until element is visible    ${wvar('user_text_box')}    60s
+    Wait until element is visible    ${angvar('user_text_box')}    60s
     
-    SeleniumLibrary.Input text    ${wvar('user_text_box')}        ${wvar('user_id')}
-    SeleniumLibrary.Input password    ${wvar('password_text_box')}    ${wvar('password')}
-    SeleniumLibrary.Click element    ${wvar('Login_anugal_button')}
+    SeleniumLibrary.Input text    ${angvar('user_text_box')}        ${angvar('user_id')}
+    SeleniumLibrary.Input password    ${angvar('password_text_box')}    ${angvar('password')}
+    SeleniumLibrary.Click element    ${angvar('Login_anugal_button')}
     Maximize Browser Window
     Wait Until Keyword Succeeds    2 minute    5s    Wait Until Element Is Visible    xpath://img[@alt='IGA']    
     # Wait Until Element Is Visible    xpath://img[@alt='IGA']    60s

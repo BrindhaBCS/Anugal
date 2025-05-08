@@ -5,6 +5,7 @@ from robot.api import logger
 import pyautogui
 import time
 from pythoncom import com_error
+import re
 
 
 
@@ -103,3 +104,59 @@ class Anugal_library:
             self.take_screenshot()
             message = "Cannot find element with id '%s'" % element_id
             raise ValueError(message)
+        
+    def extract_order_number(self,sentence):
+        """
+        Extracts the integer value from the given sentence.
+
+        Args:
+            sentence (str): The sentence containing the order number.
+
+        Returns:
+            int: The extracted order number.
+        """
+        # Use regular expression to extract the integer value
+        import re
+        pattern = r'\b(\d+)\b'
+        match = re.search(pattern, sentence)
+        if match:
+            return int(match.group(1))
+        else:
+            raise ValueError("No order number found in the sentence") 
+    
+    def extract_order_number_otp(self, sentence):
+        """
+        Extracts the 6-digit OTP from the given sentence.
+    
+        Args:
+            sentence (str): The sentence containing the OTP.
+    
+        Returns:
+            str: The extracted OTP as a string to preserve leading zeros.
+        """
+        # Use regular expression to extract a 6-digit OTP
+        pattern = r'\b\d{6}\b'  # Matches exactly 6-digit numbers
+        matches = re.findall(pattern, sentence)  # Find all matches
+    
+        if matches:
+            return matches[-1]  # Return the last 6-digit number (most likely the OTP) as a string
+        else:
+            raise ValueError("No OTP found in the sentence")
+        
+        
+    def __init__(self):
+        self.explicit_wait = float(0.0)
+        self.session = None
+
+    def press_keys(self, keys):
+            """
+            Simulate pressing multiple keys. Each key should be separated by a space in the input string.
+            Example: press_keys("tab enter") will press TAB and then ENTER.
+            """
+            time.sleep(1)  # Adjust delay if needed
+            for key in keys.split():
+                pyautogui.press(key)
+
+    def reload_page(self):
+        """Simulates user reloading page."""
+        self.driver.refresh()
