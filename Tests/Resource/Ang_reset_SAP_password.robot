@@ -71,7 +71,7 @@ Anugal_password_reset
     SeleniumLibrary.Click Element    xpath:(//div[contains(@class,'C2IG3 LPIso')]//span)[1]
     Sleep    2
 
-
+    
     SeleniumLibrary.Input Text    id:topSearchInput    Password Reset
     Sleep    2
     SeleniumLibrary.Click Element    xpath://span[contains(@class,'ms-Dropdown-caretDownWrapper BNxC5')]
@@ -95,15 +95,16 @@ Anugal_password_reset
     Set Global Variable    ${password1}
 
 SAP_LOGIN   
-    Start Process     ${angvar('SAP_SERVER')}    
+    Start Process     ${wvar('SAP_SERVER')}    
     Sleep    2
     Connect To Session
-    Open Connection    ${angvar('SAP_connection')}    
-    SAP_Tcode_Library.Input Text    wnd[0]/usr/txtRSYST-MANDT    ${angvar('Client_Id')}
-    SAP_Tcode_Library.Input Text    wnd[0]/usr/txtRSYST-BNAME    ${angvar('User_Name')}    
+    Open Connection    ${wvar('SAP_connection')}    
+    SAP_Tcode_Library.Input Text    wnd[0]/usr/txtRSYST-MANDT    ${wvar('Client_Id')}
+    SAP_Tcode_Library.Input Text    wnd[0]/usr/txtRSYST-BNAME    ${wvar('User_Name')}    
     SAP_Tcode_Library.Input Password   wnd[0]/usr/pwdRSYST-BCODE    ${password1}
     Send Vkey    0
     Sleep    5
+
 
 New password Generate
     ${random_password}    Generate Random String    ${password_length}    [NUMBERS][LETTERS]
@@ -120,5 +121,8 @@ New password Generate
     Sleep    2
 
     
+
+
 Finish TestCase
     Close All Browsers
+

@@ -44,6 +44,7 @@ def copy_images(source_dir, target_dir):
 
             except Exception as e:
 
+<<<<<<< HEAD
                 print(f"Skipped: {file_name} - Not a valid image file or format not supported. Error: {e}")
 
 
@@ -224,3 +225,6 @@ def generate_report_html(input_file, output_file, report_name):
         print(f"Report generated successfully: {output_file}")
     except Exception as e:
         print(f"Error processing the report: {e}")
+=======
+                print(f"Skipped: {file_name} - Not a valid image file or format not supported. Error: {e}")
+>>>>>>> 010a2164a96ffc863c9cc23086e4ad7d5a2f0dea

@@ -1,0 +1,9 @@
+*** Settings ***
+Resource    ../Tests/Resources/One_Owner_Approves_One_Role_and_Rejects_Other_Role_and_Other_Owner_Approves_His_Roles_roleC.robot
+Suite Setup    One_Owner_Approves_One_Role_and_Rejects_Other_Role_and_Other_Owner_Approves_His_Roles_roleC.Start TestCase
+Suite Teardown    One_Owner_Approves_One_Role_and_Rejects_Other_Role_and_Other_Owner_Approves_His_Roles_roleC.Finish TestCase
+Test Tags    approveoneRejectoneandapproveroleotherowner_roleC
+
+*** Test Cases ***
+One_Owner_Approves_One_Role_and_Rejects_Other_Role_and_Other_Owner_Approves_His_Roles_roleC
+    One_Owner_Approves_One_Role_and_Rejects_Other_Role_and_Other_Owner_Approves_His_Roles_roleC
