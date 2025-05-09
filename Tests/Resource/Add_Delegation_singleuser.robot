@@ -21,7 +21,7 @@ Start TestCase
     SeleniumLibrary.Click element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[3]
     Sleep    5
 
-    # Wait Until Element Is Visible    xpath:(//input[@inputmode='text'])    60s
+    Wait Until Element Is Visible    xpath:(//input[@inputmode='text'])    60s
     # Execute Javascript    window.open('https://outlook.office365.com/mail/inbox/')
     # Switch Window    new
 
