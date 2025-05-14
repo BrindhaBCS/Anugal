@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../Tests/Resources/multiplerole_multipleowner_approved_roleB.robot
+Resource    ../Tests/Resource/multiplerole_multipleowner_approved_roleB.robot
 Suite Setup    multiplerole_multipleowner_approved_roleB.Start TestCase
 Suite Teardown    multiplerole_multipleowner_approved_roleB.Finish TestCase
 Test Tags    approved_roleB

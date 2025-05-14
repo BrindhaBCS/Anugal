@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../Tests/Resources/Single_owner_approval.robot
+Resource    ../Tests/Resource/Single_owner_approval.robot
 Suite Setup    Single_owner_approval.Start TestCase
 Suite Teardown    Single_owner_approval.Finish TestCase
 Test Tags    Request_Single_owner

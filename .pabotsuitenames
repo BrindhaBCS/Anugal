@@ -1,5 +1,5 @@
-datasources:2c5bffd256daeaccbf701dbb70b46f85389c8038
-commandlineoptions:51c1af8fd16eb1bcb016bb8b9d5be34087119c6a
+datasources:19fd371e65199bf6096480169bf466003944878f
+commandlineoptions:630a3eefbeda3936177c86cdcfe0c6cc3b8454cb
 suitesfrom:no-suites-from-option
-file:56a372e2c0f0fa908b98d51e053ba89119340a43
---suite Tests.Test Add Delegation singleuser
+file:371f8face462b6908933ef8de7dfc9f81052261d
+--suite Tests.Test Rejected multipleowner singlerole

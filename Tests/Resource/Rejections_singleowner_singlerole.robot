@@ -11,40 +11,41 @@ ${Apps}    symphony
 *** Keywords ***
 Start TestCase
     Log    Opening browser
-    Open Browser    ${wvar('url')}    ${wvar('browser')}    #options=${global_browser_options}
+    Open Browser    ${angvar('url')}    ${angvar('browser')}    #options=${global_browser_options}
     
     Wait Until Keyword Succeeds    2 minute    5s   Wait until element is visible    xpath://button[contains(.,'Azure')]
     # Sleep    10
     Maximize Browser Window
-    SeleniumLibrary.Input text    id:emailId        ${wvar('user_id')}
-    Input password    id:password    ${wvar('password')}
+    SeleniumLibrary.Input text    id:emailId        ${angvar('user_id')}
+    Input password    id:password    ${angvar('qa_password')}
     SeleniumLibrary.Click element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[3]
-    # Sleep    20
+    Sleep    5
+
     Wait Until Element Is Visible    xpath:(//input[@inputmode='text'])    60s
     Execute Javascript    window.open('https://outlook.office365.com/mail/inbox/')
     Switch Window    new
 
     Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://*[@id="i0116"]
-    SeleniumLibrary.Input Text   xpath://*[@id="i0116"]    ${wvar('Mail_id')}
+    SeleniumLibrary.Input Text   xpath://*[@id="i0116"]    ${angvar('Mail_id')}
     Sleep    2
     SeleniumLibrary.Click Element    xpath://*[@id="idSIButton9"]
     Sleep    2
     Wait Until Element Is Visible    xpath://*[@id="i0118"]    60s
-    SeleniumLibrary.Input Text    xpath://*[@id="i0118"]    ${wvar('Mail_password')}
+    SeleniumLibrary.Input Text    xpath://*[@id="i0118"]    ${angvar('Mail_password')}
     Sleep    2
     SeleniumLibrary.Click Element    xpath://*[@id="idSIButton9"]
     Sleep    2
     SeleniumLibrary.Click Element    xpath://*[@id="idBtn_Back"]
-    Sleep    5
+    Sleep    15
 
-    Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://span[normalize-space(text())='New mail']
-    Wait Until Keyword Succeeds    2 minute    5s    Wait Until Element Is Visible    xpath:(//div[@data-folder-name='inbox'])[1]
-    SeleniumLibrary.Input Text    id:topSearchInput    Anugal Administrator (Lab)
+    SeleniumLibrary.Click Element    xpath=//input[@id='topSearchInput']
+    SeleniumLibrary.Input Text       xpath=//input[@id='topSearchInput']    Anugal login otp
     Sleep    2
-    SeleniumLibrary.Click Element    xpath:(//i[@fill='currentColor'])[3]
+    SeleniumLibrary.Press Keys       xpath=//input[@id='topSearchInput']    ENTER
+
+    Sleep    5
+    SeleniumLibrary.Click Element    xpath://span[text()='Mail']    
     Sleep    2
-    SeleniumLibrary.Click Element    xpath://span[text()='Mail']
-    Sleep    4
     SeleniumLibrary.Click Element    xpath:(//div[@class='XG5Jd TszOG'])[1]
     Sleep    2
     
@@ -92,25 +93,25 @@ Rejections singleowner and singlerole
         # Log To Console    Dept Name After Cleaning: ${dept_name_clean}
 
         # IF    '${dept_name_clean}' == '${wvar("department").strip()}'
-        IF    '${dept_name}' == '${wvar('department')}'
+        IF    '${dept_name}' == '${angvar('department')}'
             SeleniumLibrary.Click Element    ${element}
             Sleep    5
             FOR    ${app}    IN RANGE    1    100
-                ${App_name}    Set Variable    xpath:(//div[contains(@class,'MuiButtonBase-root MuiAccordionSummary-root')])[${app}]
+                ${App_name}    Set Variable    xpath:(//button[contains(@class,'MuiButtonBase-root MuiAccordionSummary-root')])[${app}]
                 ${app_visible}    Run Keyword And Return Status    Element Should Be Visible    ${App_name}
 
                 Run Keyword If    not ${app_visible}    Exit For Loop  # Exit if no more data
 
                 ${dept_name}    Run Keyword If    ${app_visible}    Get Text    ${App_name}
 
-                ${Application}    Get Text    xpath:(//div[contains(@class,'MuiButtonBase-root MuiAccordionSummary-root')])[${app}]
+                ${Application}    Get Text    xpath:(//button[contains(@class,'MuiButtonBase-root MuiAccordionSummary-root')])[${app}]
                 Sleep    1
 
                 # Check if Env_name matches a specific value
                 
                 IF    '${Application}' == '${Apps}'
                     Log    Application is Symphony
-                    SeleniumLibrary.Click Element    xpath:(//div[contains(@class,'MuiButtonBase-root MuiAccordionSummary-root')])[${app}]
+                    SeleniumLibrary.Click Element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiAccordionSummary-root')])[${app}]
                     Sleep    5
                     Wait Until Element Is Visible    xpath://div[contains(@class, 'MuiCollapse-entered')]//button[.//p[normalize-space(text())='QA SYMPHONY']]    30s
                     SeleniumLibrary.Click Element    xpath://div[contains(@class, 'MuiCollapse-entered')]//button[.//p[normalize-space(text())='QA SYMPHONY']]
@@ -131,10 +132,10 @@ Rejections singleowner and singlerole
     
 
 
-    Wait Until Element Is Visible    xpath:(//div[@class='MuiCardContent-root css-1qw96cp'])[1]    40s
+    Wait Until Element Is Visible    xpath:(//img[@alt='toggleIcon'])[1]    40s
     SeleniumLibrary.Input Text    xpath:(//input[@id='addRolesSearch'])[2]    ${Role_name}
     Sleep    2
-    Wait Until Element Is Visible    xpath:(//div[@class='MuiGrid-root css-rfnosa'])    20s
+    Wait Until Element Is Visible    xpath://img[@alt='toggleIcon']    20s
     SeleniumLibrary.Click Element    xpath://img[@alt='toggleIcon']
     Sleep    2
     SeleniumLibrary.Click Element    xpath://button[normalize-space(text())='Next']

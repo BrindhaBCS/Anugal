@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../Tests/Resources/multiplerole_multipleowner.robot
+Resource    ../Tests/Resource/multiplerole_multipleowner.robot
 Suite Setup    multiplerole_multipleowner.Start TestCase
 Suite Teardown    multiplerole_multipleowner.Finish TestCase
 Test Tags    Request_multiplerole_multipleowner
