@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-url ="https://dev.anugalid.com/login"
-browser = "Chrome"
-user_id = "malayranjan.s@basiscloudsolutions.com"
-password = "GzraO9MB"
-days_to_add = "1"
-SAP_SERVER = "C:\\Program Files (x86)\\SAP\\FrontEnd\\SAPgui\\saplogon.exe"
-SAP_connection = "DEV"
-Client_Id = "001"
-User_Name = "Malayranjan"
-request_id = "$Copilot_Request_id"
-=======
 url ="$url"
 browser = "$browser"
 user_id = "$user_id"
@@ -22,4 +10,3 @@ User_Name = "$User_Name"
 request_id = "$Copilot_Request_id"
 Mail_id = "$Mail_id"
 Mail_password = "$Mail_password"
->>>>>>> 010a2164a96ffc863c9cc23086e4ad7d5a2f0dea

@@ -3,27 +3,27 @@ Library     SeleniumLibrary
 Resource    ../Web/Support_Web.robot
  
 *** Variables ***
-${browser}    chrome
-${url}    https://dev.anugalid.com/login
-${Mail_id}    dhanasekaran.g@businesscoresolutions.com
-${Mail_password}    Dhanag@2k00
+# ${browser}    chrome
+# ${url}    https://dev.anugalid.com/login
+# ${Mail_id}    dhanasekaran.g@businesscoresolutions.com
+# ${Mail_password}    Dhanag@2k00
 ${TEXT_TO_CHECK_Role_Level}    choose what to share with dev anugalid.com
  
  
 *** Keywords ***
 System_login
     Log    Opening browser
-    Open Browser    ${url}    ${browser}
+    Open Browser    ${angvar('anug_url')}    ${angvar('anug_browser')}
     Maximize Browser Window
     Sleep    5
     Click Element    xpath://span[normalize-space(text())='Azure']
     Sleep    10
-    Input Text   xpath://*[@id="i0116"]    ${Mail_id}
+    Input Text   xpath://*[@id="i0116"]    ${angvar('anug_Mail_id')}
     Sleep    2
     Click Element    xpath://*[@id="idSIButton9"]
     Sleep    2
     Wait Until Element Is Visible    xpath://*[@id="i0118"]    60s
-    Input Text    xpath://*[@id="i0118"]    ${Mail_password}
+    Input Text    xpath://*[@id="i0118"]    ${angvar('anug_Mail_password')}
     Sleep    2
     Click Element    xpath://*[@id="idSIButton9"]
     Sleep    15

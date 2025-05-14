@@ -1,0 +1,23 @@
+# anug_url ="https://dev.anugalid.com/login"
+# anug_browser = "Chrome"
+# anug_user_id = "malayranjan.s@businesscoresolutions.com"
+# anug_password = "GzraO9MB"
+# anug_user_text_box = "id:emailId"
+# anug_password_text_box = "id:password"
+# anug_Mail_id = "malayranjan.s@businesscoresolutions.com"
+# anug_Mail_password = "Mitu@mitu@bcs@0909"
+# anug_outlook = "https://outlook.office365.com/mail/inbox/"
+# anug_ENV = "BTP -APPS"
+# anug_env_list = ["DEV Symphony", "QA Symphony"]
+
+anug_url ="$url"
+anug_browser = "$browser"
+anug_user_id = "$Anugal_user_id"
+anug_password = "$Anugal_user_password"
+anug_user_text_box = "id:emailId"
+anug_password_text_box = "id:password"
+anug_Mail_id = "$Mail_id"
+anug_Mail_password = "$Mail_password"
+anug_outlook = "https://outlook.office365.com/mail/inbox/"
+anug_ENV = "BTP -APPS"
+anug_env_list = ["DEV Symphony", "QA Symphony"]
