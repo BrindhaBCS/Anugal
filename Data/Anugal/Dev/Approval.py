@@ -1,4 +1,4 @@
-url ="https://qa.anugalid.com/login"
+# url ="https://qa.anugalid.com/login"
 Azure = "xpath://span[text()=' Azure']"
 browser = "Chrome"
 user_id = "malayranjan.s@businesscoresolutions.com"
