@@ -5,8 +5,8 @@ Library    DateTime
 
 *** Variables ***
 
-${user_name_1}    sanket
-${user_name_2}    Bhavani
+${user_name_1}    Dhanasekaran Gunasekaran
+${user_name_2}    Anitha Sridhar
 ${outlook}    https://outlook.office365.com/mail/inbox/
 
 
@@ -21,58 +21,16 @@ Start TestCase
     SeleniumLibrary.Input text    id:emailId        ${angvar('user_id')}
     Input password    id:password    ${angvar('password')}
     SeleniumLibrary.Click element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[3]
-    # Sleep    20
-    Wait Until Element Is Visible    xpath:(//input[@inputmode='text'])    60s
-    Execute Javascript    window.open('${outlook}')
-    Switch Window    new
-
-    Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://*[@id="i0116"]
-    SeleniumLibrary.Input Text   xpath://*[@id="i0116"]    ${angvar('Mail_id')}
-    Sleep    2
-    SeleniumLibrary.Click Element    xpath://*[@id="idSIButton9"]
-    Sleep    2
-    Wait Until Element Is Visible    xpath://*[@id="i0118"]    60s
-    SeleniumLibrary.Input Text    xpath://*[@id="i0118"]    ${angvar('Mail_password')}
-    Sleep    2
-    SeleniumLibrary.Click Element    xpath://*[@id="idSIButton9"]
-    Sleep    2
-    SeleniumLibrary.Click Element    xpath://*[@id="idBtn_Back"]
     Sleep    5
 
-    Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://span[normalize-space(text())='New mail']
-    Wait Until Keyword Succeeds    2 minute    5s    Wait Until Element Is Visible    xpath:(//div[@data-folder-name='inbox'])[1]
-    SeleniumLibrary.Click Element    xpath:(//div[@data-folder-name='inbox'])[1]
-    Sleep    3
-    SeleniumLibrary.Input Text    id:topSearchInput    Anugal Administrator (Lab)
-    Sleep    4
-    SeleniumLibrary.Click Element    xpath://button[@title='Search']
-    Sleep    2
-    Wait Until Element Is Visible    xpath://span[text()='Mail']    40s
-    SeleniumLibrary.Click Element    xpath://span[text()='Mail']
-    Sleep    2
-    SeleniumLibrary.Click Element    xpath:(//div[@class='XG5Jd TszOG'])[1]
-    Sleep    2
-    
-    Wait Until Element Is Visible    xpath:(//button[@aria-label='Reply'])[3]    20s
-    ${text_otp}    Get Text    xpath://div[@class='BodyFragment']//div[1]
-    Sleep    1
-    Log    ${text_otp}
-    ${otp}    Extract Order Number otp    ${text_otp}
-    Switch Window    main
-    SeleniumLibrary.Input Text    xpath:(//input[@inputmode='text'])    ${otp}
-    Sleep    2
-    SeleniumLibrary.Click Element    xpath:(//button[@type='button'])[1]
-    Sleep    2
-    
-
 add delegation for multiple user
-    Wait Until Keyword Succeeds    1 minute    5s     Wait Until Element Is Visible    xpath://p[normalize-space(text())='Peers']
-    SeleniumLibrary.Click Element    xpath://div[@class='MuiBox-root css-1dzplvk']
+    Wait Until Keyword Succeeds    1 minute    5s     Wait Until Element Is Visible    xpath://h1[text()='My Team']
+    SeleniumLibrary.Click Element    xpath://h1[normalize-space()='My Team']//*[name()='svg']
     Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath:(//div[@class='react-flow__renderer']//div)[1] 
     SeleniumLibrary.Click Element    xpath://div[normalize-space(text())='Delegate']
     Sleep    2
     SeleniumLibrary.Click Element    xpath://button[normalize-space(text())='Add Delegation']
-    Wait Until Element Is Visible    xpath://button[normalize-space(text())='Add']    30s
+    Wait Until Element Is Visible    xpath://input[@placeholder='Enter Username']    30s
     SeleniumLibrary.Click Element    xpath://input[@placeholder='Enter Username']
     Sleep    3
     SeleniumLibrary.Input Text    xpath://input[@role='combobox']    ${user_name_1}
@@ -92,27 +50,27 @@ add delegation for multiple user
     Sleep    1
     SeleniumLibrary.Input Text    xpath:(//input[@type='date'])[2]    ${valid_to}
     Sleep    1
-    SeleniumLibrary.Click Element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[2]
+    SeleniumLibrary.Click Element    xpath:(//button[@type='button'][normalize-space()='Role'])[1]
     Sleep    1
-    SeleniumLibrary.Click Element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[3]
+    SeleniumLibrary.Click Element    xpath:(//button[@type='button'][normalize-space()='Firefighter Owner'])[1]
     Sleep    1
-    SeleniumLibrary.Click Element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[4]
-    Sleep    1
+    # SeleniumLibrary.Click Element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[4]
+    # Sleep    1
 
     SeleniumLibrary.Input Text    xpath:(//input[@type='date'])[3]    ${Valid_from}
-    Sleep    1
+    Sleep    2
     SeleniumLibrary.Input Text    xpath:(//input[@type='date'])[4]    ${valid_to}
-    Sleep    1
-    SeleniumLibrary.Click Element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[5]
-    Sleep    1
-    SeleniumLibrary.Click Element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[6]
-    Sleep    1
-    SeleniumLibrary.Click Element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[7]
-    Sleep    1
+    Sleep    2
+    SeleniumLibrary.Click Element    xpath:(//button[@type='button'][normalize-space()='Role'])[2]
+    Sleep    2
+    SeleniumLibrary.Click Element    xpath:(//button[@type='button'][normalize-space()='Firefighter Owner'])[2]
+    Sleep    3
+    # SeleniumLibrary.Click Element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[7]
+    # Sleep    1
 
     
 
-    SeleniumLibrary.Click Element    xpath://button[normalize-space(text())='Add']
+    SeleniumLibrary.Click Element    xpath:(//button[@type='button'][normalize-space()='Add'])[2]
     Sleep    2
     Wait Until Element Is Visible    xpath:(//div[@direction='down']//div)[2]    30s
     ${pop_up}    Get Text    xpath:(//div[@direction='down']//div)[2]

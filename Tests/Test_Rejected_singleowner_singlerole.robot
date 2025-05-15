@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../Tests/Resources/Rejected_singleowner_singlerole.robot
+Resource    ../Tests/Resource/Rejected_singleowner_singlerole.robot
 Suite Setup    Rejected_singleowner_singlerole.Start TestCase
 Suite Teardown    Rejected_singleowner_singlerole.Finish TestCase
 Test Tags    Reject_singleownersinglerole
