@@ -11,7 +11,7 @@ ${outlook}    https://outlook.office365.com/mail/inbox/
 *** Keywords ***
 Start TestCase
     Log    Opening browser
-    Open Browser    ${angvar('url')}    ${angvar('browser')}    #options=${global_browser_options}
+    Open Browser    https://dev.anugalid.com/login    ${angvar('browser')}    #options=${global_browser_options}
     
     Wait Until Keyword Succeeds    2 minute    5s   Wait until element is visible    xpath://button[contains(.,'Azure')]
     # Sleep    10
