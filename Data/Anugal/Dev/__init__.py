@@ -7,7 +7,7 @@
 # from .urls import *
 # from .xpaths import *
 # from .Variable import *
-from .Anugal_var import *
+# from .Anugal_var import *
 # from .clubcracker import *
 from .Anugal_feature import *
 
