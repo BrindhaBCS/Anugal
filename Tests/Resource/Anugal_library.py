@@ -1,12 +1,10 @@
 # from dbm import _error
 import win32com.client
-import time
 from robot.api import logger
 import pyautogui
 import time
 from pythoncom import com_error
 import re
-
 
 
 class Anugal_library:

@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../Tests/Resources/All_Owners_Reject_Their_Owned_Roles_roleB.robot
+Resource    ../Tests/Resource/All_Owners_Reject_Their_Owned_Roles_roleB.robot
 Suite Setup    All_Owners_Reject_Their_Owned_Roles_roleB.Start TestCase
 Suite Teardown    All_Owners_Reject_Their_Owned_Roles_roleB.Finish TestCase
 Test Tags    Reject_roleB

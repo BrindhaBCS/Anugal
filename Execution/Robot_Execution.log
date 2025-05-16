@@ -21367,3 +21367,1176 @@ Argument File Data:
 
 2025-05-07 11:07:30,051 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
 2025-05-07 11:07:30,082 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-14 15:09:39,492 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\1fe03a9b-ced3-48ef-9108-bce3635ac4a4
+2025-05-14 15:09:39,492 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-14 15:09:39,662 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_98aa824c-a651-4ba2-bf85-f6931e5c52ec"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-14 15:09:39,662 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_98aa824c-a651-4ba2-bf85-f6931e5c52ec"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-14 15:09:39,662 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include AllOwnersRejectTheirOwnedRoles
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\1fe03a9b-ced3-48ef-9108-bce3635ac4a4
+--output Output.xml
+
+
+2025-05-14 15:10:46,864 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-14 15:10:46,900 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-14 15:16:17,621 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\cf6bd7ff-6b36-4429-aaa3-46bf8a82e7e7
+2025-05-14 15:16:17,622 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-14 15:16:17,786 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_4b447a91-0a7d-4d65-8b59-e58ffb11d091"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-14 15:16:17,786 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_4b447a91-0a7d-4d65-8b59-e58ffb11d091"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-14 15:16:17,787 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include AllOwnersRejectTheirOwnedRoles
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\cf6bd7ff-6b36-4429-aaa3-46bf8a82e7e7
+--output Output.xml
+
+
+2025-05-14 15:18:32,504 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-14 15:18:32,537 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-14 15:19:27,397 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\bf811006-605c-4f9c-b227-d378318b4132
+2025-05-14 15:19:27,398 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-14 15:19:27,564 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_0c0fe084-2780-47a8-bb10-fc599ab1b851"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-14 15:19:27,564 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_0c0fe084-2780-47a8-bb10-fc599ab1b851"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-14 15:19:27,564 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include AllOwnersRejectTheirOwnedRoles
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\bf811006-605c-4f9c-b227-d378318b4132
+--output Output.xml
+
+
+2025-05-14 15:21:40,782 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-14 15:21:40,808 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-14 15:24:02,543 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\0a282f16-3c35-4e9b-88b8-020dfff6a25d
+2025-05-14 15:24:02,544 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-14 15:24:02,718 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_1ed9ca85-d1ee-42a1-ae97-e4e5af9c9b03"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-14 15:24:02,718 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_1ed9ca85-d1ee-42a1-ae97-e4e5af9c9b03"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-14 15:24:02,719 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include AllOwnersRejectTheirOwnedRoles
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\0a282f16-3c35-4e9b-88b8-020dfff6a25d
+--output Output.xml
+
+
+2025-05-14 15:26:23,892 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-14 15:26:23,919 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 07:21:32,469 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\344c542c-b9e6-4a5a-81d5-f9bc74a282a8
+2025-05-15 07:21:32,484 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 07:21:35,603 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_fb5998ce-cb8e-4914-bf95-a04ade578be5"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 07:21:35,603 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_fb5998ce-cb8e-4914-bf95-a04ade578be5"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 07:21:35,603 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include single_add_delegation
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\344c542c-b9e6-4a5a-81d5-f9bc74a282a8
+--output Output.xml
+
+
+2025-05-15 07:22:04,668 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\650520d9-138c-4b66-831e-3f40ca43a3f4
+2025-05-15 07:22:04,678 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 07:22:04,946 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_b3f812a1-7650-4876-a635-420e33e6d7a8"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 07:22:04,946 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_b3f812a1-7650-4876-a635-420e33e6d7a8"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 07:22:04,946 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include single_add_delegation
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\650520d9-138c-4b66-831e-3f40ca43a3f4
+--output Output.xml
+
+
+2025-05-15 07:22:50,911 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 07:22:50,927 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 07:23:07,216 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 07:23:07,247 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 07:23:25,992 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\f042f47d-e4e9-4490-bf2e-6fa37ac4ef48
+2025-05-15 07:23:25,992 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 07:23:26,164 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_81b0623a-a210-4acd-baa5-4cc32223b02b"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 07:23:26,164 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_81b0623a-a210-4acd-baa5-4cc32223b02b"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 07:23:26,164 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include single_add_delegation
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\f042f47d-e4e9-4490-bf2e-6fa37ac4ef48
+--output Output.xml
+
+
+2025-05-15 07:24:30,467 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 07:24:30,483 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 07:34:10,884 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\5e14ba73-b596-4d62-8148-ab904e24eba7
+2025-05-15 07:34:10,884 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 07:34:11,058 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_453629ba-5ad7-4e39-bcfb-ec553b8bb5a3"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 07:34:11,058 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_453629ba-5ad7-4e39-bcfb-ec553b8bb5a3"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 07:34:11,058 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include single_add_delegation
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\5e14ba73-b596-4d62-8148-ab904e24eba7
+--output Output.xml
+
+
+2025-05-15 07:35:12,786 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 07:35:12,818 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 07:35:22,721 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\eb246db6-0543-44ad-be9b-fa132324bc1b
+2025-05-15 07:35:22,721 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 07:35:22,892 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_ac82a6cb-1137-4ce7-b01c-305ab99c87a4"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 07:35:22,892 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_ac82a6cb-1137-4ce7-b01c-305ab99c87a4"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 07:35:22,892 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include single_add_delegation
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\eb246db6-0543-44ad-be9b-fa132324bc1b
+--output Output.xml
+
+
+2025-05-15 07:36:24,811 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 07:36:24,827 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 07:40:38,794 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\8e5c0cc5-eef4-460b-b7be-260c12706f3b
+2025-05-15 07:40:38,794 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 07:40:38,966 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_6c426f6c-9938-4859-bc6c-7a38d24605d1"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 07:40:38,966 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_6c426f6c-9938-4859-bc6c-7a38d24605d1"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 07:40:38,966 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include single_add_delegation
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\8e5c0cc5-eef4-460b-b7be-260c12706f3b
+--output Output.xml
+
+
+2025-05-15 07:41:41,147 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 07:41:41,163 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 07:41:51,142 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\6a49619c-21bb-4b90-88f7-12c6b3b8a6bc
+2025-05-15 07:41:51,142 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 07:41:51,312 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_a60dae5c-f69a-4f52-b46b-41aa04cf47f0"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 07:41:51,312 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_a60dae5c-f69a-4f52-b46b-41aa04cf47f0"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 07:41:51,312 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include single_add_delegation
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\6a49619c-21bb-4b90-88f7-12c6b3b8a6bc
+--output Output.xml
+
+
+2025-05-15 07:42:53,155 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 07:42:53,171 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 09:55:16,532 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\bb492b43-fff1-4447-bbc8-244d36c5007f
+2025-05-15 09:55:16,532 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 09:55:16,688 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_fd91008c-3af8-40cd-8151-8b6591d121a0"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 09:55:16,688 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_fd91008c-3af8-40cd-8151-8b6591d121a0"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 09:55:16,688 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include AllOwnersRejectTheirOwnedRoles
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\bb492b43-fff1-4447-bbc8-244d36c5007f
+--output Output.xml
+
+
+2025-05-15 09:56:49,419 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 09:56:49,451 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 09:56:57,415 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\a209434b-bb15-4810-9be3-277639835758
+2025-05-15 09:56:57,415 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 09:56:57,571 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_76d84787-6b6b-42e0-bef9-19e71cdaf89c"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 09:56:57,571 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_76d84787-6b6b-42e0-bef9-19e71cdaf89c"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 09:56:57,571 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include Reject_roleA
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\a209434b-bb15-4810-9be3-277639835758
+--output Output.xml
+
+
+2025-05-15 09:58:04,515 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 09:58:04,530 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 10:03:00,681 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\c1c2811c-3590-4abb-82c5-0c25c4148b2e
+2025-05-15 10:03:00,697 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 10:03:00,854 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_6eed2288-fd33-4592-99bd-8ce078871535"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 10:03:00,854 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_6eed2288-fd33-4592-99bd-8ce078871535"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 10:03:00,854 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include single_add_delegation
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\c1c2811c-3590-4abb-82c5-0c25c4148b2e
+--output Output.xml
+
+
+2025-05-15 10:06:39,548 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\425b539c-3729-46c8-818e-c3f3a01cb740
+2025-05-15 10:06:39,563 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 10:06:39,720 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_e5610f48-0fd7-4355-b0e5-2e8368bb24f7"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 10:06:39,720 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_e5610f48-0fd7-4355-b0e5-2e8368bb24f7"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 10:06:39,720 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include single_add_delegation
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\425b539c-3729-46c8-818e-c3f3a01cb740
+--output Output.xml
+
+
+2025-05-15 10:07:41,298 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 10:07:41,313 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 10:07:51,364 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\38410f53-bf74-4d86-bc58-f1274a15115b
+2025-05-15 10:07:51,364 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 10:07:51,521 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_e85453e1-ba25-41c0-b691-6bc059032b8c"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 10:07:51,521 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_e85453e1-ba25-41c0-b691-6bc059032b8c"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 10:07:51,521 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include single_add_delegation
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\38410f53-bf74-4d86-bc58-f1274a15115b
+--output Output.xml
+
+
+2025-05-15 10:08:52,822 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 10:08:52,837 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 10:11:50,331 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\17eb0531-c6df-42ee-809e-cb11ea51914e
+2025-05-15 10:11:50,331 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 10:11:50,488 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_0e4d0336-396f-4c32-873c-1f72be83d2fb"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 10:11:50,488 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_0e4d0336-396f-4c32-873c-1f72be83d2fb"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 10:11:50,488 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include single_add_delegation
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\17eb0531-c6df-42ee-809e-cb11ea51914e
+--output Output.xml
+
+
+2025-05-15 10:12:36,147 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 10:12:36,178 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 10:53:01,826 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\1e99ca89-2931-47dc-b7e1-9835eb7d66d9
+2025-05-15 10:53:01,826 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 10:53:01,983 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_7979974b-8fdb-4ef9-8c02-a54f5f85a8d8"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 10:53:01,983 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_7979974b-8fdb-4ef9-8c02-a54f5f85a8d8"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 10:53:01,983 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include Reject_roleA
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\1e99ca89-2931-47dc-b7e1-9835eb7d66d9
+--output Output.xml
+
+
+2025-05-15 10:54:09,138 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 10:54:09,154 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 10:55:54,719 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\553d1ba9-295d-4381-9abf-5dc76e82ef78
+2025-05-15 10:55:54,719 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 10:55:54,875 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_aeb1de44-8250-4345-9b23-73f5797ccab7"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 10:55:54,875 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_aeb1de44-8250-4345-9b23-73f5797ccab7"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 10:55:54,875 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include Reject_roleA
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\553d1ba9-295d-4381-9abf-5dc76e82ef78
+--output Output.xml
+
+
+2025-05-15 10:56:47,581 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 10:56:47,597 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 10:58:44,827 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\f8e0e74b-7a94-4087-9558-306ec06a0260
+2025-05-15 10:58:44,827 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 10:58:44,983 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_87e2b940-5518-4335-bb3f-99106b163ef9"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 10:58:44,983 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_87e2b940-5518-4335-bb3f-99106b163ef9"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 10:58:44,983 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include Reject_roleA
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\f8e0e74b-7a94-4087-9558-306ec06a0260
+--output Output.xml
+
+
+2025-05-15 10:59:37,144 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 10:59:37,160 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 11:05:14,834 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\897a3425-12e0-41ed-877f-821e8e390963
+2025-05-15 11:05:14,834 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 11:05:14,990 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_3facbec7-b912-4ae1-b1f0-f508fb99f10d"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 11:05:14,990 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_3facbec7-b912-4ae1-b1f0-f508fb99f10d"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 11:05:14,990 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include Reject_roleA
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\897a3425-12e0-41ed-877f-821e8e390963
+--output Output.xml
+
+
+2025-05-15 11:06:14,462 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 11:06:14,493 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 11:06:21,808 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\4b788499-9680-4dbb-94f1-337d781cc542
+2025-05-15 11:06:21,808 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 11:06:21,965 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_badd12db-a611-404c-bd10-7bc5f772cfc5"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 11:06:21,965 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_badd12db-a611-404c-bd10-7bc5f772cfc5"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 11:06:21,965 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include Reject_roleB
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\4b788499-9680-4dbb-94f1-337d781cc542
+--output Output.xml
+
+
+2025-05-15 11:07:09,261 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 11:07:09,276 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 11:11:26,055 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\4cafa7ab-74b4-47ff-8343-d6816f8015ff
+2025-05-15 11:11:26,055 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 11:11:26,211 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_a429d2c7-10e6-46d6-874f-e8caa3fefb05"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 11:11:26,211 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_a429d2c7-10e6-46d6-874f-e8caa3fefb05"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 11:11:26,211 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include Reject_roleB
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\4cafa7ab-74b4-47ff-8343-d6816f8015ff
+--output Output.xml
+
+
+2025-05-15 11:12:26,892 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 11:12:26,908 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 12:52:17,639 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\b037975e-ba56-46de-b8de-22977773092f
+2025-05-15 12:52:17,639 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 12:52:17,797 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_17a24653-5f5f-4c46-8038-45fc447ea3d9"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 12:52:17,797 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_17a24653-5f5f-4c46-8038-45fc447ea3d9"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 12:52:17,798 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include Rejection_OneRole_ApprovalOthers
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\b037975e-ba56-46de-b8de-22977773092f
+--output Output.xml
+
+
+2025-05-15 12:52:23,828 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 12:52:23,842 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 12:53:45,690 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\975b580e-c008-4b83-abad-156ca99fbd49
+2025-05-15 12:53:45,696 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 12:53:45,857 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_7b9afe21-3389-4e10-9a10-6228bf371ff1"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 12:53:45,857 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_7b9afe21-3389-4e10-9a10-6228bf371ff1"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 12:53:45,857 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include Rejection_OneRole_ApprovalOthers
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\975b580e-c008-4b83-abad-156ca99fbd49
+--output Output.xml
+
+
+2025-05-15 12:55:13,924 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 12:55:13,970 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 12:55:21,992 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\f1cb0743-ffdb-4069-b033-3cec49421c5f
+2025-05-15 12:55:21,993 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 12:55:22,169 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_1c4e07eb-f703-47b0-99cb-15c1a02fc271"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 12:55:22,169 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_1c4e07eb-f703-47b0-99cb-15c1a02fc271"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 12:55:22,169 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include RoleA_OneRoleApprovalOthers
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\f1cb0743-ffdb-4069-b033-3cec49421c5f
+--output Output.xml
+
+
+2025-05-15 12:56:10,243 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 12:56:10,264 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 13:00:59,261 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\227a26d7-2afc-4888-9c98-47a22f454c0c
+2025-05-15 13:00:59,261 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 13:00:59,473 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_e20dcf6e-9407-4f14-92f5-f3571ddba169"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 13:00:59,474 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_e20dcf6e-9407-4f14-92f5-f3571ddba169"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 13:00:59,474 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include RoleA_OneRoleApprovalOthers
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\227a26d7-2afc-4888-9c98-47a22f454c0c
+--output Output.xml
+
+
+2025-05-15 13:01:46,766 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 13:01:46,787 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 13:13:48,054 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\2f81aa97-354f-4fa5-ab08-b3bab1acb7d3
+2025-05-15 13:13:48,055 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 13:13:48,213 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_490b2580-28b4-4ef6-8857-e6181e4d8db2"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 13:13:48,214 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_490b2580-28b4-4ef6-8857-e6181e4d8db2"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 13:13:48,214 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include RoleA_OneRoleApprovalOthers
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\2f81aa97-354f-4fa5-ab08-b3bab1acb7d3
+--output Output.xml
+
+
+2025-05-15 13:14:36,063 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 13:14:36,093 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 13:18:10,956 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\812a0e52-af87-4911-8e1d-e18687d3c47e
+2025-05-15 13:18:10,957 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 13:18:11,113 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_e7a7d9a8-3a14-4f0b-bf48-d8330c7f48ea"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 13:18:11,113 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_e7a7d9a8-3a14-4f0b-bf48-d8330c7f48ea"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 13:18:11,113 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include RoleA_OneRoleApprovalOthers
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\812a0e52-af87-4911-8e1d-e18687d3c47e
+--output Output.xml
+
+
+2025-05-15 13:18:59,183 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 13:18:59,205 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 13:30:44,255 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\4a734cec-2bc1-4178-a3ef-4fc790bb1720
+2025-05-15 13:30:44,255 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 13:30:44,418 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_8acb4da3-9356-4249-99c5-190cbeb5f295"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 13:30:44,418 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_8acb4da3-9356-4249-99c5-190cbeb5f295"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 13:30:44,418 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include Rejection_OneRole_ApprovalOthers
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\4a734cec-2bc1-4178-a3ef-4fc790bb1720
+--output Output.xml
+
+
+2025-05-15 13:32:12,754 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 13:32:12,801 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 13:32:20,698 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\60c7a100-f114-4345-9930-dd35e9948f26
+2025-05-15 13:32:20,698 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 13:32:20,862 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_bd3eaa59-204d-4f92-864f-7f87d6c53fe3"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 13:32:20,863 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_bd3eaa59-204d-4f92-864f-7f87d6c53fe3"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 13:32:20,863 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include RoleA_OneRoleApprovalOthers
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\60c7a100-f114-4345-9930-dd35e9948f26
+--output Output.xml
+
+
+2025-05-15 13:33:08,733 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 13:33:08,753 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 13:38:20,096 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\531fc70b-6a27-4a78-9a33-34fff889f2a7
+2025-05-15 13:38:20,097 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 13:38:20,265 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_35af7446-294d-4acf-9118-9bc30d2dcab3"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 13:38:20,265 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_35af7446-294d-4acf-9118-9bc30d2dcab3"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 13:38:20,265 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include RoleA_OneRoleApprovalOthers
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\531fc70b-6a27-4a78-9a33-34fff889f2a7
+--output Output.xml
+
+
+2025-05-15 13:39:08,392 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 13:39:08,414 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 13:44:27,687 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\3bc80fb6-bc5e-49b5-afbd-c1e4dbfa0e45
+2025-05-15 13:44:27,687 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 13:44:27,843 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_e2c000de-62f8-491b-a279-af9641ba0fe5"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 13:44:27,843 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_e2c000de-62f8-491b-a279-af9641ba0fe5"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 13:44:27,843 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include RoleA_OneRoleApprovalOthers
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\3bc80fb6-bc5e-49b5-afbd-c1e4dbfa0e45
+--output Output.xml
+
+
+2025-05-15 13:45:16,432 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 13:45:16,458 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 13:58:20,048 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\c55b5f1b-daf7-44d9-b976-4dad6708feb8
+2025-05-15 13:58:20,049 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 13:58:20,303 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_f3ca6bb1-a554-4eee-92c7-d51c140ad6d3"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 13:58:20,303 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_f3ca6bb1-a554-4eee-92c7-d51c140ad6d3"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 13:58:20,303 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include Rejection_OneRole_ApprovalOthers
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\c55b5f1b-daf7-44d9-b976-4dad6708feb8
+--output Output.xml
+
+
+2025-05-15 13:59:48,394 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 13:59:48,439 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 13:59:56,579 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\41073f92-0da3-4db8-a813-ac07d80d9089
+2025-05-15 13:59:56,579 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 13:59:56,739 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_b03f0976-36f6-493a-9083-d36a0cdd18ea"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 13:59:56,739 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_b03f0976-36f6-493a-9083-d36a0cdd18ea"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 13:59:56,739 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include RoleA_OneRoleApprovalOthers
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\41073f92-0da3-4db8-a813-ac07d80d9089
+--output Output.xml
+
+
+2025-05-15 14:00:52,409 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 14:00:52,439 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-15 14:01:01,301 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\612f5f08-92b0-4250-82a4-9f3778f8da65
+2025-05-15 14:01:01,302 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-15 14:01:01,466 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_844e7fcd-9a85-4c9a-a42c-07e3222981dc"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 14:01:01,466 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_844e7fcd-9a85-4c9a-a42c-07e3222981dc"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-15 14:01:01,466 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include RoleB_OneRoleApprovalOthers
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\612f5f08-92b0-4250-82a4-9f3778f8da65
+--output Output.xml
+
+
+2025-05-15 14:02:06,661 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-15 14:02:06,683 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-16 06:09:52,357 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\b528a634-7542-4b6b-a14c-aa84042e450e
+2025-05-16 06:09:52,373 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-16 06:09:58,414 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_3b26366b-67e0-48b5-a766-54c97bd8c757"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 06:09:58,414 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_3b26366b-67e0-48b5-a766-54c97bd8c757"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 06:09:58,414 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include approveoneRejectoneandapproveroleotherowner
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\b528a634-7542-4b6b-a14c-aa84042e450e
+--output Output.xml
+
+
+2025-05-16 06:10:30,170 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-16 06:10:30,231 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-16 06:18:09,869 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\5f1e920d-9310-4f87-8213-535c1f60b390
+2025-05-16 06:18:09,869 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-16 06:18:11,302 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_0926a868-dded-4718-b274-9407404926db"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 06:18:11,302 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_0926a868-dded-4718-b274-9407404926db"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 06:18:11,302 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include approveoneRejectoneandapproveroleotherowner
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\5f1e920d-9310-4f87-8213-535c1f60b390
+--output Output.xml
+
+
+2025-05-16 06:19:13,266 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-16 06:19:13,353 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-16 06:32:20,400 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\52f2438c-b6a7-4f15-8fe4-8472d5526dd2
+2025-05-16 06:32:20,400 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-16 06:32:21,148 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_9161b6f0-60d0-470c-82a7-efec5aa80aaf"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 06:32:21,148 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_9161b6f0-60d0-470c-82a7-efec5aa80aaf"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 06:32:21,148 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include approveoneRejectoneandapproveroleotherowner
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\52f2438c-b6a7-4f15-8fe4-8472d5526dd2
+--output Output.xml
+
+
+2025-05-16 06:34:01,547 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-16 06:34:01,600 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-16 06:34:11,478 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\096183aa-32e7-4d14-b665-a17bad2c219d
+2025-05-16 06:34:11,478 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-16 06:34:11,654 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_7d997f13-759e-497b-8003-64df89233ada"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 06:34:11,654 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_7d997f13-759e-497b-8003-64df89233ada"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 06:34:11,654 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include approveoneRejectoneandapproveroleotherowner_roleA
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\096183aa-32e7-4d14-b665-a17bad2c219d
+--output Output.xml
+
+
+2025-05-16 06:35:07,798 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-16 06:35:07,821 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-16 06:35:18,197 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\b141a5bf-6f1b-455d-b829-69d74c8c35da
+2025-05-16 06:35:18,197 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-16 06:35:18,371 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_1b7f6425-81e6-49cb-866f-222114ed3046"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 06:35:18,371 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_1b7f6425-81e6-49cb-866f-222114ed3046"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 06:35:18,371 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include approveoneRejectoneandapproveroleotherowner_roleC
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\b141a5bf-6f1b-455d-b829-69d74c8c35da
+--output Output.xml
+
+
+2025-05-16 06:36:23,887 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-16 06:36:23,916 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-16 06:48:29,333 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\ca4f30d7-59ba-4d95-9e6b-420bdc3d02a9
+2025-05-16 06:48:29,334 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-16 06:48:29,517 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_a2df905c-011a-42bf-947b-39bfc55af7e7"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 06:48:29,517 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_a2df905c-011a-42bf-947b-39bfc55af7e7"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 06:48:29,517 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include approveoneRejectoneandapproveroleotherowner
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\ca4f30d7-59ba-4d95-9e6b-420bdc3d02a9
+--output Output.xml
+
+
+2025-05-16 06:50:08,259 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-16 06:50:08,308 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-16 06:50:16,728 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\d5d232a5-7c53-4256-a123-89a1c33f35cd
+2025-05-16 06:50:16,729 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-16 06:50:16,905 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_88ff36e1-1221-46fc-b1b4-00134ceec6f4"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 06:50:16,905 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_88ff36e1-1221-46fc-b1b4-00134ceec6f4"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 06:50:16,905 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include approveoneRejectoneandapproveroleotherowner_roleA
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\d5d232a5-7c53-4256-a123-89a1c33f35cd
+--output Output.xml
+
+
+2025-05-16 06:51:13,130 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-16 06:51:13,151 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-16 07:01:42,942 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\41a650f5-fdf0-448e-b068-d4fef7f4c20b
+2025-05-16 07:01:42,943 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-16 07:01:43,113 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_fbe6e3fa-091f-420b-8ee5-a8ec90f58767"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 07:01:43,113 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_fbe6e3fa-091f-420b-8ee5-a8ec90f58767"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 07:01:43,114 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include approveoneRejectoneandapproveroleotherowner_roleC
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\41a650f5-fdf0-448e-b068-d4fef7f4c20b
+--output Output.xml
+
+
+2025-05-16 07:02:39,794 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-16 07:02:39,816 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-16 11:49:00,607 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\4f586b56-b5b8-41b8-81d2-d44442d7643e
+2025-05-16 11:49:00,607 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-16 11:49:00,780 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_8c9cfc90-ab00-49c9-96f6-fcca27d122fc"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 11:49:00,780 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_8c9cfc90-ab00-49c9-96f6-fcca27d122fc"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 11:49:00,780 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include requestoneownerapproveandrejectroleandotherownerapprovetwoandrejectone
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\4f586b56-b5b8-41b8-81d2-d44442d7643e
+--output Output.xml
+
+
+2025-05-16 11:51:26,936 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-16 11:51:26,999 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-16 11:51:34,983 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\6380e569-6768-4dd1-8303-e86102946582
+2025-05-16 11:51:34,983 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-16 11:51:35,155 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_24e0d9df-617a-4f88-8500-b8225f944898"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 11:51:35,155 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_24e0d9df-617a-4f88-8500-b8225f944898"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 11:51:35,155 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include approveoneRejectoneandapprovetworolerejectoneotherowner_roleA
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\6380e569-6768-4dd1-8303-e86102946582
+--output Output.xml
+
+
+2025-05-16 11:52:34,752 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-16 11:52:34,783 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
+2025-05-16 11:52:42,515 - Robot.Driver - clean_output_directory - INFO - Cleaning Output Directory: C:\Anugal_Testing\Anugal\Output\b2aee4e7-b0df-49a2-b23a-f82b415654f3
+2025-05-16 11:52:42,515 - Robot.Driver - build_execution_command - INFO - 
+Executing tests from folder: Tests
+2025-05-16 11:52:42,687 - Robot.Driver - set_execution_command - INFO - 
+command is : "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_6007cb9b-ad8d-4279-832c-7d88e758dda6"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 11:52:42,687 - Robot.Driver - execute_command - INFO - 
+Executing: "C:\Anugal_Testing\Anugal\RoboEnvironment\Anugal\Scripts\pabot" --verbose  --argumentfile "C:\Anugal_Testing\Anugal\Robot_Arguments_6007cb9b-ad8d-4279-832c-7d88e758dda6"  "C:\Anugal_Testing\Anugal\Tests" 
+2025-05-16 11:52:42,687 - Robot.Driver - execute_command - INFO - 
+Argument File Data:
+--variable test_server:Dev
+--metadata test_environment:Dev
+--metadata test_freeze_dependencies:astroid==3.3.5,attrs==24.2.0,beautifulsoup4==4.12.3,bs4==0.0.2,certifi==2024.8.30,cffi==1.17.1,chardet==5.2.0,charset-normalizer==3.4.0,click==8.1.7,colorama==0.4.6,cryptography==43.0.1,defusedxml==0.7.1,dill==0.3.9,docutils==0.21.2,et_xmlfile==2.0.0,exceptiongroup==1.2.2,fpdf==1.7.2,gitdb==4.0.11,GitPython==3.1.43,h11==0.14.0,idna==3.10,isort==5.13.2,Jinja2==3.1.4,jira==3.8.0,jsonpath-ng==1.7.0,jsonschema==4.23.0,jsonschema-specifications==2024.10.1,lazy-object-proxy==1.10.0,lxml==5.3.0,markdown-it-py==3.0.0,MarkupSafe==3.0.1,mccabe==0.7.0,mdurl==0.1.2,MouseInfo==0.1.3,natsort==8.4.0,numpy==2.1.3,oauthlib==3.2.2,openpyxl==3.1.5,outcome==1.3.0.post0,packaging==24.1,pandas==2.2.3,pathspec==0.11.2,pillow==11.0.0,pip==25.0.1,platformdirs==4.3.6,ply==3.11,psutil==6.1.0,PyAutoGUI==0.9.54,pycparser==2.22,PyGetWindow==0.0.9,Pygments==2.18.0,pylint==3.3.1,PyMsgBox==1.0.9,pyperclip==1.9.0,PyRect==0.2.0,PyScreeze==1.0.1,PySocks==1.7.1,python-dateutil==2.9.0.post0,pytweening==1.2.0,pytz==2024.2,pywin32==308,PyYAML==6.0.2,referencing==0.35.1,requests==2.32.3,requests-oauthlib==2.0.0,requests-toolbelt==1.0.0,rich==13.9.2,rich-click==1.6.1,robotframework==6.0.2,robotframework-datadriver==1.9.0,robotframework-jsonlibrary==0.5,robotframework-pabot==2.16.0,robotframework-pythonlibcore==4.2.0,robotframework-requests==0.9.2,robotframework-sapguilibrary==1.1,robotframework-seleniumlibrary==5.1.3,robotframework-stacktrace==0.4.1,robotframework-tidy==4.5.0,rpds-py==0.20.0,selenium==4.9.1,setuptools==75.2.0,six==1.16.0,smmap==5.0.1,sniffio==1.3.1,sortedcontainers==2.4.0,soupsieve==2.6,tomli==2.0.2,tomlkit==0.13.2,trio==0.27.0,trio-websocket==0.11.1,typing_extensions==4.12.2,tzdata==2024.2,urllib3==2.2.3,wheel==0.44.0,wrapt==1.16.0,wsproto==1.2.0
+--include approveoneRejectoneandapprovetworolerejectoneotherowner_roleB
+--variable browser:chrome
+--variableFile C:\Anugal_Testing\Anugal\Execution\Access_Data.py
+--log LOG
+--report Report
+--listener C:\Anugal_Testing\Anugal\Execution\ResultsListener.py
+--variable screenshot_taking:True
+--outputdir C:\Anugal_Testing\Anugal\Output\b2aee4e7-b0df-49a2-b23a-f82b415654f3
+--output Output.xml
+
+
+2025-05-16 11:53:28,985 - Robot.Driver - _delete_file - INFO - Deleting file: C:\Anugal_Testing\Anugal\Robot_Arguments__
+2025-05-16 11:53:29,001 - Robot.Driver - create_pabot_local_logfiles - INFO - Create log.html file in pabot results folders, which will have the screenshots embedded:
