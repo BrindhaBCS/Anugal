@@ -9,14 +9,14 @@ Library    String
 # @{ROLES}    QA_QA    testaudit
 ${Apps}    Symphony
 
-&{ROLE_MAP_1}    envm=Predev Symphony    role=asd
-&{ROLE_MAP_2}    envm=QA Symphony    role=BGM_ADMIN
+&{ROLE_MAP_1}    envm=Predev Symphony    role=Harmony Developer
+&{ROLE_MAP_2}    envm=DEV Symphony    role=appstoretest
 @{ROLES_LIST}    &{ROLE_MAP_1}    &{ROLE_MAP_2}
 
 *** Keywords ***
 Start TestCase
     Log    Opening browser
-    Open Browser    ${angvar('url')}    ${angvar('browser')}    #options=${global_browser_options}
+    Open Browser    ${angvar('url2')}    ${angvar('browser')}    #options=${global_browser_options}
     
     Wait Until Keyword Succeeds    2 minute    5s   Wait until element is visible    xpath://button[contains(.,'Azure')]
     # Sleep    10
@@ -58,8 +58,8 @@ All Owners Reject Their Owned Roles
 
         Log To Console    Dept Name After Cleaning: ${dept_name_clean}
 
-        IF    '${dept_name_clean}' == '${wvar("department").strip()}'
-        # IF    '${dept_name}' == '${wvar('department')}'
+        IF    '${dept_name_clean}' == '${angvar("department2").strip()}'
+        # IF    '${dept_name}' == '${angvar('department2')}'
             SeleniumLibrary.Click Element    ${element}
             Sleep    5
 

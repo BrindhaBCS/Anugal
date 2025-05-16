@@ -9,62 +9,22 @@ Library    String
 # @{ROLES}    QA_QA    testaudit
 ${Apps}    Symphony
 
-&{ROLE_MAP_1}    envm=Predev Symphony    role=asd
-&{ROLE_MAP_2}    envm=QA Symphony    role=BGM_ADMIN
+&{ROLE_MAP_1}    envm=Predev Symphony    role=Harmony Developer
+&{ROLE_MAP_2}    envm=DEV Symphony    role=appstoretest
 @{ROLES_LIST}    &{ROLE_MAP_1}    &{ROLE_MAP_2}
 
 *** Keywords ***
 Start TestCase
     Log    Opening browser
-    Open Browser    ${wvar('url')}    ${wvar('browser')}    #options=${global_browser_options}
+    Open Browser    ${angvar('url2')}    ${angvar('browser')}    #options=${global_browser_options}
     
     Wait Until Keyword Succeeds    2 minute    5s   Wait until element is visible    xpath://button[contains(.,'Azure')]
     # Sleep    10
     Maximize Browser Window
-    SeleniumLibrary.Input text    id:emailId        ${wvar('user_id')}
-    Input password    id:password    ${wvar('password')}
+    SeleniumLibrary.Input text    id:emailId        ${angvar('user_id')}
+    Input password    id:password    ${angvar('password')}
     SeleniumLibrary.Click element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[3]
-    # Sleep    20
-    Wait Until Element Is Visible    xpath:(//input[@inputmode='text'])    60s
-    Execute Javascript    window.open('https://outlook.office365.com/mail/inbox/')
-    Switch Window    new
-
-    Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://*[@id="i0116"]
-    SeleniumLibrary.Input Text   xpath://*[@id="i0116"]    ${wvar('Mail_id')}
-    Sleep    4
-    
-    SeleniumLibrary.Click Element    xpath://*[@id="idSIButton9"]
-    Sleep    2
-    Wait Until Element Is Visible    xpath://*[@id="i0118"]    60s
-    SeleniumLibrary.Input Text    xpath://*[@id="i0118"]    ${wvar('Mail_password')}
-    Sleep    2
-    SeleniumLibrary.Click Element    xpath://*[@id="idSIButton9"]
-    Sleep    2
-    SeleniumLibrary.Click Element    xpath://*[@id="idBtn_Back"]
     Sleep    5
-
-    Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://span[normalize-space(text())='New mail']
-    Wait Until Keyword Succeeds    2 minute    5s    Wait Until Element Is Visible    xpath:(//div[@data-folder-name='inbox'])[1]
-    SeleniumLibrary.Input Text    id:topSearchInput    Anugal Administrator (Lab)
-    Sleep    2
-    SeleniumLibrary.Click Element    xpath:(//i[@fill='currentColor'])[3]
-    Sleep    2
-    SeleniumLibrary.Click Element    xpath://span[text()='Mail']
-    Sleep    4
-    Wait Until Element Is Visible    xpath:(//div[@class='XG5Jd TszOG'])[1]    20s
-    SeleniumLibrary.Click Element    xpath:(//div[@class='XG5Jd TszOG'])[1]
-    Sleep    2
-    
-    Wait Until Element Is Visible    xpath:(//button[@aria-label='Reply'])[3]    20s
-    ${text_otp}    Get Text    xpath://div[@class='BodyFragment']//div[1]
-    Sleep    1
-    Log    ${text_otp}
-    ${otp}    Extract Order Number otp    ${text_otp}
-    Switch Window    main
-    SeleniumLibrary.Input Text    xpath:(//input[@inputmode='text'])    ${otp}
-    Sleep    2
-    SeleniumLibrary.Click Element    xpath:(//button[@type='button'])[1]
-    Sleep    20
     
 
 Rejection_of_One_Role_and_Approval_of_Others
@@ -98,8 +58,8 @@ Rejection_of_One_Role_and_Approval_of_Others
 
         Log To Console    Dept Name After Cleaning: ${dept_name_clean}
 
-        IF    '${dept_name_clean}' == '${wvar("department").strip()}'
-        # IF    '${dept_name}' == '${wvar('department')}'
+        IF    '${dept_name_clean}' == '${angvar("department2").strip()}'
+        # IF    '${dept_name}' == '${angvar('department2')}'
             SeleniumLibrary.Click Element    ${element}
             Sleep    5
 
@@ -153,7 +113,7 @@ Rejection_of_One_Role_and_Approval_of_Others
         Sleep    2
         SeleniumLibrary.Input Text    xpath:(//input[@id='addRolesSearch'])[2]    ${role}
         Sleep    2
-        Wait Until Element Is Visible  xpath:(//div[@class='MuiGrid-root css-rfnosa'])    20s
+        Wait Until Element Is Visible  xpath://img[@alt='toggleIcon']    20s
         SeleniumLibrary.Click Element    xpath://img[@alt='toggleIcon']
         Sleep    3
     END
@@ -161,6 +121,8 @@ Rejection_of_One_Role_and_Approval_of_Others
 
     Wait Until Element Is Visible    xpath://button[normalize-space(text())='Next']    10s
     SeleniumLibrary.Click Element    xpath://button[normalize-space(text())='Next']
+    Sleep    2
+    SeleniumLibrary.Click Element    xpath://button[contains(.,'Symphonytest')]
     Sleep    2
     SeleniumLibrary.Click Element    xpath:(//div[@id='mui-component-select-selectedDepartment'])[1]
     Sleep    1
@@ -187,8 +149,9 @@ Rejection_of_One_Role_and_Approval_of_Others
     ${Rejection_of_One_Role_and_Approval_of_Others_id}    Extract Order Number    ${multipleowner_multiplerole}
     Log    IGA-${Rejection_of_One_Role_and_Approval_of_Others_id}
     Set Global Variable    ${Rejection_of_One_Role_and_Approval_of_Others_id}
-    Log To Console    **gbStart**Rejection_of_One_Role_and_Approval_of_Others_id**splitKeyValue**IGA-${Rejection_of_One_Role_and_Approval_of_Others_id}**gbEnd**
+    Log To Console    **gbStart**Rejection_of_One_Role_and_Approval_of_Others**splitKeyValue**IGA-${Rejection_of_One_Role_and_Approval_of_Others_id}**gbEnd**
     SeleniumLibrary.Click Element    xpath://div[@data-testid='close-button']
+    
     Sleep    2
     
     
