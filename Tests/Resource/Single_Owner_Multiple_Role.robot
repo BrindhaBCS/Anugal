@@ -6,7 +6,7 @@ Library    String
 
 *** Variables ***
 
-@{ROLES}    Role_testing    QA_QA
+@{ROLES}    Role_testing    Role_role01
 ${Apps}    symphony
 
 *** Keywords ***
