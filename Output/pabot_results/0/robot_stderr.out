@@ -1,0 +1,20 @@
+[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF7158F1F55+78133]
+	GetHandleVerifier [0x00007FF7158F1FB0+78224]
+	(No symbol) [0x00007FF7156B8FEC]
+	(No symbol) [0x00007FF7156FF47F]
+	(No symbol) [0x00007FF715737022]
+	(No symbol) [0x00007FF715731A32]
+	(No symbol) [0x00007FF715730AF9]
+	(No symbol) [0x00007FF715685AB5]
+	GetHandleVerifier [0x00007FF715BBBA8D+3001453]
+	GetHandleVerifier [0x00007FF715BB5E72+2977874]
+	GetHandleVerifier [0x00007FF715BD497D+3103581]
+	GetHandleVerifier [0x00007FF71590C7EA+186826]
+	GetHandleVerifier [0x00007FF7159143FF+218591]
+	(No symbol) [0x00007FF715684B28]
+	GetHandleVerifier [0x00007FF715CC5F28+4092168]
+	BaseThreadInitThunk [0x00007FFEAEF54DE0+16]
+	RtlUserThreadStart [0x00007FFEAF6DEDAB+43]
+

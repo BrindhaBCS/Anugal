@@ -1,25 +1,15 @@
-url ="https://qa.anugalid.com/login"
+apurl ="https://qa.anugalid.com/login"
 url2 = "https://dev.anugalid.com/login"
 Azure = "xpath://span[text()=' Azure']"
 browser = "Chrome"
-<<<<<<< HEAD
 user_id = "malayranjan.s@businesscoresolutions.com"
-qa_password = "$qa_password"
-password = "GzraO9MB"
-=======
-user_id = "$user_id"
-qa_password = "$qa_password"
+qa_password = "Malay@@ranjan12"
 password = "$password"
->>>>>>> cc57dd06479c03aa534182b428683124683d3c3d
 user_text_box = "id:emailId"
 password_text_box = "id:password"
-Mail_id = "$Mail_id"
-Mail_password = "$Mail_password"
-<<<<<<< HEAD
-=======
-
->>>>>>> cc57dd06479c03aa534182b428683124683d3c3d
-department = "$department"
+Mail_id = "malayranjan.s@businesscoresolutions.com"
+Mail_password = "Mitu@mitu@bcs@0909"
+department = "Symphony"
 department2 = "BASIS test"
 Access_requiest_id = "$New_Access_request"
 Multipleowner_singlerole_id = "$Multipleowner_singlerole"
@@ -35,12 +25,6 @@ Delete_Approval_to_Another_Approver_id = "$Delete_Approval_to_Another_Approver"
 All_owners_reject_their_owned_roles_id = "$All_owners_reject_their_owned_roles"
 Rejection_of_One_Role_and_Approval_of_Others_id = "$Rejection_of_One_Role_and_Approval_of_Others"
 One_Owner_Approves_One_Role_and_Rejects_Other_Role_and_Other_Owner_Approves_His_Roles_id = "$One_Owner_Approves_One_Role_and_Rejects_Other_Role_and_Other_Owner_Approves_His_Roles"
-<<<<<<< HEAD
-One_Owner_Approves_One_Role_and_Rejects_Other_Role_and_Other_Owner_Approves_Two_and_Rejects_One_Roles_id = "IGA-118389"
-c_user_id = "anitha.s@businesscoresolutions.com"
-c_password = "mPxKUSrM"
-=======
 One_Owner_Approves_One_Role_and_Rejects_Other_Role_and_Other_Owner_Approves_Two_and_Rejects_One_Roles_id = "$One_Owner_Approves_One_Role_and_Rejects_Other_Role_and_Other_Owner_Approves_Two_and_Rejects_One_Roles"
 c_user_id = "$c_user_id"
 c_password = "$c_password"
->>>>>>> cc57dd06479c03aa534182b428683124683d3c3d

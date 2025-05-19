@@ -6,13 +6,13 @@ Library    String
 
 *** Variables ***
 
-@{ROLES}    Role_testing    QA_QA
+@{ROLES}    Role_testing    Role_role01
 ${Apps}    symphony
 
 *** Keywords ***
 Start TestCase
     Log    Opening browser
-    Open Browser    ${angvar('url')}    ${angvar('browser')}    #options=${global_browser_options}
+    Open Browser    ${angvar('apurl')}    ${angvar('browser')}    #options=${global_browser_options}
     
     Wait Until Keyword Succeeds    2 minute    5s   Wait until element is visible    xpath://button[contains(.,'Azure')]
     # Sleep    10
