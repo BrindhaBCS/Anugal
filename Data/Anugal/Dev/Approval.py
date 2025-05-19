@@ -1,4 +1,4 @@
-url ="https://qa.anugalid.com/login"
+apurl ="https://qa.anugalid.com/login"
 url2 = "https://dev.anugalid.com/login"
 Azure = "xpath://span[text()=' Azure']"
 browser = "Chrome"
