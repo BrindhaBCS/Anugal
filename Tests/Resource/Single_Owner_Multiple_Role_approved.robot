@@ -20,7 +20,7 @@ Start TestCase
     SeleniumLibrary.Input text    id:emailId        ${angvar('user_id')}
     Input password    id:password    ${angvar('qa_password')}
     SeleniumLibrary.Click element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[3]
-    Sleep    20
+    Sleep    5
 
     Wait Until Element Is Visible    xpath:(//input[@inputmode='text'])    60s
     Execute Javascript    window.open('https://outlook.office365.com/mail/inbox/')
@@ -28,20 +28,19 @@ Start TestCase
 
     Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://*[@id="i0116"]
     SeleniumLibrary.Input Text   xpath://*[@id="i0116"]    ${angvar('Mail_id')}
-    Sleep    5
+    Sleep    2
     SeleniumLibrary.Click Element    xpath://*[@id="idSIButton9"]
     Sleep    2
     Wait Until Element Is Visible    xpath://*[@id="i0118"]    60s
     SeleniumLibrary.Input Text    xpath://*[@id="i0118"]    ${angvar('Mail_password')}
-    Sleep    5
+    Sleep    2
     SeleniumLibrary.Click Element    xpath://*[@id="idSIButton9"]
-    Sleep    5
+    Sleep    2
     SeleniumLibrary.Click Element    xpath://*[@id="idBtn_Back"]
     Sleep    15
-
     SeleniumLibrary.Click Element    xpath=//input[@id='topSearchInput']
     SeleniumLibrary.Input Text       xpath=//input[@id='topSearchInput']    Anugal login otp
-    Sleep    5
+    Sleep    2
     SeleniumLibrary.Press Keys       xpath=//input[@id='topSearchInput']    ENTER
 
     Sleep    5
