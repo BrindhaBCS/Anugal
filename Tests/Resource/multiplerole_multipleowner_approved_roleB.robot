@@ -11,13 +11,14 @@ ${Apps}    symphony
 
 *** Keywords ***
 Start TestCase
-    Open Browser    ${angvar('url')}    ${angvar('browser')}    #options=${global_browser_options}
+    Log    Opening browser
+    Open Browser    ${angvar('apurl')}    ${angvar('browser')}    #options=${global_browser_options}
     
     Wait Until Keyword Succeeds    2 minute    5s   Wait until element is visible    xpath://button[contains(.,'Azure')]
     # Sleep    10
     Maximize Browser Window
-    SeleniumLibrary.Input text    id:emailId        ${angvar('RoleB_user_id')}
-    Input password    id:password    ${angvar('RoleB_qa_password')}
+    SeleniumLibrary.Input text    id:emailId        ${angvar('user_id')}
+    Input password    id:password    ${angvar('qa_password')}
     SeleniumLibrary.Click element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[3]
     Sleep    5
 
@@ -26,12 +27,12 @@ Start TestCase
     Switch Window    new
 
     Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://*[@id="i0116"]
-    SeleniumLibrary.Input Text   xpath://*[@id="i0116"]    ${angvar('RoleB_Mail_id')}
+    SeleniumLibrary.Input Text   xpath://*[@id="i0116"]    ${angvar('Mail_id')}
     Sleep    2
     SeleniumLibrary.Click Element    xpath://*[@id="idSIButton9"]
     Sleep    2
     Wait Until Element Is Visible    xpath://*[@id="i0118"]    60s
-    SeleniumLibrary.Input Text    xpath://*[@id="i0118"]    ${angvar('RoleB_Mail_password')}
+    SeleniumLibrary.Input Text    xpath://*[@id="i0118"]    ${angvar('Mail_password')}
     Sleep    2
     SeleniumLibrary.Click Element    xpath://*[@id="idSIButton9"]
     Sleep    2
@@ -46,7 +47,7 @@ Start TestCase
     Sleep    5
     SeleniumLibrary.Click Element    xpath://span[text()='Mail']    
     Sleep    2
-    SeleniumLibrary.Click Element    xpath:(//div[@class='xc0ZS TszOG'])[1]
+    SeleniumLibrary.Click Element    xpath:(//div[@class='XG5Jd TszOG'])[1]
     Sleep    2
     
     Wait Until Element Is Visible    xpath:(//button[@aria-label='Reply'])[3]    20s

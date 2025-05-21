@@ -11,7 +11,8 @@ ${Apps}    symphony
 
 *** Keywords ***
 Start TestCase
-    Open Browser    ${angvar('url')}    ${angvar('browser')}    #options=${global_browser_options}
+    Log    Opening browser
+    Open Browser    ${angvar('apurl')}    ${angvar('browser')}    #options=${global_browser_options}
     
     Wait Until Keyword Succeeds    2 minute    5s   Wait until element is visible    xpath://button[contains(.,'Azure')]
     # Sleep    10
