@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../Tests/Resources/Unlock_set.robot
+Resource    ../Tests/Resource/Unlock_set.robot
 Suite Setup    Unlock_set.Start TestCase
 Suite Teardown    Unlock_set.Finish TestCase
 Test Tags    sap_unlock

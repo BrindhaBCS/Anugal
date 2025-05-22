@@ -3,12 +3,12 @@ Library     SeleniumLibrary
 Library    Anugal_library.py
 Library    DateTime
 
-# *** Variables ***
+*** Variables ***
 
-# ${Mail_id}    malayranjan.s@basiscloudsolutions.com
-# ${Mail_password}    Malay@@Ranjan12
-
-
+${Mail_id}    malayranjan.s@basiscloudsolutions.com
+${Mail_password}    @Malay@Ranjan12
+${out_look}    https://outlook.office365.com/mail/inbox/
+${app}    Symphony
 
 *** Keywords ***
 Start TestCase
@@ -23,7 +23,7 @@ Start TestCase
     SeleniumLibrary.Click element    xpath:(//button[contains(@class,'MuiButtonBase-root MuiButton-root')])[3]
     # Sleep    20
     Wait Until Element Is Visible    xpath:(//input[@inputmode='text'])    60s
-    Execute Javascript    window.open('https://outlook.office365.com/mail/inbox/')
+    Execute Javascript    window.open('${out_look}')
     Switch Window    new
 
     Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath://*[@id="i0116"]
@@ -59,54 +59,33 @@ Start TestCase
     SeleniumLibrary.Input Text    xpath:(//input[@inputmode='text'])    ${otp}
     Sleep    2
     SeleniumLibrary.Click Element    xpath:(//button[@type='button'])[1]
-    Sleep    10
-    
-unlock_SAP_not_set
-    Wait Until Element Is Visible    xpath://h1[text()='My Team']    40s 
-    
-    SeleniumLibrary.Click Element    xpath://button[normalize-space(text())='My Systems']
+    Sleep    2
+   
+
+navigate_my_teams
+    Wait Until Keyword Succeeds    1 minute    5s     Wait Until Element Is Visible    xpath://p[normalize-space(text())='Peers']
+    SeleniumLibrary.Click Element    xpath://div[@class='MuiBox-root css-1dzplvk']
+    Sleep    2
+    Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath:(//div[@class='react-flow__renderer']//div)[1]
+    SeleniumLibrary.Click Element    xpath://div[normalize-space(text())='Profile']
+    Capture Page Screenshot
+    Sleep    2
+    SeleniumLibrary.Click Element    xpath://button[contains(.,'Team')]
+    Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath:(//div[@class='react-flow__renderer']//div)[1]
+    SeleniumLibrary.Double Click Element   xpath:(//*[name()='svg'][@class='MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1fb8gj2'])[7]
+    Wait Until Element Is Visible    xpath://li[normalize-space(text())='View Access']    20s
+    SeleniumLibrary.Click Element    xpath://li[normalize-space(text())='View Access']
+    Wait Until Element Is Visible    xpath://h2[text()='${app}']    40s
+    SeleniumLibrary.Click Element    xpath://div[normalize-space(text())='Profile']
+    Capture Page Screenshot
+    SeleniumLibrary.Click Element    xpath://button[contains(@class,'MuiButtonBase-root MuiButton-root')]
+    Sleep    2
+    Wait Until Keyword Succeeds    1 minute    5s    Wait Until Element Is Visible    xpath:(//div[@class='react-flow__renderer']//div)[1]
+    SeleniumLibrary.Click Element    xpath://button[contains(.,'Assets')]
+    Sleep    5
+    SeleniumLibrary.Click Element    xpath://div[normalize-space(text())='Delegate']
     Sleep    3
-    Wait Until Element Is Visible    xpath://div[text()='SAP Systems']    20s
-    SeleniumLibrary.Click Element    xpath://div[text()='SAP Systems']
-    Sleep    2
-    Wait Until Element Is Visible    xpath://img[@alt='View']    30s
+    Wait Until Element Is Visible    xpath:(//img[@aria-label='View'])[1]    30s
 
-    ${sap_env}    Set Variable    1
-    
-    WHILE    True
-        ${element}    Set Variable    xpath:(//div[@data-colindex='1'])[${sap_env}]
-        ${data_visible}    Run Keyword And Return Status    Get Text    ${element}
-        Sleep    1
-        
-        Run Keyword If    not ${data_visible}    Exit For Loop  # Exit if no more data
-        Sleep    1
-
-        ${Env_name}    Get Text    xpath:(//div[@data-colindex='1'])[${sap_env}]
-        Sleep    1
-
-        # Check if Env_name matches a specific value
-        IF    '${Env_name}' == '${angvar('SAP_SYSTEM')}'  
-            SeleniumLibrary.Click Element    xpath:(//div[@data-colindex='0'])[${sap_env}]
-            Sleep    2
-            # SeleniumLibrary.Click Element    xpath:(//img[@alt='View'])[${sap_env}]
-            # Sleep    5
-            Capture Page Screenshot
-        END
-        ${sap_env}    Evaluate    ${sap_env} + 1
-
-    END
-
-    SeleniumLibrary.Click Element    xpath:(//div[@aria-colspan='1']//button)[1]
-    Sleep    1
-    Wait Until Element Is Visible    xpath://div[@role='dialog']    30s
-    SeleniumLibrary.Click Element    xpath://button[normalize-space(text())='Confirm request']
-    Sleep    2
-    Wait Until Element Is Visible    xpath://div[@class='MuiAlert-message css-1xsto0d']    30s
-    ${unlock_popup}    Get Text    xpath://div[@class='MuiAlert-message css-1xsto0d']
-    Log To Console    ${unlock_popup}
-
-
-
-        
 Finish TestCase
     Close Browser
